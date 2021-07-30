@@ -1,0 +1,1 @@
+document.getElementById("ftjs").innerHTML = "<nav class='ft'><ul class='ftmn'><li><img src='/naoyukigamework/images/mclogocc2.png' width='50' height='50'></img></li><li><a href='/naoyukigamework/terms.html'>利用規約</a></li><li><a href='mailto:official-naoyukigamework@outlook.jp'>お問い合わせ</a></li><li><a href='/naoyukigamework/qa.html'>よくある質問</a></li></div></ul></nav>";
