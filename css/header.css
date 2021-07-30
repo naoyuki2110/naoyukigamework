@@ -1,0 +1,90 @@
+.hd .menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: #fff;
+  margin: 0 -8 0 -8;
+  border-bottom: solid 1px #ddd;
+}
+.hd .menu li {
+  margin-right: 1rem;
+}
+.hd .menu li a {
+  display: block;
+  padding: 10px;
+  color: #000000;
+  text-decoration: none;
+  border-radius:5px;
+}
+.hd .menu li img {
+  padding-top: 7px;
+}
+.hd .menu a {
+  transition:all 0.2s;
+}
+.hd .menu a:hover {
+  display:block;
+  background: rgba(0,0,0,0.1);
+  border-radius:5px;
+}
+.hd .menu a:active {
+  display:block;
+  background: rgba(0,0,0,0.2);
+  border-radius:5px;
+}
+@media screen and (min-width: 700px){
+.hd .menu li .menu2 {
+  position: absolute;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  top: 40px;
+  width: 200px;
+  background: #fff;
+  transition: all .2s cubic-bezier(0, 0.61, 0.57, 0.99);
+  border-radius: 10px;
+  list-style: none;
+}
+.hd .menu li .menu2 li {
+  margin: 10 20 10 -20;
+}
+.hd .menu li:hover .menu2 {
+  top: 50px;
+  visibility: visible;
+  opacity: 1;
+}
+}
+@media screen and (max-width: 700px){
+.hd .menu li .menu2 {
+  position: absolute;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  left: 30px;
+  width: 200px;
+  background: #fff;
+  transition: all .2s cubic-bezier(0, 0.61, 0.57, 0.99);
+  border-radius: 10px;
+  list-style: none;
+}
+.hd .menu li .menu2 li {
+  margin: 10 20 10 -20;
+}
+.hd .menu li:hover .menu2 {
+  left: 40px;
+  visibility: visible;
+  opacity: 1;
+}
+}
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+body {
+  padding-top: 60px;
+  margin-bottom: 0px;
+}
