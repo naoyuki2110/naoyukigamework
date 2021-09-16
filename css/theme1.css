@@ -54,3 +54,7 @@ a:active {
   background-color: #07cec1;
   color: #fff;
 }
+
+p {
+  font-family: 'Inter', sans-serif;
+}
