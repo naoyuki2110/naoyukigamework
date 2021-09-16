@@ -1,6 +1,7 @@
 a {
   color: #207cf5;
   transition: all 0.2s;
+  font-family: 'Inter', sans-serif;
 }
 a:hover {
   color: #0e40c9;
@@ -56,5 +57,9 @@ a:active {
 }
 
 p {
+  font-family: 'Inter', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Inter', sans-serif;
 }
