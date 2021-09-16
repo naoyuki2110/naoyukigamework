@@ -51,11 +51,6 @@ a:active {
   background-color: #124bc3;
   color: #fff;
 }
-::selection{
-  background-color: #07cec1;
-  color: #fff;
-}
-
 p {
   font-family: 'Inter', sans-serif;
 }
