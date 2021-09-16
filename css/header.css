@@ -26,12 +26,14 @@
 }
 .hd .menu a:hover {
   display:block;
-  background: rgba(0,0,0,0.1);
+  border: solid 1.5px rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.05);
   border-radius:5px;
 }
 .hd .menu a:active {
   display:block;
-  background: rgba(0,0,0,0.2);
+  border: solid 1.5px rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.08);
   border-radius:5px;
 }
 @media screen and (min-width: 700px){
