@@ -17,6 +17,7 @@
   color: #000000;
   text-decoration: none;
   border-radius:5px;
+  border: solid 1.5px rgba(0,0,0,0);
 }
 .hd .menu li img {
   padding-top: 7px;
@@ -26,8 +27,7 @@
 }
 .hd .menu a:hover {
   display:block;
-  border: solid 1.5px rgba(0,0,0,0.1);
-  background: rgba(0,0,0,0.05);
+  border: solid 1.5px rgba(0,0,0,0.3);
   border-radius:5px;
 }
 .hd .menu a:active {
