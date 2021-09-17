@@ -66,7 +66,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .imgsdw:hover{
   transform: translateX(-5px) translateY(-5px);
-  box-shadow: 5px 5px 2px grey;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
 }
 .ineimg{
   width:500px;
