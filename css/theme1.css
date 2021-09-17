@@ -99,6 +99,12 @@ h1,h2,h3,h4,h5,h6 {
 .iconback{
   width:100%;
 }
+.gamescr{
+  width:500px;
+  height:300px;
+  display:inline-block;
+  margin: 0px 30px 20px 30px;
+}
 }
 @media screen and (max-width: 700px){
 .imgsdw{
@@ -118,7 +124,7 @@ h1,h2,h3,h4,h5,h6 {
   width:400px;
   height:320px;
   display:inline-block;
-  margin: 0px 30px 30px 30px;
+  margin: 0px 30px -10px 30px;
 }
 .imgsdw2{
   max-width: 100%;
@@ -140,5 +146,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 .iconback{
   width:100%;
+}
+.gamescr{
+  width:400px;
+  height:320px;
+  display:inline-block;
+  margin: 0px 30px -60px 30px;
 }
 }
