@@ -60,6 +60,20 @@ p {
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Inter', sans-serif;
 }
+.mds1{
+  font-size: 30px;
+  color: #4788ff;
+}
+.mds1:before {
+  position: absolute;
+  bottom: 110px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 5px;
+  content: '';
+  border-radius: 3px;
+  background: #007eff;
+}
 @media screen and (min-width: 700px){
 .imgsdw{
   max-width: 100%;
