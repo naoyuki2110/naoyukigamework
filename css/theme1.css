@@ -68,6 +68,9 @@ h1,h2,h3,h4,h5,h6 {
   transform: translateX(-5px) translateY(-5px);
   filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
 }
+.imgsdw:active{
+  transform: scale(0.95,0.95);
+}
 .ineimg{
   width:500px;
   height:300px;
