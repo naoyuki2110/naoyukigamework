@@ -2,6 +2,7 @@ a {
   color: #207cf5;
   transition: all 0.2s;
   font-family: 'Inter', sans-serif;
+  text-decoration: none;
 }
 a:hover {
   color: #0e40c9;
