@@ -15,6 +15,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
     <meta name="viewport" content="initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/naoyukigamework/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.topslide').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+    </script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3MLYLNGS1"></script>
     <script>
@@ -65,36 +78,6 @@
         </ul>
     </nav>
   </footer>
-<style>
-#topslide {
-    width: 100%;
-    margin: 0 auto;
-    text-align: left;
-    overflow: hidden;
-    position: relative;
-}
-
-#topslide img {
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-</style>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script type="text/javascript">
-$(function(){
-    var setImg = '#topslide';
-    var fadeSpeed = 1500;
-    var switchDelay = 5000;
-
-    $(setImg).children('img').css({opacity:'0'});
-    $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
-
-    setInterval(function(){
-        $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
-    },switchDelay);
-});
-</script>
 <!-- CommonComponent -->
   <script src="/naoyukigamework/js/header.js"></script>
   <script src="/naoyukigamework/js/footer.js"></script>
