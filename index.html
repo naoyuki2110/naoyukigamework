@@ -36,6 +36,13 @@
         </ul>
     </nav>
   </header>
+<div class="topslide">
+  <img src="/naoyukigamework/images/cewebback.png">
+  <img src="/naoyukigamework/images/cawebback.png">
+  <img src="/naoyukigamework/images/spwebback.png">
+  <img src="/naoyukigamework/images/bpwebback.png">
+  <img src="/naoyukigamework/images/b3dwebback.png">
+</div>
   <h1 style="text-align:center;">naoyukiGameWork</h1>
   <h2 style="text-align:center;"><br>現在整備中です。しばらくお待ちください。</h2>
   <p class="mds2">お知らせ</p>
@@ -59,7 +66,33 @@
     </nav>
   </footer>
 <style>
-
+.topslide {
+  position   : relative;
+  overflow   : hidden;
+  width      : 100%;
+  margin     : auto;
+}
+.topslide img {
+  display    : block;
+  position   : absolute;
+  width      : inherit;
+  height     : inherit;
+  opacity    : 0;
+  animation  : slideAnim 15s ease infinite;
+}
+.topslide img:nth-of-type(1) { animation-delay: 0s }
+.topslide img:nth-of-type(2) { animation-delay: 3s }
+.topslide img:nth-of-type(3) { animation-delay: 6s }
+.topslide img:nth-of-type(4) { animation-delay: 9s }
+.topslide img:nth-of-type(5) { animation-delay: 12s }
+  
+@keyframes slideAnim{
+   0% { opacity: 0;}
+   2% { opacity: 1;}
+  18% { opacity: 1;}
+  20% { opacity: 0;}
+ 100% { opacity: 0;}
+}
 </style>
 <!-- CommonComponent -->
   <script src="/naoyukigamework/js/header.js"></script>
