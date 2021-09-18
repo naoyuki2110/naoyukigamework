@@ -146,10 +146,10 @@ h1,h2,h3,h4,h5,h6 {
   transform: scale(0.95,0.95);
 }
 .ineimg{
-  width:400px;
-  height:320px;
+  width:90%;
+  height:80%;
   display:inline-block;
-  margin: 0px 30px -10px 30px;
+  margin: 0px 5px -250px 5px;
 }
 .imgsdw2{
   max-width: 100%;
@@ -173,9 +173,9 @@ h1,h2,h3,h4,h5,h6 {
   width:100%;
 }
 .gamescr{
-  width:400px;
-  height:320px;
+  width:90%;
+  height:80%;
   display:inline-block;
-  margin: 0px 30px -60px 30px;
+  margin: 0px 5px -200px 5px;
 }
 }
