@@ -130,6 +130,9 @@ h1,h2,h3,h4,h5,h6 {
   display:inline-block;
   margin: 0px 30px 20px 30px;
 }
+.margtext1{
+  margin:80px;
+}
 }
 @media screen and (max-width: 700px){
 .imgsdw{
@@ -177,5 +180,8 @@ h1,h2,h3,h4,h5,h6 {
   height:230px;
   display:inline-block;
   margin: 0px 5px -10px 5px;
+}
+.margtext1{
+  margin:10px;
 }
 }
