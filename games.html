@@ -8,8 +8,6 @@
   <meta property="og:site_name" content="naoyukiGameWork" />
   <meta property="og:image" content="https://naoyuki2110.github.io/naoyukigamework/images/ngwlogo.png" />
   <title>ゲームリスト | naoyukiGameWork</title>
-  <link rel="stylesheet" href="/naoyukigamework/css/header.css">
-  <link rel="stylesheet" href="/naoyukigamework/css/footer.css">
   <link rel="stylesheet" href="/naoyukigamework/css/theme1.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +33,7 @@
 </head>
 
 <body>
+  <!--
   <header id="hdjs">
     <nav class="hd">
       <ul class="menu">
@@ -51,9 +50,43 @@
       </ul>
     </nav>
   </header>
-  <div class="alert alert-primary d-flex" role="alert">
-    <div>申し訳ありません。このページはただいまメンテナンス中です。</div>
-  </div>
+-->
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/naoyukigamework/images/ngwwebheader.png" alt="ロゴ" width="220" height="35"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/naoyukigamework/">TOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/naoyukigamework/games">ゲーム一覧</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                aria-expanded="false">
+                ソーシャル
+              </a>
+              <ul class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="https://discord.gg/VvrBsaq" target="_blank">Discord</a></li>
+                <li><a class="dropdown-item" href="https://twitter.com/naoyukigamework/" target="_blank">Twitter</a>
+                </li>
+                <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCZmB8400Hi_j5xDU9EwbQDA/"
+                    target="_blank">YouTube</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div style="padding-top:3.78rem;">
   <h1 style="text-align:center;">ゲームリスト</h1>
   <!-- <div style="text-align:center;">
     <div class="ineimg"><a href="/naoyukigamework/games/blockbreak3d"><img
@@ -90,11 +123,11 @@
   </div>
   -->
   <div class="container-md">
-    <div class="row row-cols-2 justify-content-center">
+    <div class="row row-cols-1 row-cols-sm-2 justify-content-center">
       <div class="col my-2">
         <div class="card" style="height:100%">
-          <img src="https://cdn.discordapp.com/attachments/879547925598969917/887939264694845480/B3D4.png"
-            alt="超シンプルな3D版ブロック崩し。ミニゲームあり。「ブロック崩し3D」" class="card-img-top">
+          <a href="/naoyukigamework/games/blockbreak3d"><img src="https://cdn.discordapp.com/attachments/879547925598969917/887939264694845480/B3D4.png"
+            alt="超シンプルな3D版ブロック崩し。ミニゲームあり。「ブロック崩し3D」" class="card-img-top"></a>
           <div class="card-body">
             <h5 class="card-title">ブロック崩し3D</h5>
             <p class="card-text">超シンプルな3D版ブロック崩し。ミニゲームあり。</p>
@@ -104,8 +137,8 @@
       </div>
       <div class="col my-2">
         <div class="card" style="height:100%">
-          <img src="https://cdn.discordapp.com/attachments/879547925598969917/888273776851177503/unknown.png"
-            alt="ボタンをクリックする簡単ゲーム。いろんなモードでプレイ！「ボタポッチ」" class="card-img-top">
+          <a href="/naoyukigamework/games/botapochi"><img src="https://cdn.discordapp.com/attachments/879547925598969917/888273776851177503/unknown.png"
+            alt="ボタンをクリックする簡単ゲーム。いろんなモードでプレイ！「ボタポッチ」" class="card-img-top"></a>
           <div class="card-body">
             <h5 class="card-title">ボタポッチ</h5>
             <p class="card-text">ボタンをクリックする簡単ゲーム。いろんなモードでプレイ！</p>
@@ -115,8 +148,8 @@
       </div>
       <div class="col my-2">
         <div class="card" style="height:100%">
-          <img src="https://cdn.discordapp.com/attachments/879547925598969917/888264099199348756/SP4.png"
-            alt="宇宙のプッシャーゲーム！シンプルな物理抽選つき「スペースプッシャー」" class="card-img-top img-fluid">
+          <a href="/naoyukigamework/games/spacepusher"><img src="https://cdn.discordapp.com/attachments/879547925598969917/888264099199348756/SP4.png"
+            alt="宇宙のプッシャーゲーム！シンプルな物理抽選つき「スペースプッシャー」" class="card-img-top img-fluid"></a>
           <div class="card-body">
             <h5 class="card-title">スペースプッシャー</h5>
             <p class="card-text">シンプルな宇宙のプッシャーゲーム！物理抽選つき</p>
@@ -126,8 +159,8 @@
       </div>
       <div class="col my-2">
         <div class="card" style="height:100%">
-          <img src="https://cdn.discordapp.com/attachments/879547925598969917/887947064850382848/CA3.png"
-            alt="キューブを避けてゲームクリア！爽快ゲーム「CubeAvoid」" class="card-img-top img-fluid">
+          <a href="/naoyukigamework/games/cubeavoid"><img src="https://cdn.discordapp.com/attachments/879547925598969917/887947064850382848/CA3.png"
+            alt="キューブを避けてゲームクリア！爽快ゲーム「CubeAvoid」" class="card-img-top img-fluid"></a>
           <div class="card-body">
             <h5 class="card-title">CubeAvoid</h5>
             <p class="card-text">キューブを避けてゲームクリア！爽快避けゲー</p>
@@ -137,9 +170,9 @@
       </div>
       <div class="col my-2">
         <div class="card" style="height:100%">
-          <img
+          <a href="/naoyukigamework/games/colorant-echo"><img
             src="https://cdn.discordapp.com/attachments/879547925598969917/887948531627851786/21_08_25-16_58_32_0873.png"
-            alt="JP共有で楽しめる！オンラインメダルゲーム「Colorant Echo」" class="card-img-top">
+            alt="JP共有で楽しめる！オンラインメダルゲーム「Colorant Echo」" class="card-img-top"></a>
           <div class="card-body">
             <h5 class="card-title">Colorant Echo</h5>
             <p class="card-text">JP共有で楽しめる！オンラインメダルゲーム</p>
@@ -147,14 +180,102 @@
           </div>
         </div>
       </div>
+      <div class="col my-2">
+        <div class="card" style="height:100%">
+          <img src="https://cdn.discordapp.com/attachments/879547925598969917/888279862790484048/unknown.png"
+            alt="学校がモチーフ？！のプッシャーゲーム「School Beat」" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">School Beat</h5>
+            <p class="card-text">学校がモチーフ？！のプッシャーゲーム</p>
+            <!--
+              <a href="/naoyukigamework/games/school-beat" class="btn btn-primary">School Beatのページへ</a>
+            -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#notpageModal">
+              School Beatのページへ
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col my-2">
+        <div class="card" style="height:100%">
+          <img src="https://cdn.discordapp.com/attachments/879547925598969917/888270276670926858/unknown.png"
+            alt="手軽にできる、3Dの簡易抽選アプリ「RandomLottery」" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">RandomLottery</h5>
+            <p class="card-text">手軽にできる、3Dの簡易抽選アプリ</p>
+            <!--
+              <a href="/naoyukigamework/games/randomlottery" class="btn btn-primary">RandomLotteryのページへ</a>
+            -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#notpageModal">
+              RandomLotteryのページへ
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <h1 style="text-align:center;">BOTリスト</h1>
-  <div style="text-align:center;">
+  <!--
+    <div style="text-align:center;">
     <div class="ineimg2"><img
         src="https://cdn.discordapp.com/attachments/879547925598969917/888284077898203146/d1cd95c873221a1f06c5395a72f1dff1.png"
         class="imgsdw2">
       <p style="font-size:20px;text-align:center;">ふくみぃ</p>
+    </div>
+  -->
+  <div class="container-md">
+    <div class="row row-cols-3 row-cols-lg-4 justify-content-center">
+      <div class="col my-2">
+        <div class="card">
+          <img
+            src="https://cdn.discordapp.com/attachments/879547925598969917/888284077898203146/d1cd95c873221a1f06c5395a72f1dff1.png"
+            alt="遊び、便利、親しみやすいBOT「ふくみぃ」" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">ふくみぃ</h5>
+            <p class="card-text">遊び、便利、親しみやすいBOT</p>
+            <!--
+                <a href="/naoyukigamework/bots/fukumi" class="btn btn-danger disabled">ふくみぃのページへ</a>
+              -->
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#notpageModal">
+              ふくみぃのページへ
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col my-2">
+        <div class="card">
+          <img
+            src="https://cdn.discordapp.com/attachments/879547925598969917/927425866584195114/b44b17d423a424da88dded0bf4a6c96c.png"
+            alt="安全、快適にさせてみせます。「ふくちょー」" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">ふくちょー</h5>
+            <p class="card-text">安全、快適にさせてみせます。</p>
+            <!--
+                <a href="/naoyukigamework/bots/fukutyo" class="btn btn-danger disabled">ふくちょーのページへ</a>
+              -->
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#notpageModal">
+              ふくちょーのページへ
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col my-2">
+        <div class="card">
+          <img
+            src="https://cdn.discordapp.com/attachments/879547925598969917/927427880244363294/1e1a34bc67fb82b9cc9580b8be4dfa9d.png"
+            alt="おしゃべりを音でもっと楽しく「えすいちゃん」" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">えすいちゃん</h5>
+            <p class="card-text">おしゃべりを音でもっと楽しく</p>
+            <!--
+                <a href="/naoyukigamework/bots/sechan" class="btn btn-danger disabled">えすいちゃんのページへ</a>
+              -->
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#notpageModal">
+              えすいちゃんのページへ
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!--
@@ -170,12 +291,37 @@
     </nav>
   </footer>
 -->
-  <footer class="bg-light">
+</div>
+  <footer class="bg-black">
     <div class="container py-3">
-      <p class="text-center mb-0">© 2020-2022 naoyukiGameWork</p>
-      <p class="text-center mb-0"><a href="/naoyukigamework/terms">利用規約</a>・<a href="mailto:official-naoyukigamework@outlook.jp">お問い合わせ</a>・<a href="/naoyukigamework/qa">よくある質問</a></p>
+      <p class="text-center text-light mb-0">© 2020-2022 naoyukiGameWork</p>
+      <p class="text-center text-light mb-0"><a href="/naoyukigamework/terms">利用規約</a>・<a
+          href="mailto:official-naoyukigamework@outlook.jp">お問い合わせ</a>・<a href="/naoyukigamework/qa">よくある質問</a></p>
     </div>
   </footer>
+  <!-- ModalArea -->
+  <div class="modal fade" id="notpageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ページがありません - naoyukiGameWork</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          このゲームまたはBOTのページがありません。<br><br>原因としては以下が考えられます。<br><br>・選択したゲームまたはBOTのページが準備中である。<br>・選択したゲームまたはBOTが公開されていない。<br><br>ご迷惑をおかけし申し訳ございません。
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CustomStyle -->
+  <style>
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+  </style>
   <!-- CommonComponent -->
   <script src="/naoyukigamework/js/header.js"></script>
   <script src="/naoyukigamework/js/footer.js"></script>
