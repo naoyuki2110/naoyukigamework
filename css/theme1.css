@@ -264,7 +264,6 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   border-radius: 3px;
   background: -webkit-linear-gradient(0deg, #1294ff, #07e6a3);
-  background: linear-gradient(0deg, #1294ff, #07e6a3);
 }
 .nav-blur{
   background-color:rgba(255, 255, 255, 0.8);
