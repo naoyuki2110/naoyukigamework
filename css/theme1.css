@@ -4,15 +4,19 @@ a {
   font-family: 'Inter', sans-serif;
   text-decoration: none;
 }
+
 a:hover {
   color: #0e40c9;
 }
+
 a:active {
   color: #0a2e91;
 }
+
 div {
   font-family: 'Inter', sans-serif;
 }
+
 .btn-primary {
   display: inline-block;
   padding: 5 30 5 30;
@@ -23,10 +27,12 @@ div {
   color: #fff;
   transition: all 0.3s;
 }
+
 .btn-primary:hover {
   background-color: #13b978;
   color: #fff;
 }
+
 .btn-secondary {
   display: inline-block;
   padding: 5 30 5 30;
@@ -38,10 +44,12 @@ div {
   font-size: 20px;
   transition: all 0.3s;
 }
+
 .btn-secondary:hover {
   background-color: #5d5d5d;
   color: #fff;
 }
+
 .btn-blue {
   display: inline-block;
   padding: 5 30 5 30;
@@ -53,21 +61,25 @@ div {
   font-size: 20px;
   transition: all 0.3s;
 }
+
 .btn-blue:hover {
   background-color: #124bc3;
   color: #fff;
 }
+
 p {
   font-family: 'Inter', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
 }
-.mds1{
+
+.mds1 {
   font-size: 30px;
   color: #4788ff;
 }
+
 .mds1:before {
   position: absolute;
   bottom: 110px;
@@ -78,19 +90,22 @@ h1,h2,h3,h4,h5,h6 {
   border-radius: 3px;
   background: #007eff;
 }
-.mds2{
-  color:#fff;
-  font-size:30px;
-  background:#0070ff;
-  border-radius:10px;
-  text-align:center;
+
+.mds2 {
+  color: #fff;
+  font-size: 30px;
+  background: #0070ff;
+  border-radius: 10px;
+  text-align: center;
   padding: 5px 15px 5px 15px;
 }
-.infotable{
+
+.infotable {
   width: 100%;
   margin: auto;
 }
-.infotable .tbtitle{
+
+.infotable .tbtitle {
   text-align: center;
   font-size: 22px;
   border: solid 1px #555;
@@ -99,7 +114,8 @@ h1,h2,h3,h4,h5,h6 {
   color: #fff;
   padding: 5px;
 }
-.infotable .tbtext{
+
+.infotable .tbtext {
   text-align: left;
   font-size: 18px;
   border: solid 1px #555;
@@ -108,105 +124,150 @@ h1,h2,h3,h4,h5,h6 {
   background-color: #fafafa;
   padding: 10px
 }
-@media screen and (min-width: 700px){
-.imgsdw{
-  max-width: 100%;
-  max-height: 100%;
-  transition: 0.5s;
-  border-radius:10px;
+
+@media screen and (min-width: 700px) {
+  .imgsdw {
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+
+  .imgsdw:hover {
+    transform: translateX(-5px) translateY(-5px);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  }
+
+  .imgsdw:active {
+    transform: scale(0.95, 0.95);
+  }
+
+  .ineimg {
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    margin: 0px 30px 70px 30px;
+  }
+
+  .imgsdw2 {
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.5s;
+    border-radius: 100px;
+  }
+
+  .imgsdw2:hover {
+    border-radius: 15px;
+  }
+
+  .imgsdw2:active {
+    transform: scale(0.95, 0.95);
+  }
+
+  .ineimg2 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 0px 30px 70px 30px;
+  }
+
+  .iconback {
+    width: 100%;
+  }
+
+  .gamescr {
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    margin: 0px 30px 20px 30px;
+  }
+
+  .margtext1 {
+    margin: 80px;
+  }
 }
-.imgsdw:hover{
-  transform: translateX(-5px) translateY(-5px);
-  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+
+@media screen and (max-width: 700px) {
+  .imgsdw {
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+
+  .imgsdw:hover {
+    transform: translateX(-5px) translateY(-5px);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  }
+
+  .imgsdw:active {
+    transform: scale(0.95, 0.95);
+  }
+
+  .ineimg {
+    width: 300px;
+    height: 270px;
+    display: inline-block;
+    margin: 0px 5px -10px 5px;
+  }
+
+  .imgsdw2 {
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.5s;
+    border-radius: 100px;
+  }
+
+  .imgsdw2:hover {
+    border-radius: 15px;
+  }
+
+  .imgsdw2:active {
+    transform: scale(0.95, 0.95);
+  }
+
+  .ineimg2 {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 0px 30px 70px 30px;
+  }
+
+  .iconback {
+    width: 100%;
+  }
+
+  .gamescr {
+    width: 300px;
+    height: 230px;
+    display: inline-block;
+    margin: 0px 5px -10px 5px;
+  }
+
+  .margtext1 {
+    margin: 10px;
+  }
 }
-.imgsdw:active{
-  transform: scale(0.95,0.95);
+
+.mds3 {
+  position: relative;
+  padding: 45px;
+  text-align: center;
 }
-.ineimg{
-  width:500px;
-  height:300px;
-  display:inline-block;
-  margin: 0px 30px 70px 30px;
+
+.mds3:before {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 6px;
+  content: '';
+  border-radius: 3px;
+  background: -webkit-linear-gradient(0deg, #1294ff, #07e6a3);
+  background: linear-gradient(0deg, #1294ff, #07e6a3);
 }
-.imgsdw2{
-  max-width: 100%;
-  max-height: 100%;
-  transition: 0.5s;
-  border-radius:100px;
-}
-.imgsdw2:hover{
-  border-radius:15px;
-}
-.imgsdw2:active{
-  transform: scale(0.95,0.95);
-}
-.ineimg2{
-  width:200px;
-  height:200px;
-  display:inline-block;
-  margin: 0px 30px 70px 30px;
-}
-.iconback{
-  width:100%;
-}
-.gamescr{
-  width:500px;
-  height:300px;
-  display:inline-block;
-  margin: 0px 30px 20px 30px;
-}
-.margtext1{
-  margin:80px;
-}
-}
-@media screen and (max-width: 700px){
-.imgsdw{
-  max-width: 100%;
-  max-height: 100%;
-  transition: 0.5s;
-  border-radius:10px;
-}
-.imgsdw:hover{
-  transform: translateX(-5px) translateY(-5px);
-  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
-}
-.imgsdw:active{
-  transform: scale(0.95,0.95);
-}
-.ineimg{
-  width:300px;
-  height:270px;
-  display:inline-block;
-  margin: 0px 5px -10px 5px;
-}
-.imgsdw2{
-  max-width: 100%;
-  max-height: 100%;
-  transition: 0.5s;
-  border-radius:100px;
-}
-.imgsdw2:hover{
-  border-radius:15px;
-}
-.imgsdw2:active{
-  transform: scale(0.95,0.95);
-}
-.ineimg2{
-  width:100px;
-  height:100px;
-  display:inline-block;
-  margin: 0px 30px 70px 30px;
-}
-.iconback{
-  width:100%;
-}
-.gamescr{
-  width:300px;
-  height:230px;
-  display:inline-block;
-  margin: 0px 5px -10px 5px;
-}
-.margtext1{
-  margin:10px;
-}
+.nav-blur{
+  background-color:rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
