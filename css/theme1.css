@@ -320,8 +320,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: .25rem;
   position:relative;
   z-index: 1;
-  border-left-color: #1082df;
-  border-right-color: #06c98f;
+  border-left-color: #1294ff!important;
+  border-right-color: #07e6a3!important;
   background: -webkit-linear-gradient(0deg, #1294ff, #07e6a3);
 }
 .acbord1:before{
