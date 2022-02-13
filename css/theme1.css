@@ -249,12 +249,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* h1に最適 */
 .mds3 {
   position: relative;
   padding: 45px;
   text-align: center;
 }
-
 .mds3:before {
   position: absolute;
   bottom: 20px;
@@ -264,6 +264,76 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   border-radius: 3px;
   background: -webkit-linear-gradient(0deg, #1294ff, #07e6a3);
+}
+
+/* h1に最適 */
+.mds4 {
+  position: relative;
+  padding: 45px;
+  text-align: center;
+}
+.mds4:before {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 6px;
+  content: '';
+  border-radius: 3px;
+  background: -webkit-linear-gradient(0deg, #f51651, #9805fa);
+}
+
+/* h2に最適 */
+.mds5 {
+  position: relative;
+  padding: 45px;
+  text-align: center;
+}
+.mds5:before {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 75px);
+  width:150px;
+  height: 6px;
+  content: '';
+  border-radius: 3px;
+  background: -webkit-linear-gradient(0deg, #f51651, #f5b82a);
+}
+
+/* h3に最適 */
+.mds6 {
+  position: relative;
+  padding: 40px;
+  text-align: center;
+}
+.mds6:before {
+  position: absolute;
+  bottom: 18px;
+  left: calc(50% - 50px);
+  width:100px;
+  height: 6px;
+  content: '';
+  border-radius: 3px;
+  background: -webkit-linear-gradient(0deg, #0526fa, #1eccf7);
+}
+.acbord1{
+  border-radius: .25rem;
+  position:relative;
+  z-index: 1;
+  border-left-color: #1082df;
+  border-right-color: #06c98f;
+  background: -webkit-linear-gradient(0deg, #1294ff, #07e6a3);
+}
+.acbord1:before{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  width: 100%;
+  height:100%;
+  background:#fff;
+  border-radius: .25rem;
+  content: "";
 }
 .nav-blur{
   background-color:rgba(255, 255, 255, 0.8);
