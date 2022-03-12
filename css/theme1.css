@@ -252,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
 /* h1に最適 */
 .mds3 {
   position: relative;
-  padding: 45px;
+  padding: 45px 1rem;
   text-align: center;
 }
 .mds3:before {
@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6 {
 /* h1に最適 */
 .mds4 {
   position: relative;
-  padding: 45px;
+  padding: 45px 1rem;
   text-align: center;
 }
 .mds4:before {
@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
 /* h2に最適 */
 .mds5 {
   position: relative;
-  padding: 45px;
+  padding: 45px 1rem;
   text-align: center;
 }
 .mds5:before {
@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
 /* h3に最適 */
 .mds6 {
   position: relative;
-  padding: 40px;
+  padding: 40px 1rem;
   text-align: center;
 }
 .mds6:before {
