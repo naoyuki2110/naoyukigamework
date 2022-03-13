@@ -70,11 +70,32 @@
   <div style="padding-top:3.2rem;">
     <div style="text-align:center;">
       <h1 class="mds4">各サービスのSnowflakeIDをリアルタイムで</h1>
-      <p class="fs-5 mx-1">このページでは、TwitterやDiscordなどに使われているIDシステム「Snowflake」の現在の値をリアルタイムで確認することができます。<br>端末の時刻が正しく設定されていない場合は値が正しく表示されないことがあります。</p>
+      <p class="fs-5 mx-1">
+        このページでは、TwitterやDiscordなどに使われているIDシステム「Snowflake」の現在の値をリアルタイムで確認することができます。<br>端末の時刻が正しく設定されていない場合は値が正しく表示されないことがあります。
+      </p>
       <h1 class="mds5">Discord</h1>
-      <div class="container bg-dark rounded py-3">
-        <h2 class="text-light" id="datetext">------------------</h2>
-        <h1 class="text-light font-monospace" id="flaketext">000000000000000000</h1>
+      <div class="py-3 px-1">
+        <div class="container bg-dark rounded py-3">
+          <h2 class="text-light" id="datefmtext2">------------------</h2>
+          <p class="text-muted" id="datetext">------------------</p>
+          <p class="text-muted" id="datefmtext">------------------</p>
+          <hr class="bg-light">
+          <h1 class="text-light font-monospace" id="flaketext">000000000000000000</h1>
+          <hr class="bg-light">
+          <h2 class="text-light" id="lengthtext">--桁</h2>
+        </div>
+      </div>
+      <h1 class="mds5">Twitter</h1>
+      <div class="py-3 px-1">
+        <div class="container bg-dark rounded py-3">
+          <h2 class="text-light" id="twdatefmtext2">------------------</h2>
+          <p class="text-muted" id="twdatetext">------------------</p>
+          <p class="text-muted" id="twdatefmtext">------------------</p>
+          <hr class="bg-light">
+          <h1 class="text-light font-monospace" id="twflaketext">000000000000000000</h1>
+          <hr class="bg-light">
+          <h2 class="text-light" id="twlengthtext">--桁</h2>
+        </div>
       </div>
     </div>
   </div>
@@ -91,11 +112,31 @@
     function SnowCalc() {
       const flake = document.getElementById("flaketext");
       const datetext = document.getElementById("datetext");
+      const datefmtext = document.getElementById("datefmtext");
+      const datefmtext2 = document.getElementById("datefmtext2");
+      const twdatetext = document.getElementById("twdatetext");
+      const twdatefmtext = document.getElementById("twdatefmtext");
+      const twdatefmtext2 = document.getElementById("twdatefmtext2");
+      const flentext = document.getElementById("lengthtext");
+      const twflake = document.getElementById("twflaketext");
+      const twflentext = document.getElementById("twlengthtext");
       const date = Date.now();
       const date2 = new Date();
+      const datefm = date2.toLocaleString();
       const result = (Number(BigInt(date - 1420070400000) << 22n));
+      const flength = result.toString().length;
+      const twresult = (Number(BigInt(date - 1288834974657) << 22n));
+      const twflength = twresult.toString().length;
       flake.innerHTML = result;
       datetext.innerHTML = date2;
+      datefmtext.innerHTML = datefm;
+      twdatetext.innerHTML = date2;
+      twdatefmtext.innerHTML = datefm;
+      datefmtext2.innerHTML = `${date2.getFullYear()}年${date2.getMonth() + 1}月${date2.getDate()}日 ${date2.getHours().toString().padStart(2, '0')}時${date2.getMinutes().toString().padStart(2, '0')}分${date2.getSeconds().toString().padStart(2, '0')}秒`;
+      twdatefmtext2.innerHTML = `${date2.getFullYear()}年${date2.getMonth() + 1}月${date2.getDate()}日 ${date2.getHours().toString().padStart(2, '0')}時${date2.getMinutes().toString().padStart(2, '0')}分${date2.getSeconds().toString().padStart(2, '0')}秒`;
+      flentext.innerHTML = `${flength}桁`;
+      twflake.innerHTML = twresult;
+      twflentext.innerHTML = `${twflength}桁`;
     }
     setInterval("SnowCalc()", 1000 / 30);
   </script>
