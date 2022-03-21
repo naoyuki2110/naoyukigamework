@@ -109,7 +109,6 @@
     </div>
   </footer>
   <script>
-    function SnowCalc() {
       const flake = document.getElementById("flaketext");
       const datetext = document.getElementById("datetext");
       const datefmtext = document.getElementById("datefmtext");
@@ -137,6 +136,130 @@
       flentext.innerHTML = `${flength}桁`;
       twflake.innerHTML = twresult;
       twflentext.innerHTML = `${twflength}桁`;
+    function SnowCalc() {
+      const flake = document.getElementById("flaketext");
+      const datetext = document.getElementById("datetext");
+      const datefmtext = document.getElementById("datefmtext");
+      const datefmtext2 = document.getElementById("datefmtext2");
+      const twdatetext = document.getElementById("twdatetext");
+      const twdatefmtext = document.getElementById("twdatefmtext");
+      const twdatefmtext2 = document.getElementById("twdatefmtext2");
+      const flentext = document.getElementById("lengthtext");
+      const twflake = document.getElementById("twflaketext");
+      const twflentext = document.getElementById("twlengthtext");
+      const date = Date.now();
+      const date2 = new Date();
+      const datefm = date2.toLocaleString();
+      const result = (Number(BigInt(date - 1420070400000) << 22n));
+      const flength = result.toString().length;
+      const twresult = (Number(BigInt(date - 1288834974657) << 22n));
+      const twflength = twresult.toString().length;
+      if(result.toString().charAt(result.toString().length -12) != flake.innerHTML.toString().charAt(flake.innerHTML.toString().length -12)){
+        flake.classList.remove('yellowanim');
+        flake.classList.remove('text-light');
+        flake.classList.add('yellowanim');
+        NumEffectP();
+      }
+      if(result.toString().charAt(result.toString().length -13) != flake.innerHTML.toString().charAt(flake.innerHTML.toString().length -13)){
+        flake.classList.remove('orangeanim');
+        flake.classList.remove('text-light');
+        flake.classList.add('orangeanim');
+        NumEffectP();
+      }
+      if(result.toString().charAt(result.toString().length -14) != flake.innerHTML.toString().charAt(flake.innerHTML.toString().length -14)){
+        flake.classList.remove('greenanim');
+        flake.classList.remove('text-light');
+        flake.classList.add('greenanim');
+        NumEffectP();
+      }
+      if(result.toString().charAt(result.toString().length -15) != flake.innerHTML.toString().charAt(flake.innerHTML.toString().length -15)){
+        flake.classList.remove('wateranim');
+        flake.classList.remove('text-light');
+        flake.classList.add('wateranim');
+        NumEffectP();
+      }
+      if(result.toString().charAt(result.toString().length -16) != flake.innerHTML.toString().charAt(flake.innerHTML.toString().length -16)){
+        flake.classList.remove('blueanim');
+        flake.classList.remove('text-light');
+        flake.classList.add('blueanim');
+        NumEffectP();
+      }
+      if(result.toString().charAt(result.toString().length -17) != flake.innerHTML.toString().charAt(flake.innerHTML.toString().length -17)){
+        flake.classList.remove('redanim');
+        flake.classList.remove('text-light');
+        flake.classList.add('redanim');
+        NumEffectP();
+      }
+
+      if(twresult.toString().charAt(twresult.toString().length -12) != twflake.innerHTML.toString().charAt(twflake.innerHTML.toString().length -12)){
+        twflake.classList.remove('yellowanim');
+        twflake.classList.remove('text-light');
+        twflake.classList.add('yellowanim');
+        NumEffectP();
+      }
+      if(twresult.toString().charAt(twresult.toString().length -13) != twflake.innerHTML.toString().charAt(twflake.innerHTML.toString().length -13)){
+        twflake.classList.remove('orangeanim');
+        twflake.classList.remove('text-light');
+        twflake.classList.add('orangeanim');
+        NumEffectP();
+      }
+      if(twresult.toString().charAt(twresult.toString().length -14) != twflake.innerHTML.toString().charAt(twflake.innerHTML.toString().length -14)){
+        twflake.classList.remove('greenanim');
+        twflake.classList.remove('text-light');
+        twflake.classList.add('greenanim');
+        NumEffectP();
+      }
+      if(twresult.toString().charAt(twresult.toString().length -15) != twflake.innerHTML.toString().charAt(twflake.innerHTML.toString().length -15)){
+        twflake.classList.remove('wateranim');
+        twflake.classList.remove('text-light');
+        twflake.classList.add('wateranim');
+        NumEffectP();
+      }
+      if(twresult.toString().charAt(twresult.toString().length -16) != twflake.innerHTML.toString().charAt(twflake.innerHTML.toString().length -16)){
+        twflake.classList.remove('blueanim');
+        twflake.classList.remove('text-light');
+        twflake.classList.add('blueanim');
+        NumEffectP();
+      }
+      if(twresult.toString().charAt(twresult.toString().length -17) != twflake.innerHTML.toString().charAt(twflake.innerHTML.toString().length -17)){
+        twflake.classList.remove('redanim');
+        twflake.classList.remove('text-light');
+        twflake.classList.add('redanim');
+        NumEffectP();
+      }
+      flake.innerHTML = result;
+      datetext.innerHTML = date2;
+      datefmtext.innerHTML = datefm;
+      twdatetext.innerHTML = date2;
+      twdatefmtext.innerHTML = datefm;
+      datefmtext2.innerHTML = `${date2.getFullYear()}年${date2.getMonth() + 1}月${date2.getDate()}日 ${date2.getHours().toString().padStart(2, '0')}時${date2.getMinutes().toString().padStart(2, '0')}分${date2.getSeconds().toString().padStart(2, '0')}秒`;
+      twdatefmtext2.innerHTML = `${date2.getFullYear()}年${date2.getMonth() + 1}月${date2.getDate()}日 ${date2.getHours().toString().padStart(2, '0')}時${date2.getMinutes().toString().padStart(2, '0')}分${date2.getSeconds().toString().padStart(2, '0')}秒`;
+      flentext.innerHTML = `${flength}桁`;
+      twflake.innerHTML = twresult;
+      twflentext.innerHTML = `${twflength}桁`;
+    }
+    function NumEffectP()
+    {
+      setTimeout("NumEffect()", 1500);
+    }
+    function NumEffect()
+    {
+      //const flake = document.getElementById("flaketext");
+      //const twflake = document.getElementById("twflaketext");
+      flake.classList.remove('yellowanim');
+      flake.classList.remove('orangeanim');
+      flake.classList.remove('greenanim');
+      flake.classList.remove('wateranim');
+      flake.classList.remove('blueanim');
+      flake.classList.remove('redanim');
+      flake.classList.add('text-light');
+      twflake.classList.remove('yellowanim');
+      twflake.classList.remove('orangeanim');
+      twflake.classList.remove('greenanim');
+      twflake.classList.remove('wateranim');
+      twflake.classList.remove('blueanim');
+      twflake.classList.remove('redanim');
+      twflake.classList.add('text-light');
     }
     setInterval("SnowCalc()", 1000 / 30);
   </script>
@@ -144,6 +267,119 @@
   <style>
     .dropdown:hover>.dropdown-menu {
       display: block;
+    }
+    .yellowanim{
+      animation-name:yellowFade;
+      animation-duration:1s;
+      animation-fill-mode: forwards;
+      opacity:1;
+    }
+
+    @keyframes yellowFade{
+      from {
+        opacity: 1;
+        color:#ffff00;
+      }
+
+      to {
+        opacity: 1;
+        color:#fff;
+      }
+    }
+
+    .orangeanim{
+      animation-name:orangeFade;
+      animation-duration:1s;
+      animation-fill-mode: forwards;
+      opacity:1;
+    }
+
+    @keyframes orangeFade{
+      from {
+        opacity: 1;
+        color:#ffae00;
+      }
+
+      to {
+        opacity: 1;
+        color:#fff;
+      }
+    }
+
+    .greenanim{
+      animation-name:greenFade;
+      animation-duration:1s;
+      animation-fill-mode: forwards;
+      opacity:1;
+    }
+
+    @keyframes greenFade{
+      from {
+        opacity: 1;
+        color:#0fff37;
+      }
+
+      to {
+        opacity: 1;
+        color:#fff;
+      }
+    }
+
+    .wateranim{
+      animation-name:waterFade;
+      animation-duration:1s;
+      animation-fill-mode: forwards;
+      opacity:1;
+    }
+
+    @keyframes waterFade{
+      from {
+        opacity: 1;
+        color:#0fefff;
+      }
+
+      to {
+        opacity: 1;
+        color:#fff;
+      }
+    }
+
+    .redanim{
+      animation-name:redFade;
+      animation-duration:1s;
+      animation-fill-mode: forwards;
+      opacity:1;
+    }
+
+    @keyframes redFade{
+      from {
+        opacity: 1;
+        color:#ff0f4b;
+      }
+
+      to {
+        opacity: 1;
+        color:#fff;
+      }
+    }
+
+    .blueanim{
+      animation-name:blueFade;
+      animation-duration:1s;
+      animation-fill-mode: forwards;
+      opacity:1;
+    }
+
+    @keyframes blueFade{
+      from {
+        opacity: 1;
+        color:#0f33ff;
+      }
+
+      to {
+        opacity: 1;
+        color:#fff;
+      }
     }
   </style>
   <script src="/naoyukigamework/js/header.js"></script>
