@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
   <meta name="description" content="数字を選んでメダルGET！必ずメダルが貰えるクルーン。段階式抽選や、プレイヤー共通イベントも！複数のゲームが楽しめるオンラインゲーム「ColorantEcho」" />
   <meta property="og:url" content="https://naoyuki2110.github.io/naoyukigamework/games/play/colorant-echo" />
   <meta property="og:type" content="website" />
@@ -24,12 +25,16 @@
 
     gtag('config', 'G-Y3MLYLNGS1');
   </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  </head>
-  <body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+
+<body>
   <header class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light nav-blur border-bottom shadow">
       <div class="container">
@@ -65,78 +70,121 @@
       </div>
     </nav>
   </header>
-<div style="padding-top:3.2rem;">
+  <div style="padding-top:3.2rem;">
     <div style="text-align:center;">
-<div class="jumbotron">
-<div class="container">
-<h1 class="mds4 display-2 fw-normal">Colorant Echo</h1>
-  <h2>aaa</h2>
-</div>
-</div>
-
-  <h1 id="cjpval">0</h1>
-    </div>
-    </div>
-    <footer class="bg-black">
-      <div class="container py-3">
-        <p class="text-center mb-0 text-light">© 2020-2022 naoyukiGameWork</p>
-        <p class="text-center mb-0 text-light"><a href="/naoyukigamework/terms">利用規約</a>・<a
-            href="mailto:official-naoyukigamework@outlook.jp">お問い合わせ</a>・<a href="/naoyukigamework/qa">よくある質問</a></p>
-        <div class="text-center"><img src="/naoyukigamework/images/nenaobuildslogo2-transpt.png" style="width:250px">
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="mds4 display-2 fw-normal">Colorant Echo</h1>
+          <h2>プレイ・紹介ページ</h2>
         </div>
       </div>
-    </footer>
-<!-- CommonComponent -->
+      <div class="container text-center py-3">
+        <img src="https://cdn.discordapp.com/attachments/879547925598969917/955370736153927690/colorjpimg.png" alt=""
+          class="img-fluid w-50">
+        <h1 class="display-1 fw-bold" id="cjpval">0</h1>
+        <!--<p class="text-muted fs-5 py-2">前回のCJP獲得者：</p>-->
+        <p class="text-muted fs-5 py-2" id="cjpuser">前回のCJP獲得者：<br>NicknameNone さん、<br>10000枚</p>
+      </div>
+      <div class="container text-center py-3">
+        <img src="https://cdn.discordapp.com/attachments/879547925598969917/955370784581382164/nightjackpotimg1.png" alt=""
+          class="img-fluid w-50">
+        <h1 class="display-1 fw-bold" id="njpval">0</h1>
+      </div>
+      <div class="container text-center py-3">
+        <h1 class="py-2" id="randcjpctime">本日のランダムCJPC時刻は、--時です。</h1>
+        <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="alert alert-warning" role="alert">
+            プログラムの仕様上、ランダム開催がされない場合があります。その場合は「本日のランダムCJPC時刻は、ありません。」と表記されます。<br>また、午前0〜1時の間は時刻が反映されていない場合があります。1時を過ぎた際に表記されている時刻がほぼ正しいと思われます。
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-black">
+    <div class="container py-3">
+      <p class="text-center mb-0 text-light">© 2020-2022 naoyukiGameWork</p>
+      <p class="text-center mb-0 text-light"><a href="/naoyukigamework/terms">利用規約</a>・<a
+          href="mailto:official-naoyukigamework@outlook.jp">お問い合わせ</a>・<a href="/naoyukigamework/qa">よくある質問</a></p>
+      <div class="text-center"><img src="/naoyukigamework/images/nenaobuildslogo2-transpt.png" style="width:250px">
+      </div>
+    </div>
+  </footer>
+  <!-- CommonComponent -->
   <script src="b3dpageheaderjs.js"></script>
   <script src="b3dpagefooterjs.js"></script>
-<!-- CommonComponentEnd -->
-  </body>
+  <!-- CommonComponentEnd -->
+</body>
 <style>
-    .dropdown:hover>.dropdown-menu{
-    display:block;
-    }
-.jumbotron {
-  position:relative;
-  background:url(https://cdn.discordapp.com/attachments/879547925598969917/888308418224480276/2021_09_17-15_12_20_4859.png) top;
-  z-index:0;
-  background-size:cover;
-}
-.jumbotron::before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  bottom: -5px;
-  left: -5px;
-  right: 0px;
-  background: inherit;
-  filter: blur(5px);
-  
-  z-index: -1;
-}
-.jumbotron .container{
-  padding: 100px 0px 100px 0px;
-  justify-content:center;
-  color:#fff;
-  text-shadow:0 0 10px #555;
-}
-  
-}
-    </style>
-    <script>
-    DataGet();
-    function DataGet(){
-  const cjpval = document.getElementById("cjpval");
-    var obj = {ct: Math.floor(cjpval.innerHTML)}
-  fetch("https://script.google.com/macros/s/AKfycbwzRNFIa3DX4SMNMTPMWb88xMB-oAXDTS4zfHVXUbg532HvSZBm1L6tz1fNgZYVIqtGwA/exec")
-  .then(res=>res.json())
-  .then(data=>{
-  console.log("success");
-gsap.to(obj, {duration: 3,ease: "power3.inOut",ct:Math.floor(data[1][1]),
-  onUpdate: function() {
-    cjpval.innerHTML =  Math.floor(obj.ct);
-  }})
-  })
+  .dropdown:hover>.dropdown-menu {
+    display: block;
   }
-    setInterval("DataGet()",60000);
-    </script>
+
+  .jumbotron {
+    position: relative;
+    background: url(https://cdn.discordapp.com/attachments/879547925598969917/888308418224480276/2021_09_17-15_12_20_4859.png) top;
+    z-index: 0;
+    background-size: cover;
+  }
+
+  .jumbotron::before {
+    content: '';
+    position: absolute;
+    background: inherit;
+
+    z-index: -1;
+  }
+
+  .jumbotron .container {
+    padding: 100px 0px 100px 0px;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0 0 10px #333;
+  }
+</style>
+<script>
+  DataGet();
+  function DataGet() {
+    const cjpval = document.getElementById("cjpval");
+    const cjpuser = document.getElementById("cjpuser");
+    const njpval = document.getElementById("njpval");
+    const randcjpctime = document.getElementById("randcjpctime");
+    var obj = { ct: cjpval.innerHTML }
+    var obj2 = { ct: njpval.innerHTML }
+    fetch("https://script.google.com/macros/s/AKfycbwzRNFIa3DX4SMNMTPMWb88xMB-oAXDTS4zfHVXUbg532HvSZBm1L6tz1fNgZYVIqtGwA/exec")
+      .then(res => res.json())
+      .then(data => {
+        console.log("success");
+        gsap.to(obj, {
+          duration: 3, ease: "power3.inOut", ct: data[1][1],
+          onUpdate: function () {
+            cjpval.innerHTML = obj.ct.toFixed(2);
+          }
+        })
+        gsap.to(obj2, {
+          duration: 3, ease: "power3.inOut", ct: data[1][7],
+          onUpdate: function () {
+            njpval.innerHTML = obj2.ct.toFixed(1);
+          }
+        })
+        let cjpuserfm = "NicknameNoneさん、";
+        if(data[1][2] == ""){
+          cjpuserfm = "当選者はいなかったようです・・・<br>";
+        }
+        else{
+          cjpuserfm = `${data[1][2].replace(/さん、/g,"さん、<br>")}`;
+        }
+        cjpuser.innerHTML = `前回のCJP獲得者：<br>${cjpuserfm}${data[1][3]}枚`;
+        if(data[1][5] == "17" || data[1][5] == "22"){
+          randcjpctime.innerHTML = `本日のランダムCJPC時刻は、ありません。`;
+        }
+        else if(data[1][5] != "17" || data[1][5] != "22"){
+          randcjpctime.innerHTML = `本日のランダムCJPC時刻は、${data[1][5]}時です。`;
+        }
+      })
+  }
+  setInterval("DataGet()", 60000);
+</script>
+
 </html>
