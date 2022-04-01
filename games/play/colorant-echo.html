@@ -86,20 +86,22 @@
         <p class="text-muted fs-5 py-2" id="cjpuser">前回のCJP獲得者：<br>NicknameNone さん、<br>10000枚</p>
       </div>
       <div class="container text-center py-3">
-        <img src="https://cdn.discordapp.com/attachments/879547925598969917/955370784581382164/nightjackpotimg1.png" alt=""
-          class="img-fluid w-50">
+        <img src="https://cdn.discordapp.com/attachments/879547925598969917/955370784581382164/nightjackpotimg1.png"
+          alt="" class="img-fluid w-50">
         <h1 class="display-1 fw-bold" id="njpval">0</h1>
       </div>
+      <!--
       <div class="container text-center py-3">
         <h1 class="py-2" id="randcjpctime">本日のランダムCJPC時刻は、--時です。</h1>
         <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="alert alert-warning" role="alert">
-            プログラムの仕様上、ランダム開催がされない場合があります。その場合は「本日のランダムCJPC時刻は、ありません。」と表記されます。<br>また、午前0〜1時の間は時刻が反映されていない場合があります。1時を過ぎた際に表記されている時刻がほぼ正しいと思われます。
+          <div class="col-lg-10">
+            <div class="alert alert-warning" role="alert">
+              プログラムの仕様上、ランダム開催がされない場合があります。その場合は「本日のランダムCJPC時刻は、ありません。」と表記されます。<br>また、午前0〜1時の間は時刻が反映されていない場合があります。1時を過ぎた際に表記されている時刻がほぼ正しいと思われます。
+            </div>
           </div>
         </div>
-        </div>
       </div>
+    -->
     </div>
   </div>
   <footer class="bg-black">
@@ -169,17 +171,17 @@
           }
         })
         let cjpuserfm = "NicknameNoneさん、";
-        if(data[1][2] == ""){
+        if (data[1][2] == "") {
           cjpuserfm = "当選者はいなかったようです・・・<br>";
         }
-        else{
-          cjpuserfm = `${data[1][2].replace(/さん、/g,"さん、<br>")}`;
+        else {
+          cjpuserfm = `${data[1][2].replace(/さん、/g, "さん、<br>")}`;
         }
         cjpuser.innerHTML = `前回のCJP獲得者：<br>${cjpuserfm}${data[1][3]}枚`;
-        if(data[1][5] == "17" || data[1][5] == "22"){
+        if (data[1][5] == "17" || data[1][5] == "22") {
           randcjpctime.innerHTML = `本日のランダムCJPC時刻は、ありません。`;
         }
-        else if(data[1][5] != "17" || data[1][5] != "22"){
+        else if (data[1][5] != "17" || data[1][5] != "22") {
           randcjpctime.innerHTML = `本日のランダムCJPC時刻は、${data[1][5]}時です。`;
         }
       })
