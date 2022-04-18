@@ -3,16 +3,14 @@
     <meta property="og:url" content="https://naoyuki2110.github.io/naoyukigamework/games/updates/colorant-echo" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="アップデート履歴 | naoyukiGameWork" />
-    <meta property="og:description" content="naoyukiGameWorkは、皆様により良いゲームを届けるために日々努力しています。昨日と今日で全く違う体験をあなたに" />
+    <meta property="og:description" content="naoyukiGameWorkは、皆様により良いものを届けるために日々努力しています。見つける楽しさ、遊ぶ楽しさ、自由な発想をあなたからあなたへ" />
     <meta property="og:site_name" content="naoyukiGameWork" />
     <meta property="og:image" content="https://naoyuki2110.github.io/naoyukigamework/images/ngwlogo.png" />
     <title>アップデート履歴 | naoyukiGameWork</title>
-    <link rel="stylesheet" href="/naoyukigamework/css/header.css">
-    <link rel="stylesheet" href="/naoyukigamework/css/footer.css">
     <link rel="stylesheet" href="/naoyukigamework/css/theme1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@450&display=swap" rel="stylesheet">
     <meta name="viewport" content="initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/naoyukigamework/images/favicon.ico">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -24,21 +22,353 @@
 
       gtag('config', 'G-Y3MLYLNGS1');
     </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
   </head>
   <body>
-      <header id="hdjs">
-    <nav class="hd">
-        <ul class="menu">
-          <li><img src="images/mclogocc2.png" width="50" height="50"></img></li>
-          <li><a href="index.html">TOP</a></li>
-          <li><a href="games.html">ゲーム一覧</a></li>
-          <li><a href="#">ソーシャル</a><ul class="menu2"><li><a href="https://discord.gg/VvrBsaq" target="_blank">Discord</a></li><li><a href="https://twitter.com/naoyukigamework/" target="_blank">Twitter</a></li><li><a href="https://www.youtube.com/channel/UCZmB8400Hi_j5xDU9EwbQDA/" target="_blank">YouTube</a></li></ul></li>
-        </ul>
-    </nav>
-  </header>
-  <h1 style="text-align:center;">Colorant Echo アップデート履歴</h1>
-<div class="margtext1">
-  <p style="font-size:20px;"><u>Ver.1.2.9 変更内容 (2022/4/1)</u><br>・メニュー内の情報に、当方からプレイヤーへメダルの補填ができる機能を実装しました。<br>・お知らせの動画プレーヤーで、1分以上の動画を視聴するとき、「分」が変わるときの時間表記が一瞬「0:60」のようになる問題を修正しました。<br>・お知らせの動画プレーヤーで、動画再生終了時に正常ではない時間でポーズマークからプレイマークに変化する問題を修正しました。<br>・お知らせの動画プレーヤーで動画を視聴中のときはゲームの音量をオフにするようにしました。</p>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light nav-blur border-bottom shadow">
+        <div class="container">
+          <a class="navbar-brand" href="/naoyukigamework/">
+            <img src="/naoyukigamework/images/ngwlogo3.png" alt="ロゴ" width="230" height="35"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto me-5">
+              <li class="nav-item me-3">
+                <a class="nav-link fw-bold" aria-current="page" href="/naoyukigamework/">TOP</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link fw-bold" href="/naoyukigamework/games">ゲーム一覧</a>
+              </li>
+              <li class="nav-item dropdown me-3">
+                <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink" role="button"
+                  aria-expanded="false">
+                  ソーシャル
+                </a>
+                <ul class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="https://discord.gg/VvrBsaq" target="_blank">Discord</a></li>
+                  <li><a class="dropdown-item" href="https://twitter.com/naoyukigamework/" target="_blank">Twitter</a>
+                  </li>
+                  <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCZmB8400Hi_j5xDU9EwbQDA/"
+                      target="_blank">YouTube</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div style="padding-top:3.2rem;">
+  <h1 class="mds3">Colorant Echo アップデート履歴</h1>
+  <div class="container">
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.2.9 変更内容 (2022/4/1)</h5>
+          <div class="card-body">
+            <p class="card-text">・メニュー内の情報に、当方からプレイヤーへメダルの補填ができる機能を実装しました。<br>・お知らせの動画プレーヤーで、1分以上の動画を視聴するとき、「分」が変わるときの時間表記が一瞬「0:60」のようになる問題を修正しました。<br>・お知らせの動画プレーヤーで、動画再生終了時に正常ではない時間でポーズマークからプレイマークに変化する問題を修正しました。<br>・お知らせの動画プレーヤーで動画を視聴中のときはゲームの音量をオフにするようにしました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.2.8 変更内容 (2022/3/28)</h5>
+          <div class="card-body">
+            <p class="card-text">・メニュー内に、naoyukiGameWorkが配信するお知らせが確認できる項目を実装しました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.2.7 変更内容</h5>
+          <div class="card-body">
+            <p class="card-text">・設定の画面オプションの、画面比率設定で「カスタム」が選べるようになりました。<br>・TenthGreenのクルーンチャレンジ、TunetyWaveのWaveJPCで、ボールがクルーン上で止まってしまい、進行不能に陥る不具合を修正しました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.2.6 変更内容</h5>
+          <div class="card-body">
+            <p class="card-text">・Tenth Green、Night Crortに、ゲームスタートを自動で行う機能「オートモード」を実装しました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.2.5 変更内容</h5>
+          <div class="card-body">
+            <p class="card-text">・TunetyWaveの新要素「SPECIAL FEVER」を実装しました。<br>・Android版で、ボタン等をタップしても反応しない不具合を修正しました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.2.4 変更内容</h5>
+          <div class="card-body">
+            <p class="card-text">・Windows、Android版の最低対応CPUアーキテクチャを64bit(x86_64,ARM64)のみにしました。<br>・Ver.1.2.2で公表した、NightCrortでボールが稀に止まり進行不能に陥る不具合の修正プログラムを改善しました。<br>・TunetyWaveで、現在のステータスを確認できる「データカウンター」を実装しました。<br>・最大所持メダル数を20億から大幅に増量させました。<br>・TenthGreenの最大BET数を10,000枚に減らしました。<br>・TenthGreenの最大BET数の減少に伴い、同ゲームでのColorantJP上昇率を上げました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.2.3s2 変更内容</h5>
+          <div class="card-body">
+            <p class="card-text">・イベントプログラムの不具合を修正しました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.2.3 変更内容</h5>
+          <div class="card-body">
+            <p class="card-text">・今後開催予定のイベント処理を実装しました。<br>・TenthGreenの最小BET数を0枚から1枚に変更しました。<br>・その他機能強化を行いました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.2.2 変更内容</h5>
+          <div class="card-body">
+            <p class="card-text">・AndroidでTunetyWaveをプレイした場合、UIを押してもメダルが投入されてしまう、通常とは異なる範囲までメダルが投入できてしまう不具合を修正しました。<br>・TunetyWaveのメダルの投入速度を調整しました。<br>・NightCrortで、ごく稀にボールがクルーン上で止まってしまい、その後進行不能に陥る不具合を修正しました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.2.1 変更内容</h5>
+          <div class="card-body">
+            <p class="card-text">・TunetyWaveで、ウィンドウ外でメダルが投入できてしまう不具合を修正しました。<br>・その他2件の不具合を修正しました。<br>・UI調整をしました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.2.0 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・新ゲーム「Tunety Wave」を実装しました。<br>・一部のUI調整、機能強化を行いました。<br>・ColorantJP、JPCの仕様を修正しました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.1.7 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・1件の不具合を修正しました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.1.6 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・イベント用の処理を実装しました。<br>・一部のUI調整をしました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.1.5s2 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・一部のUI調整を行いました。<br>・バンク操作などの入力決定の際、エンターキーでも決定できるようにしました。<span style="font-size:10px">※バンクの場合、最後に入力エリアにフォーカスした方のアクションが実行されます。</span><br>・その他軽微な不具合の修正を行いました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.1.5 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・一部のUI調整を行いました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.1.4 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・一部のUI調整、機能強化を行いました。<br>・イベント用の処理を調整しました。<br>・メニューの情報オプションのテキストが正常ではない表示になっている不具合を修正しました。<br>・DiscordRPCが正常に反映されない不具合を修正しました。<br>・TenthGreenの最大BET数を1000BETから1,000,000BETにしました。<br>・TenthGreenのGreenChallengeとSuperChallengeの配当を調整しました。<br>・TenthGreenのGreenChallengeとSuperChallengeで獲得できるメダルの方式を、トータルBET×配当倍率ではなく単一BET×配当倍率に変更しました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.1.3 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・一部のUI調整、機能強化を行いました。<br>・イベント用の処理を実装しました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.1.2 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・「Night Crort」の最大BET数を1000BETにしました。<br>・「Night Crort」のメイン抽選で、たまにポケットからボールが貫通し正常な結果が出なくなる不具合を抑制しました。<br>・「Night Crort」のJPCの減速タイミングをランダムにしました。<br>・一部UIの調整を行いました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.1.1 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・「Night Crort」の一部仕様を調整しました。<br>・「Night Crort」で、Round2で「4」に入っても配当表示に反映されない不具合を修正しました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.1.0 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・新ゲーム「Night Crort」を実装しました。タイトル画面より選択いただけます。<br>・一部のUI調整、機能強化を行いました。<br>・新しい広告を追加しました。メダル枚数をクリック→「広告を見る」でご確認いただけます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.0.1 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・過去バージョンを起動した後にVer.1.0.0を起動するとメダルが消失する不具合を修正しました。<br>・メダルが0枚の時にメッセージが表示されるようになりました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Ver.1.0.0 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・正式版を公開しました。<br>・β版以前での不具合を修正、ご要望の実装等を行いました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">β.1.0.0 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・αテスト以前での不具合の修正、ご要望の実装を行いました。<br>・誰かがColorantJPを獲得したときにColorantJPが10000枚にリセットされるようにしました。<br>・ニックネーム機能を実装しました。<br>・前回のColorantJP獲得者をメニュー・タイトルに表示されるようにしました。<br>・Tenth Greenを下方修正しました。<br>・お知らせテロップ音を変更しました。<br>・簡易アシスタント「Iruc」を廃止しました。<br>その他UIの調整等を行いました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">α.1.0.3 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・メニューで「タイトルに戻る」ボタンを押した際、確認ダイアログが表示されるようにしました。<br>・一部UIの調整を行いました。<br>・Tenth Greenを一部下方修正しました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">α.1.0.2 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・共有オプションに現在のメダルが反映されない不具合を修正しました。（Tenth Green）<br>・画面設定が保存されない不具合を修正しました。<br>・ColorantJPC(旧ColorantChallenge)でJPを獲得してもWin枚数表示に反映されないことがある不具合を修正しました。<br>・ColorantChallengeからColorantJACKPOTCHANCEに名称を変更しました。<br>・BET・抽選中にColorantJPCに突入した際に、前回ゲームのBET枚数が自動的に補填される機能を実装しました。<br>・ColorantJPCで既にJPが出ているマークにもう一度JPが重なると500Win加算されるようにしました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">α.1.0.1 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・ColorantJPがオーバーフローする問題を防止しました。<br>・ColorantChallengeでBGM設定が無視される不具合を修正しました。<br>・一部UIの調整を行いました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">α.1.0.0 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・プライベートCanary2テスト以前での不具合の修正、ご要望の実装を行いました。<br>・メダルが無くなった際にメダルチャレンジでメダルをランダムに獲得できるものではなく、広告を見て固定数メダルを獲得できるようにしました。<br>・メニューUI、ユーザ設定の実装をしました。<br>・ColorantChallengeを実装しました。<br>・スクリーンショット機能を実装しました。<br>・メダルデータを自動的にセーブされるようにしました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Can2.1.0.0 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・プライベートCanaryテスト以前での不具合の修正、ご要望の実装を行いました。<br>・BETゲームのBET番号を複数選択できるようにしました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Can.1.0.1 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・BETゲームで0～9（A以外）にBETして結果が「A」の際、以降ボタンが押せなくなり進行不能になる不具合を修正しました。<br>・BETゲームで「-0」と入力した際、決定音とエラー音が同時に鳴る不具合を修正しました。<br>・ネットワークエラー画面（Code1002）が正常に表示されない不具合を修正しました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-10">
+        <div class="card shadow-sm">
+          <h5 class="card-header">Can.1.0.0 更新内容</h5>
+          <div class="card-body">
+            <p class="card-text">・「Colorant Echo」を初公開しました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- 
+    <p style="font-size:20px;"><u>Ver.1.2.9 変更内容 (2022/4/1)</u><br>・メニュー内の情報に、当方からプレイヤーへメダルの補填ができる機能を実装しました。<br>・お知らせの動画プレーヤーで、1分以上の動画を視聴するとき、「分」が変わるときの時間表記が一瞬「0:60」のようになる問題を修正しました。<br>・お知らせの動画プレーヤーで、動画再生終了時に正常ではない時間でポーズマークからプレイマークに変化する問題を修正しました。<br>・お知らせの動画プレーヤーで動画を視聴中のときはゲームの音量をオフにするようにしました。</p>
   <p style="font-size:20px;"><u>Ver.1.2.8 変更内容 (2022/3/28)</u><br>・メニュー内に、naoyukiGameWorkが配信するお知らせが確認できる項目を実装しました。</p>
   <p style="font-size:20px;"><u>Ver.1.2.7 変更内容</u><br>・設定の画面オプションの、画面比率設定で「カスタム」が選べるようになりました。<br>・TenthGreenのクルーンチャレンジ、TunetyWaveのWaveJPCで、ボールがクルーン上で止まってしまい、進行不能に陥る不具合を修正しました。</p>
   <p style="font-size:20px;"><u>Ver.1.2.6 変更内容</u><br>・Tenth Green、Night Crortに、ゲームスタートを自動で行う機能「オートモード」を実装しました。</p>
@@ -68,22 +398,32 @@
   <p style="font-size:20px;color:#404040;"><u><br>Can2.1.0.0 更新内容</u><br>・プライベートCanaryテスト以前での不具合の修正、ご要望の実装を行いました。<br>・BETゲームのBET番号を複数選択できるようにしました。</p>
   <p style="font-size:20px;color:#404040;"><u><br>Can.1.0.1 更新内容</u><br>・BETゲームで0～9（A以外）にBETして結果が「A」の際、以降ボタンが押せなくなり進行不能になる不具合を修正しました。<br>・BETゲームで「-0」と入力した際、決定音とエラー音が同時に鳴る不具合を修正しました。<br>・ネットワークエラー画面（Code1002）が正常に表示されない不具合を修正しました。</p>
   <p style="font-size:20px;color:#404040;"><u>Can.1.0.0 更新内容</u><br>・「Colorant Echo」を初公開しました。</p>
+  -->
+  </div>
   <a href="/naoyukigamework/games/colorant-echo" style="text-align:center;font-size:20px;"><br>Colorant Echo のメインページに戻る</a>
 </div>
-  <footer id="ftjs">
-    <nav class="ft">
-        <ul class="ftmn">
-          <li><img src="images/mclogocc2.png" width="50" height="50"></img></li>
-          <li><a href="terms.html">利用規約</a></li>
-          <li><a href="mailto:official-naoyukigamework@outlook.jp">お問い合わせ</a></li>
-          <li><a href="qa.html">よくある質問</a></li>
-          </div>
-        </ul>
-    </nav>
-  </footer>
+<footer class="bg-black">
+  <div class="container py-3">
+    <p class="text-center mb-0 text-light">© 2020-2022 naoyukiGameWork</p>
+    <p class="text-center mb-0 text-light"><a href="/naoyukigamework/terms">利用規約</a>・<a
+        href="mailto:official-naoyukigamework@outlook.jp">お問い合わせ</a>・<a href="/naoyukigamework/qa">よくある質問</a></p>
+    <div class="text-center"><img src="/naoyukigamework/images/nenaobuildslogo2-transpt.png" style="width:250px">
+    </div>
+  </div>
+</footer>
+<!-- CustomStyle -->
+<style>
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  .accordion-item{
+    border:1px solid rgba(0,0,0,0);
+  }
+</style>
+<!-- CustomStyleEnd -->
 <!-- CommonComponent -->
-  <script src="/naoyukigamework/js/header.js"></script>
-  <script src="/naoyukigamework/js/footer.js"></script>
+<script src="/naoyukigamework/js/header.js"></script>
+<script src="/naoyukigamework/js/footer.js"></script>
 <!-- CommonComponentEnd -->
   </body>
 </html>
