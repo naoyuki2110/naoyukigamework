@@ -90,6 +90,9 @@
           alt="" class="img-fluid w-50">
         <h1 class="display-1 fw-bold" id="njpval">0</h1>
       </div>
+      <div class="container text-center py-3">
+        <h1 class="py-2" id="initwavejp">現在のWaveJP初期値は、0000枚です。</h1>
+      </div>
       <!--
       <div class="container text-center py-3">
         <h1 class="py-2" id="randcjpctime">本日のランダムCJPC時刻は、--時です。</h1>
@@ -152,6 +155,7 @@
     const cjpuser = document.getElementById("cjpuser");
     const njpval = document.getElementById("njpval");
     const randcjpctime = document.getElementById("randcjpctime");
+    const initwavejp = document.getElementById("initwavejp");
     var obj = { ct: cjpval.innerHTML }
     var obj2 = { ct: njpval.innerHTML }
     fetch("https://script.google.com/macros/s/AKfycbwzRNFIa3DX4SMNMTPMWb88xMB-oAXDTS4zfHVXUbg532HvSZBm1L6tz1fNgZYVIqtGwA/exec?type=getdata")
@@ -184,6 +188,7 @@
         else if (data[0][1][5] != "17" || data[0][1][5] != "22") {
           randcjpctime.innerHTML = `本日のランダムCJPC時刻は、${data[0][1][5]}時です。`;
         }
+        initwavejp.innerHTML = `現在のWaveJP初期値は、${data[1][1][12]}枚です。`;
       })
   }
   setInterval("DataGet()", 60000);
