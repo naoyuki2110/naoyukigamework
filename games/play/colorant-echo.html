@@ -154,35 +154,35 @@
     const randcjpctime = document.getElementById("randcjpctime");
     var obj = { ct: cjpval.innerHTML }
     var obj2 = { ct: njpval.innerHTML }
-    fetch("https://script.google.com/macros/s/AKfycbwzRNFIa3DX4SMNMTPMWb88xMB-oAXDTS4zfHVXUbg532HvSZBm1L6tz1fNgZYVIqtGwA/exec")
+    fetch("https://script.google.com/macros/s/AKfycbwzRNFIa3DX4SMNMTPMWb88xMB-oAXDTS4zfHVXUbg532HvSZBm1L6tz1fNgZYVIqtGwA/exec?type=getdata")
       .then(res => res.json())
       .then(data => {
         console.log("success");
         gsap.to(obj, {
-          duration: 3, ease: "power3.inOut", ct: data[1][1],
+          duration: 3, ease: "power3.inOut", ct: data[0][1][1],
           onUpdate: function () {
             cjpval.innerHTML = obj.ct.toFixed(2);
           }
         })
         gsap.to(obj2, {
-          duration: 3, ease: "power3.inOut", ct: data[1][7],
+          duration: 3, ease: "power3.inOut", ct: data[0][1][7],
           onUpdate: function () {
             njpval.innerHTML = obj2.ct.toFixed(1);
           }
         })
         let cjpuserfm = "NicknameNoneさん、";
-        if (data[1][2] == "") {
+        if (data[0][1][2] == "") {
           cjpuserfm = "当選者はいなかったようです・・・<br>";
         }
         else {
-          cjpuserfm = `${data[1][2].replace(/さん、/g, "さん、<br>")}`;
+          cjpuserfm = `${data[0][1][2].replace(/さん、/g, "さん、<br>")}`;
         }
-        cjpuser.innerHTML = `前回のCJP獲得者：<br>${cjpuserfm}${data[1][3]}枚`;
-        if (data[1][5] == "17" || data[1][5] == "22") {
+        cjpuser.innerHTML = `前回のCJP獲得者：<br>${cjpuserfm}${data[0][1][3]}枚`;
+        if (data[0][1][5] == "17" || data[0][1][5] == "22") {
           randcjpctime.innerHTML = `本日のランダムCJPC時刻は、ありません。`;
         }
-        else if (data[1][5] != "17" || data[1][5] != "22") {
-          randcjpctime.innerHTML = `本日のランダムCJPC時刻は、${data[1][5]}時です。`;
+        else if (data[0][1][5] != "17" || data[0][1][5] != "22") {
+          randcjpctime.innerHTML = `本日のランダムCJPC時刻は、${data[0][1][5]}時です。`;
         }
       })
   }
