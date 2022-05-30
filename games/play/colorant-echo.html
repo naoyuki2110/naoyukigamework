@@ -182,12 +182,14 @@
           cjpuserfm = `${data[0][1][2].replace(/さん、/g, "さん、<br>")}`;
         }
         cjpuser.innerHTML = `前回のCJP獲得者：<br>${cjpuserfm}${data[0][1][3]}枚`;
+      /*
         if (data[0][1][5] == "17" || data[0][1][5] == "22") {
           randcjpctime.innerHTML = `本日のランダムCJPC時刻は、ありません。`;
         }
         else if (data[0][1][5] != "17" || data[0][1][5] != "22") {
           randcjpctime.innerHTML = `本日のランダムCJPC時刻は、${data[0][1][5]}時です。`;
         }
+        */
         initwavejp.innerHTML = `現在のWaveJP初期値は、${data[1][1][12]}枚です。`;
       })
   }
