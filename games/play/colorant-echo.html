@@ -75,20 +75,32 @@
       <div class="jumbotron">
         <div class="container">
           <h1 class="mds4 display-2 fw-normal">Colorant Echo</h1>
-          <h2>プレイ・紹介ページ</h2>
+          <h2>プレイページ</h2>
         </div>
       </div>
       <div class="container text-center py-3">
-        <img src="https://cdn.discordapp.com/attachments/879547925598969917/955370736153927690/colorjpimg.png" alt=""
+        <img src="https://cdn.discordapp.com/attachments/879547925598969917/955370736153927690/colorjpimg.png" alt="Colorant JACKPOT"
           class="img-fluid w-50">
         <h1 class="display-1 fw-bold" id="cjpval">0</h1>
         <!--<p class="text-muted fs-5 py-2">前回のCJP獲得者：</p>-->
         <p class="text-muted fs-5 py-2" id="cjpuser">前回のCJP獲得者：<br>NicknameNone さん、<br>10000枚</p>
       </div>
+      <h2 class="mds5">Night Crort</h2>
       <div class="container text-center py-3">
         <img src="https://cdn.discordapp.com/attachments/879547925598969917/955370784581382164/nightjackpotimg1.png"
-          alt="" class="img-fluid w-50">
+          alt="Night JACKPOT" class="img-fluid w-50">
         <h1 class="display-1 fw-bold" id="njpval">0</h1>
+      </div>
+      <h2 class="mds5">Bright Road</h2>
+      <div class="container text-center py-3">
+        <img src=""
+          alt="Bright JACKPOT" class="img-fluid w-50">
+        <h1 class="display-1 fw-bold" id="br_bjpval">0</h1>
+      </div>
+      <div class="container text-center py-3">
+        <img src=""
+          alt="Road JACKPOT" class="img-fluid w-50">
+        <h1 class="display-1 fw-bold" id="br_rjpval">0</h1>
       </div>
       <div class="container text-center py-3">
         <h1 class="py-2" id="initwavejp">現在のWaveJP初期値は、0000枚です。</h1>
@@ -154,10 +166,14 @@
     const cjpval = document.getElementById("cjpval");
     const cjpuser = document.getElementById("cjpuser");
     const njpval = document.getElementById("njpval");
+    const br_bjpval = document.getElementById("br_bjpval");
+    const br_rjpval = document.getElementById("br_rjpval");
     const randcjpctime = document.getElementById("randcjpctime");
     const initwavejp = document.getElementById("initwavejp");
     var obj = { ct: cjpval.innerHTML }
     var obj2 = { ct: njpval.innerHTML }
+    var br_obj = { ct: br_bjpval.innerHTML }
+    var br_obj2 = { ct: br_rjpval.innerHTML }
     fetch("https://script.google.com/macros/s/AKfycbwzRNFIa3DX4SMNMTPMWb88xMB-oAXDTS4zfHVXUbg532HvSZBm1L6tz1fNgZYVIqtGwA/exec?type=getdata")
       .then(res => res.json())
       .then(data => {
@@ -172,6 +188,18 @@
           duration: 3, ease: "power3.inOut", ct: data[0][1][7],
           onUpdate: function () {
             njpval.innerHTML = obj2.ct.toFixed(1);
+          }
+        })
+        gsap.to(br_obj, {
+          duration: 3, ease: "power3.inOut", ct: data[2][1][1],
+          onUpdate: function () {
+            br_bjpval.innerHTML = br_obj.ct.toFixed(0);
+          }
+        })
+        gsap.to(br_obj2, {
+          duration: 3, ease: "power3.inOut", ct: data[2][1][2],
+          onUpdate: function () {
+            br_rjpval.innerHTML = br_obj2.ct.toFixed(0);
           }
         })
         let cjpuserfm = "NicknameNoneさん、";
