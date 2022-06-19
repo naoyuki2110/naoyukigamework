@@ -78,9 +78,10 @@
           <h2>プレイ・データページ</h2>
         </div>
       </div>
+      <h1 class="mds5">プレイデータ情報</h1>
       <div class="container text-center py-3">
-        <img src="https://cdn.discordapp.com/attachments/879547925598969917/955370736153927690/colorjpimg.png" alt="Colorant JACKPOT"
-          class="img-fluid w-50">
+        <img src="https://cdn.discordapp.com/attachments/879547925598969917/955370736153927690/colorjpimg.png"
+          alt="Colorant JACKPOT" class="img-fluid w-50">
         <h1 class="display-1 fw-bold" id="cjpval">0</h1>
         <!--<p class="text-muted fs-5 py-2">前回のCJP獲得者：</p>-->
         <p class="text-muted fs-5 py-2" id="cjpuser">前回のCJP獲得者：<br>NicknameNone さん、<br>10000枚</p>
@@ -93,18 +94,18 @@
       </div>
       <h2 class="mds5">Bright Road</h2>
       <div class="container text-center py-3">
-        <img src=""
-          alt="Bright JACKPOT" class="img-fluid w-50">
+        <img src="" alt="Bright JACKPOT" class="img-fluid w-50">
         <h1 class="display-1 fw-bold" id="br_bjpval">0</h1>
       </div>
       <div class="container text-center py-3">
-        <img src=""
-          alt="Road JACKPOT" class="img-fluid w-50">
+        <img src="" alt="Road JACKPOT" class="img-fluid w-50">
         <h1 class="display-1 fw-bold" id="br_rjpval">0</h1>
       </div>
       <div class="container text-center py-3">
         <h1 class="py-2" id="initwavejp">現在のWaveJP初期値は、0000枚です。</h1>
       </div>
+      <h1 class="mds5">不具合データ情報</h1>
+      <h5 class="py-3 text-muted">準備中...</h5>
       <!--
       <div class="container text-center py-3">
         <h1 class="py-2" id="randcjpctime">本日のランダムCJPC時刻は、--時です。</h1>
@@ -210,14 +211,14 @@
           cjpuserfm = `${data[0][1][2].replace(/さん、/g, "さん、<br>")}`;
         }
         cjpuser.innerHTML = `前回のCJP獲得者：<br>${cjpuserfm}${data[0][1][3]}枚`;
-      /*
-        if (data[0][1][5] == "17" || data[0][1][5] == "22") {
-          randcjpctime.innerHTML = `本日のランダムCJPC時刻は、ありません。`;
-        }
-        else if (data[0][1][5] != "17" || data[0][1][5] != "22") {
-          randcjpctime.innerHTML = `本日のランダムCJPC時刻は、${data[0][1][5]}時です。`;
-        }
-        */
+        /*
+          if (data[0][1][5] == "17" || data[0][1][5] == "22") {
+            randcjpctime.innerHTML = `本日のランダムCJPC時刻は、ありません。`;
+          }
+          else if (data[0][1][5] != "17" || data[0][1][5] != "22") {
+            randcjpctime.innerHTML = `本日のランダムCJPC時刻は、${data[0][1][5]}時です。`;
+          }
+          */
         initwavejp.innerHTML = `現在のWaveJP初期値は、${data[1][1][12]}枚です。`;
       })
   }
