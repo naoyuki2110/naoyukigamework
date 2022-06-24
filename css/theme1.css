@@ -333,6 +333,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: .25rem;
   position:relative;
   z-index: 1;
+  border:1px solid rgba(0,0,0,0)!important;
   border-left-color: #1294ff!important;
   border-right-color: #07e6a3!important;
   background: -webkit-linear-gradient(0deg, #1294ff, #07e6a3);
@@ -352,6 +353,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: .25rem;
   position:relative;
   z-index: 1;
+  border:1px solid rgba(0,0,0,0)!important;
   border-left-color: #1294ff!important;
   border-right-color: #07e6a3!important;
   background: -webkit-linear-gradient(0deg, #1294ff, #07e6a3);
@@ -366,9 +368,6 @@ h1, h2, h3, h4, h5, h6 {
   background:#fff;
   border-radius: .25rem;
   content: "";
-}
-.cdbord1{
-  border:1px solid rgba(0,0,0,0)
 }
 .nav-blur{
   background-color:rgba(255, 255, 255, 0.8);
