@@ -142,18 +142,18 @@
       -->
       <h1 class="mds5">不具合データ情報</h1>
       <h5 class="py-3 text-muted">準備中...</h5>
-      <!--
+      
       <div class="container text-center py-3">
         <h1 class="py-2" id="randcjpctime">本日のランダムCJPC時刻は、--時です。</h1>
         <div class="row justify-content-center">
           <div class="col-lg-10">
             <div class="alert alert-warning" role="alert">
-              プログラムの仕様上、ランダム開催がされない場合があります。その場合は「本日のランダムCJPC時刻は、ありません。」と表記されます。<br>また、午前0〜1時の間は時刻が反映されていない場合があります。1時を過ぎた際に表記されている時刻がほぼ正しいと思われます。
+              午前0〜1時の間は時刻が反映されていない場合があります。1時を過ぎた際に表記されている時刻がほぼ正しいと思われます。
             </div>
           </div>
         </div>
       </div>
-    -->
+    
     </div>
   </div>
   <footer class="bg-black">
@@ -263,14 +263,14 @@
           cjpuserfm = `${data[0][1][2].replace(/さん、/g, "さん、<br>")}`;
         }
         cjpuser.innerHTML = `前回のCJP獲得者：<br>${cjpuserfm}${data[0][1][3]}枚`;
-        /*
+        
           if (data[0][1][5] == "17" || data[0][1][5] == "22") {
             randcjpctime.innerHTML = `本日のランダムCJPC時刻は、ありません。`;
           }
           else if (data[0][1][5] != "17" || data[0][1][5] != "22") {
             randcjpctime.innerHTML = `本日のランダムCJPC時刻は、${data[0][1][5]}時です。`;
           }
-          */
+          
         // initwavejp.innerHTML = `現在のWaveJP初期値は、${data[1][1][12]}枚です。`;
         br_excpok01.firstChild.src = BR_EXC_DivImg(data[2][1][4].split(", ")[0]);
         br_excpok02.firstChild.src = BR_EXC_DivImg(data[2][1][4].split(", ")[1]);
