@@ -291,28 +291,35 @@
       </div>
       <!-- CEメダルキャンペーン 応募フォーム-->
     <h2 class="mds5">3周年記念キャンペーン「CEメダル大抽選会2023」応募フォーム</h2>
+    
     <form name="campaignSubmitForm" class="border rounded p-3 my-3" onsubmit="campaignSubmit(); return false;">
+      
       <div class="mb-3">
         <label for="playercodeInput" class="form-label">プレイヤーコード</label>
         <input type="text" name="playercodeInput" class="form-control" id="playercodeInput" aria-describedby="playercodeHelp" minLength="8" maxLength="8" size="20" required>
         <div id="playercodeHelp" class="form-text">8桁の英数字（0~9、A~F）を入力してください。</div>
       </div>
+   
       <div class="mb-3 form-check">
         <input type="checkbox" name="notnicknamePublish" class="form-check-input" id="notnicknamePublish">
         <label class="form-check-label" for="notnicknamePublish">当選発表の際、ニックネームの公開を希望しません</label>
       </div>
+     
       <div class="mb-3 form-check">
         <input type="checkbox" name="lastCheck" class="form-check-input" id="lastCheck" required>
         <label class="form-check-label" for="lastCheck">上記の内容を確認しました</label>
       </div>
+    
       <div class="mb-3 form-check">
         <input type="checkbox" name="lastCheck2" class="form-check-input" id="lastCheck2" required>
         <label class="form-check-label" for="lastCheck2"><a href="#maincampaignSection">ルール</a>を確認し、<a href="/naoyukigamework/terms">利用規約</a>に同意します</label>
       </div>
+    
       <div id="campaignSubmitBtn">
       <button name="submitBtn" type="submit" class="btn btn-primary">送信する</button>
       </div>
     </form>
+  
 
     </div>
   </div>
@@ -354,6 +361,14 @@
       padding: 15px 80px;
       border: 0px;
     }
+
+    .anim01, .anim02, .anim03, .anim03-big{
+      visibility: hidden;
+    }
+    .form-check-input{
+      float: none !important;
+      margin-right:3px;
+    }
   </style>
   <!-- CustomStyleEnd -->
   <script>
@@ -386,12 +401,12 @@
       fetch("https://script.google.com/macros/s/AKfycbyLb-VCyWcSguMGI6nuypc9srXh9QlE5rvCT1VUeiOAicMbgWhx-JG42Azj3J7J2eL6/exec",
       {
         method:"POST",
-        body:{
+        body: JSON.stringify({
           playercode:document.campaignSubmitForm.playercodeInput.value,
           notnamePub:document.campaignSubmitForm.notnicknamePublish.checked,
           contCheck:document.campaignSubmitForm.lastCheck.checked,
           ruleCheck:document.campaignSubmitForm.lastCheck2.checked
-        }
+        })
       }).then(res => res.text()).then(res => {
         if(res == "Success"){
           document.getElementById("campaignSubmitBtn").innerHTML = "<p class='fs-5'>応募が完了しました。抽選結果をお楽しみに！</p>";
