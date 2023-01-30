@@ -410,6 +410,12 @@
     ScrollReveal({}).reveal(".anim02", { distance: "50px", origin: "bottom", duration: 1000, viewFactor: 0.8 });
     ScrollReveal({}).reveal(".anim03", { scale: "3",  duration: 1000, viewFactor: 0.8});
     ScrollReveal({}).reveal(".anim03-big", { scale: "5",  duration: 800, viewFactor: 0.8, delay:600});
+
+    const urlparams = new URLSearchParams(window.location.search);
+    if(urlparams.has("playercode")){
+      document.campaignSubmitForm.playercodeInput.value = urlparams.get("playercode");
+    }
+
     function quiz01btnclick(type) {
       const quiz01obj = document.querySelector(".quiz01obj-desc");
       quiz01obj.innerHTML = "<h4 class='text-center'>正解！</h4><br>ボタポッチの一番最初の名前は「ポチ太郎」でした。<br>そこから試行錯誤して「ボタポッチ」という名前になりました。<br>ポチ太郎...めっちゃ恥ずかしいですね。";
