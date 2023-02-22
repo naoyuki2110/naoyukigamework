@@ -302,8 +302,8 @@
         const dlurl = fetch(`https://script.google.com/macros/s/AKfycbzwKdFUI5NKu434d0R3y2F1oncTO_f-_S0Z7RFsrDC_F-0eWMPtp4kFl1ejUhLrGv3j/exec?game=ce&pf=${pf}`)
           .then(res => res.text())
           .then(text => {
-            //location.href = text;
-            window.open(text, "_blank", "noreferrer");
+            location.href = text;
+            //window.open(text, "_blank", "noreferrer");
             windlbtn.classList.remove("disabled");
             androiddlbtn.classList.remove("disabled");
             windlbtn.innerText = windlbtntext;

@@ -90,8 +90,7 @@
               <h5 class="card-header">Windows (64bit)</h5>
               <div class="card-body">
                 <div class="pb-3">
-                  <a href="https://firestorage.jp/download/f4d885600eedb367d6596f81988a40eaabd74d99" class="btn btn-primary py-2 fs-5 col-11"
-                    target="_blank">Ver.1.0.3 FireStorageからダウンロード</a>
+                  <a href="javascript:gamedl('win')" class="btn btn-primary py-2 fs-5 col-11" id="windlbtn">Ver.1.0.3 ダウンロード（圧縮ZIPファイル）</a>
                 </div>
                 <div class="fs-5">38.9MB</div>
               </div>
@@ -185,6 +184,30 @@
   <script src="/naoyukigamework/js/header.js"></script>
   <script src="/naoyukigamework/js/footer.js"></script>
   <!-- CommonComponentEnd -->
+  <script>
+    function gamedl(pf) {
+      const windlbtn = document.getElementById("windlbtn");
+      // const androiddlbtn = document.getElementById("androiddlbtn");
+      windlbtn.classList.add("disabled");
+      // androiddlbtn.classList.add("disabled");
+      let windlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
+      // let androiddlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
+      windlbtntext = windlbtn.innerText;
+      // androiddlbtntext = androiddlbtn.innerText;
+      windlbtn.innerText = "お待ちください...";
+      // androiddlbtn.innerText = "お待ちください...";
+      const dlurl = fetch(`https://script.google.com/macros/s/AKfycbzwKdFUI5NKu434d0R3y2F1oncTO_f-_S0Z7RFsrDC_F-0eWMPtp4kFl1ejUhLrGv3j/exec?game=ca&pf=${pf}`)
+        .then(res => res.text())
+        .then(text => {
+          location.href = text;
+          //window.open(text, "_blank", "noreferrer");
+          windlbtn.classList.remove("disabled");
+          // androiddlbtn.classList.remove("disabled");
+          windlbtn.innerText = windlbtntext;
+          // androiddlbtn.innerText = androiddlbtntext;
+        })
+    }
+  </script>
 </body>
 
 </html>
