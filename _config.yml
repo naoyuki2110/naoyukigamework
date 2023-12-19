@@ -1,3 +1,30 @@
 theme: jekyll-theme-cayman
 plugins:
  - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path: "400.html"
+    values:
+      sitemap: false
+  -
+    scope:
+      path: "503.html"
+    values:
+      sitemap: false
+  -
+    scope:
+      path: "oldindex.html"
+    values:
+      sitemap: false
+  -
+    scope:
+      path: "sandbox.html"
+    values:
+      sitemap: false
+  -
+    scope:
+      path: "games/playwebgl/*"
+    values:
+      sitemap: false
