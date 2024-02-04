@@ -322,8 +322,8 @@
         androiddlbtn.classList.add("disabled");
         let windlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
         let androiddlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
-        windlbtntext = windlbtn.innerText;
-        androiddlbtntext = androiddlbtn.innerText;
+        windlbtntext = windlbtn.innerHTML;
+        androiddlbtntext = androiddlbtn.innerHTML;
         windlbtn.innerText = "お待ちください...";
         androiddlbtn.innerText = "お待ちください...";
         const dlurl = fetch(`https://script.google.com/macros/s/AKfycbzwKdFUI5NKu434d0R3y2F1oncTO_f-_S0Z7RFsrDC_F-0eWMPtp4kFl1ejUhLrGv3j/exec?game=ce&pf=${pf}`)
@@ -333,8 +333,8 @@
             //window.open(text, "_blank", "noreferrer");
             windlbtn.classList.remove("disabled");
             androiddlbtn.classList.remove("disabled");
-            windlbtn.innerText = windlbtntext;
-            androiddlbtn.innerText = androiddlbtntext;
+            windlbtn.innerHTML = windlbtntext;
+            androiddlbtn.innerHTML = androiddlbtntext;
           })
       }
     </script>

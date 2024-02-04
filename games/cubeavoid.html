@@ -206,7 +206,7 @@
       // androiddlbtn.classList.add("disabled");
       let windlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
       // let androiddlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
-      windlbtntext = windlbtn.innerText;
+      windlbtntext = windlbtn.innerHTML;
       // androiddlbtntext = androiddlbtn.innerText;
       windlbtn.innerText = "お待ちください...";
       // androiddlbtn.innerText = "お待ちください...";
@@ -217,7 +217,7 @@
           //window.open(text, "_blank", "noreferrer");
           windlbtn.classList.remove("disabled");
           // androiddlbtn.classList.remove("disabled");
-          windlbtn.innerText = windlbtntext;
+          windlbtn.innerHTML = windlbtntext;
           // androiddlbtn.innerText = androiddlbtntext;
         })
     }
