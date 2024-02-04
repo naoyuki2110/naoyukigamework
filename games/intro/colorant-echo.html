@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
@@ -79,9 +80,9 @@
           <h2>紹介・遊び方ページ</h2>
         </div>
       </div>
-      <div class="container text-center py-3">
+      <div class="container-lg text-center py-3">
         <h1 class="mds3">BETゲームやプレイヤー共通イベントが揃った<br>オンラインメダルゲーム</h1>
-        <div class="container">
+        <div class="container-lg">
           <div class="row row-cols-1 row-cols-sm-2 justify-content-center">
             <div class="col my-2 introimg_001">
               <div><img
@@ -140,6 +141,87 @@
         </div>
         <h4 class="py-3 introimg_002">一日2回、特定の時間に全プレイヤー同時抽選が始まります。<br>みんなでためたJPを獲得できるチャンス！<br><span
             class="text-info fs-6">※イベントなどで一日2回以上開催される場合があります。</span></h4>
+      </div>
+      <!---->
+      <ul class="slide-items">
+        <li>
+          <div class="gamesec gamesec-tg">
+            <div class="row row-cols-1 align-items-center justify-content-center">
+              <div class="col align-items-center">
+                <p class="fs-4 gamesec-text">10個のナンバーで一撃!</p>
+                <h1 class="gamesec-bigtext display-2 ">Tenth Green</h1>
+              </div>
+              <div class="col">
+                <img
+                  src="https://cdn.discordapp.com/attachments/879547925598969917/1140139437787988098/2023_08_13-13_21_00_2162.png"
+                  alt="Tenth Greenのスクリーンショット" class="img-fluid rounded-3 gamesec-img">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gamesec gamesec-nc">
+            <div class="col row row-cols-1 align-items-center justify-content-center">
+              <div class="col  align-items-center">
+                <p class="fs-4 gamesec-text">4段クルーンで目指せJP！</p>
+                <h1 class="gamesec-bigtext display-2 ">Night Crort</h1>
+              </div>
+              <div class="col">
+                <img
+                  src="https://cdn.discordapp.com/attachments/879547925598969917/1140167385177935923/2023_08_13-15_16_32_5968.png"
+                  alt="Night Crortのスクリーンショット" class="img-fluid rounded-3 gamesec-img">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gamesec gamesec-tw">
+            <div class="col row row-cols-1 align-items-center justify-content-center">
+              <div class="col  align-items-center">
+                <p class="fs-4 gamesec-text">じゃんじゃん回して高額メダル！</p>
+                <h1 class="gamesec-bigtext display-2 ">Tunety Wave</h1>
+              </div>
+              <div class="col">
+                <img
+                  src="https://cdn.discordapp.com/attachments/879547925598969917/1141545937488068829/Assets2023_08_16-16_52_07_1448.png"
+                  alt="Tunety Waveのスクリーンショット" class="img-fluid rounded-3 gamesec-img">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gamesec gamesec-br">
+            <div class="col row row-cols-1 align-items-center justify-content-center">
+              <div class="col  align-items-center">
+                <p class="fs-4 gamesec-text">驚異のの10段を駆け抜けろ！</p>
+                <h1 class="gamesec-bigtext display-2 ">Bright Road</h1>
+              </div>
+              <div class="col">
+                <img
+                  src="https://cdn.discordapp.com/attachments/879547925598969917/1141548917117435904/Assets2023_08_16-17_18_52_3985.png"
+                  alt="Bright Roadのスクリーンショット" class="img-fluid rounded-3 gamesec-img">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gamesec gamesec-cjpc">
+            <div class="col row row-cols-1 align-items-center justify-content-center">
+              <div class="col  align-items-center">
+                <p class="fs-4 gamesec-text">毎日2回、一攫千金は誰の手に!?</p>
+                <h1 class="gamesec-bigtext display-2 ">Colorant JPC</h1>
+              </div>
+              <div class="col">
+                <img
+                  src="https://cdn.discordapp.com/attachments/879547925598969917/1141549238774407208/Assets2023_08_16-17_04_12_6126.png"
+                  alt="Colorant JPCのスクリーンショット" class="img-fluid rounded-3 gamesec-img">
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="dots-2"></div>
+      <div class="container text-center py-3">
         <h1 class="mds4 introimg_001" id="htplay">遊び方</h1>
         <h2 class="mds5 introimg_001" id="htplay01">基本操作</h2>
         <div class="container">
@@ -174,12 +256,11 @@
                     公式ページからゲームをダウンロードしたら、解凍してゲームを起動しましょう。<br>そうすると、初めて遊ぶ場合、以下のような画面が出てくると思います。<br>
                     <div class="row row-cols-1 row-cols-sm-2 justify-content-center">
                       <div class="col my-2">
-                        <img
-                          src="../../images/games/colorant-echo/intro/SignupScreen01.png"
-                          alt="サインアップ画面" class="img-fluid rounded-3">
+                        <img src="../../images/games/colorant-echo/intro/SignupScreen01.png" alt="サインアップ画面"
+                          class="img-fluid rounded-3">
                       </div>
                     </div>
-                  この画面は、Colorant
+                    この画面は、Colorant
                     Echo（通称:CE）へのユーザー登録がまだお済みでないときに表示されます。<br>画面の指示に従い、ニックネームを入力して「登録」を押してください。
                   </div>
                 </div>
@@ -206,8 +287,10 @@
                       <div class="col my-2"><img
                           src="https://cdn.discordapp.com/attachments/987575984297500742/987914931879960596/ngw_ce_htplay01.png"
                           alt="タイトル画面" class="img-fluid rounded-3"></div>
-                    </div>① ･･･ メニューボタン　様々な操作をする際に使います。（詳しくはA05-メニューをご覧ください。）<br>② ･･･ ゲーム選択ボタン　この中のゲームをプレイする際に使います。<br>③ ･･･
-                    ColorantJPインフォ　現在のColorantJPの枚数（詳しくはC01-Colorant JACKPOTCHANCEをご覧ください。）<br>④ ･･･ バージョン情報　アプリのバージョン<br>⑤ ･･･ コピーライト表記　当方が制作して著作権が帰属するという印、押すとクレジットが表示されます。
+                    </div>① ･･･ メニューボタン　様々な操作をする際に使います。（詳しくはA05-メニューをご覧ください。）<br>② ･･･
+                    ゲーム選択ボタン　この中のゲームをプレイする際に使います。<br>③ ･･･
+                    ColorantJPインフォ　現在のColorantJPの枚数（詳しくはC01-Colorant JACKPOTCHANCEをご覧ください。）<br>④ ･･･
+                    バージョン情報　アプリのバージョン<br>⑤ ･･･ コピーライト表記　当方が制作して著作権が帰属するという印、押すとクレジットが表示されます。
                   </div>
                 </div>
               </div>
@@ -228,7 +311,8 @@
                     バンクを開くには「バンクを開く」をクリックすると、メダルを引き出したり預けたりすることができます。
                     <div class="row row-cols-1 row-cols-sm-2 justify-content-center">
                       <div class="col my-2">
-                        <video src="../../images/games/colorant-echo/intro/ngw_ce_bank_howto01.webm" class="img-fluid rounded-3" autoplay muted loop></video>
+                        <video src="../../images/games/colorant-echo/intro/ngw_ce_bank_howto01.webm"
+                          class="img-fluid rounded-3" autoplay muted loop></video>
                       </div>
                     </div>
                     初回起動時のメダル枚数は1000枚です。<br>
@@ -258,22 +342,19 @@
                     メニューを開くには、ゲーム画面の右上にある「≡」ボタンを押します。
                     <div class="row row-cols-1 row-cols-sm-2 justify-content-center">
                       <div class="col my-2">
-                        <img
-                          src="../../images/games/colorant-echo/intro/ce_menu_howto01.png"
-                          alt="メニュー1" class="img-fluid rounded-3">
+                        <img src="../../images/games/colorant-echo/intro/ce_menu_howto01.png" alt="メニュー1"
+                          class="img-fluid rounded-3">
                       </div>
                     </div>
                     <h4 class="mds6-2_ac">メニューでできるオプション</h4>
                     <div class="row row-cols-1 row-cols-sm-2 justify-content-center">
                       <div class="col my-2">
-                        <img
-                          src="../../images/games/colorant-echo/intro/Menu01.png"
-                          alt="メニュー（1ページ目）" class="img-fluid rounded-3">
+                        <img src="../../images/games/colorant-echo/intro/Menu01.png" alt="メニュー（1ページ目）"
+                          class="img-fluid rounded-3">
                       </div>
                       <div class="col my-2">
-                        <img
-                          src="../../images/games/colorant-echo/intro/Menu02.png"
-                          alt="メニュー（2ページ目）" class="img-fluid rounded-3">
+                        <img src="../../images/games/colorant-echo/intro/Menu02.png" alt="メニュー（2ページ目）"
+                          class="img-fluid rounded-3">
                       </div>
                     </div>
                     <h5>1ページ目</h5>
@@ -308,8 +389,12 @@
                 <div id="htc_shortcut" class="accordion-collapse collapse text-start" aria-labelledby="ht_shortcut"
                   data-bs-parent="#accordionHt">
                   <div class="accordion-body">
-                    <div class="pb-2"><span class="me-2 px-2 py-1 fs-5 bg-dark text-white rounded-2">F12</span>ゲーム画面のスクリーンショットが撮れます。<br></div>
-                    <div class="pt-2"><span class="me-2 px-2 py-1 fs-5 bg-dark text-white rounded-2">Enter</span>バンクなど、決定するときに使います。<br></div>
+                    <div class="pb-2"><span
+                        class="me-2 px-2 py-1 fs-5 bg-dark text-white rounded-2">F12</span>ゲーム画面のスクリーンショットが撮れます。<br>
+                    </div>
+                    <div class="pt-2"><span
+                        class="me-2 px-2 py-1 fs-5 bg-dark text-white rounded-2">Enter</span>バンクなど、決定するときに使います。<br>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -378,7 +463,9 @@
                     <h4 class="mds6-2_ac">3.配当・図柄紹介</h4>
                     <span class="fs-4">0～9</span>：出現した数字に賭けていれば10倍ゲット<br>
                     <span class="fs-4 text-success">★</span>：グリーンチャレンジへ。賭けている場所に関わらず突入する。<br>
-                    <span class="fs-4"><span class="text-primary">A</span><span style="font-size:20px;">&amp;</span><span class="text-warning">A</span></span>：賭けていればスーパーチャレンジへ。青も黄も同じ効果。<br>
+                    <span class="fs-4"><span class="text-primary">A</span><span
+                        style="font-size:20px;">&amp;</span><span
+                        class="text-warning">A</span></span>：賭けていればスーパーチャレンジへ。青も黄も同じ効果。<br>
                     <br>
                     <h4 class="mds6-2_ac">4.物理抽選</h4>
                     <div class="row row-cols-1 row-cols-sm-2 justify-content-center">
@@ -446,7 +533,7 @@
                     ②・・・BET枚数変更ボタン<br>
                     ③・・・抽選スタートボタン<br>
                     ④・・・現在のオッズ<br>
-                    ⑤・・・現在のNightJACKPOTの枚数<br>
+                    ⑤・・・現在のNightJACKPOTの枚数<span style="font-size: 14px;">（SuperJPC中はSuperNightJPのNightJP配当が表示されます。）</span><br>
                     ⑥・・・オートモードON/OFFボタン<br>
                     <br>
                     <h4 class="mds6-2_ac">2.操作方法</h4>
@@ -475,13 +562,35 @@
                       </div>
                     </div>
                     <h5>JACKPOTCHANCE</h5>
-                    ラウンド4でJPCポケットに入ると突入。確率12分の1を当てれば見事JP獲得です！<br>
+                    ラウンド4でJPCポケットに入ると突入。確率10分の1を当てれば見事JP獲得です！<br>
                     <br>
                     <h5>NightJP</h5>
+                    通常のJPCで「JP」ポケットに入るとNightJP獲得です！<br>
                     ゲームスタートする度に、BETの100分の1の数字分上昇します。<br>
                     JPの値は全プレイヤー共通です。<br>
                     初期値は800です。<br>
                     （ちなみに、NightJPの単位は「枚」ではなく「倍」です。最終的な配当に加算されます。）<br>
+                    <br>
+                    <h5>Super JACKPOTCHANCE</h5>
+                    <div class="row row-cols-1 row-cols-sm-2">
+                      <div class="col my-2">
+                        <img
+                          src="../../images/games/colorant-echo/intro/ce_nc_superjpc01.png"
+                          alt="Night CrortのSuperJPC" class="img-fluid rounded-3">
+                      </div>
+                    </div>
+                    通常のJPC後に、たまに発生します。<br>
+                    SuperJPCは通常のJPCより配当がスーパー!になってもう一度抽選されます！<br>
+                    ここでもJPを獲得すると、「SuperNightJP」をゲットしちゃいます！<br>
+                    目指せNight&amp;SuperNightダブルJP！<br>
+                    <br>
+                    <h5>SuperNightJP</h5>
+                    SuperJPCで「JP」ポケットに入るとSuperNightJP獲得です！<br>
+                    SuperNightJPは、NightJPとSuper配当を足したもので、<br>
+                    Super配当はゲームスタートするたびにBETの500分の1の数字分上昇します。<br>
+                    Super配当の初期値は1200で、全プレイヤー共通です。<br><br>
+                    SuperNightJPのNightJP配当は、SuperJPC突入前のNightJPの値で、SuperNightJPを獲得した場合はSuper配当のみがリセットされます。<br>
+                    また通常ゲームからの配当は通常のJPCで獲得しているため、SuperJPCでは ODDS × SuperJPC の配当を獲得できます。
                   </div>
                 </div>
               </div>
@@ -834,9 +943,13 @@
                     BGMがなっている間にどれだけデカい配当をゲットできるかがキーですね！<br>
                     <br>
                     <h4 class="mds6-2_ac">3.配当・図柄</h4>
-                    <span class="fs-4 text-info">1・2・3・4・5</span>：数字図柄です。同じ数字が左・中・右の3リールに同時に出現するとトータル枚数に+50枚プラスされます。<span style="font-size:10px;">ちなみに、3と4があって、リールが3つあるということは、なんでや！もつくれちゃうというこｔ</span><br>
+                    <span
+                      class="fs-4 text-info">1・2・3・4・5</span>：数字図柄です。同じ数字が左・中・右の3リールに同時に出現するとトータル枚数に+50枚プラスされます。<span
+                      style="font-size:10px;">ちなみに、3と4があって、リールが3つあるということは、なんでや！もつくれちゃうというこｔ</span><br>
                     <span class="fs-4 text-primary">+15</span>：トータル枚数に+15枚プラスされます。+15が同時に2つ出た場合は+30枚となるわけですね。<br>
-                    <span class="fs-4 text-warning">JP</span>：この図柄が出たリールのJPステップがオンになります。すべてオンにするとジャックポット獲得です！（詳しくは4.Colorant JPを確認）<br>
+                    <span
+                      class="fs-4 text-warning">JP</span>：この図柄が出たリールのJPステップがオンになります。すべてオンにするとジャックポット獲得です！（詳しくは4.Colorant
+                    JPを確認）<br>
                     また、すでにJPステップがオンになっているリールにJP図柄が出現すると、トータル枚数に+500枚プラスされます。<br>
                     <br>
                     <h4 class="mds6-2_ac">4.Colorant JP</h4>
@@ -916,7 +1029,8 @@
     <div class="container py-3">
       <p class="text-center mb-0 text-light">© 2020-2024 naoyukiGameWork</p>
       <p class="text-center mb-0 text-light"><a href="../../terms">利用規約</a>・<a
-          href="mailto:official-naoyukigamework@outlook.jp">お問い合わせ</a>・<a href="../../qa">よくある質問</a>・<a href="../../staff">運営者情報</a></p>
+          href="mailto:official-naoyukigamework@outlook.jp">お問い合わせ</a>・<a href="../../qa">よくある質問</a>・<a
+          href="../../staff">運営者情報</a></p>
       <div class="text-center"><img src="../../images/nenaobuildslogo2-transpt.png" style="width:250px">
       </div>
     </div>
@@ -925,6 +1039,9 @@
   <script src="b3dpageheaderjs.js"></script>
   <script src="b3dpagefooterjs.js"></script>
   <!-- CommonComponentEnd -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 <style>
   .dropdown:hover>.dropdown-menu {
@@ -971,6 +1088,241 @@
     border-radius: 2.5px;
     background: -webkit-linear-gradient(0deg, #0526fa, #1eccf7);
   }
+
+  .gamesec {
+    padding: 20px;
+  }
+
+  .gamesec-tg {
+    background-color: #01f05e;
+  }
+
+  .gamesec-nc {
+    background-color: #9500ff;
+  }
+
+  .gamesec-tw {
+    background-color: #00a2ff;
+  }
+
+  .gamesec-br {
+    background-color: #ff0044;
+  }
+  .gamesec-cjpc {
+    background-color: #ffc400;
+  }
+
+  .gamesec-text {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .gamesec-bigtext {
+    color: #fffd;
+    font-weight: bold;
+    font-size: calc(1.1rem + 2vw);
+    /*font-size:3rem;*/
+    /*transform: translate(-100px, 50px);*/
+    left: 200px;
+    z-index: 0;
+    width: 100%;
+  }
+
+  @media screen and (max-width:576px) {
+    .gamesec-bigtext {
+      color: #fffc;
+      font-weight: bold;
+      font-size: calc(1.4rem + 2vw);
+      /*font-size:3rem;*/
+      /*transform: translate(-100px, 50px);*/
+      left: 200px;
+      z-index: 0;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:768px) {
+    .gamesec-text {
+    color: #fff;
+    font-size: 18px!important;
+    font-weight: bold;
+  }
+  }
+  @media screen and (min-width:992px){
+    .gamesec-text {
+    color: #fff;
+    font-size: 20px!important;
+    font-weight: bold;
+  }
+  }
+
+  .gamesec-img {
+    position: relative;
+    z-index: 5;
+  }
+
+  /* 以下ゲームセクションスライド */
+  .slide-items {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .slide-items .slick-slide {
+    display: flex;
+    width: 100vw;
+    height: auto !important;
+    max-width: 850px;
+    transition: 0.5s cubic-bezier(0.85, 0.01, 0.12, 1);
+    /*transform: scale(0.8);*/
+    /*filter: brightness(70%);*/
+    /*padding: 10px;*/
+
+  }
+
+  .slide-items .slick-slide.slick-current,
+  .slide-items .slick-slide.is-active-next {
+    /*transform: scale(1);*/
+    filter: none;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .slide-items {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      padding: 0;
+      max-width: 100%;
+    }
+
+    .slide-items .slick-slide {
+      width: 90vw;
+      height: 100%;
+      max-width: var(--onehdp);
+      transition: 0.5s cubic-bezier(0.85, 0.01, 0.12, 1);
+      /*transform: scale(0.8);*/
+    }
+
+    /*
+    .slide-items .slick-slide.is--active {
+      transform: scale(1);
+    }
+    */
+  }
+
+  .slide-items .slick-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    /*border: 1px solid #dee2e6;*/
+    border-radius: 5px;
+  }
+
+  .slide-items .slick-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 0;
+    transition: 0.2s ease-in-out;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+    opacity: 0.85;
+    margin: auto;
+  }
+
+  .slide-items .slick-arrow:hover {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.6));
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  .slide-items .slick-arrow::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #09000d;
+    border-width: 3px 3px 0 0;
+    position: absolute;
+    top: 16px;
+    transform: rotate(45deg);
+  }
+
+  .slide-items .slick-next {
+    right: 10%;
+    top: -28.6px;
+  }
+
+  .slide-items .slick-prev {
+    left: 10%;
+    top: -28.6px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .slide-items .slick-next {
+      right: 2%;
+    }
+
+    .slide-items .slick-prev {
+      left: 2%;
+    }
+  }
+
+  .slide-items .slick-next::before {
+    left: 15px;
+  }
+
+  .slide-items .slick-prev::before {
+    border-width: 0 0 3px 3px;
+    right: 15px;
+  }
+
+  .slide-items .slick-dots {
+    text-align: center;
+  }
+
+  .slide-items .slick-dots li {
+    display: inline-block;
+  }
+
+  .slide-items .slick-dots button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 6px;
+    font-size: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background: #bcbcbc;
+    border-radius: 50%;
+    transform:scale(0.9);
+    transition:0.3s ease;
+  }
+
+  .slide-items .slick-dots .slick-active button {
+    background: #00cf4c;
+    transform:scale(1.2);
+  }
+
+  .slick-dots {
+    padding-left: 0;
+  }
+
+  .slick-track {
+    display: flex;
+  }
 </style>
 <script>
   ScrollReveal({}).reveal(".introimg_001", { distance: "50px", origin: "bottom", duration: 1000, viewFactor: 0.45 });
@@ -988,6 +1340,72 @@
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
   }
+
+  $(".slide-items").slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+
+    dots: true,
+    //variableWidth: true,
+    variableHeight: true,
+    centerMode: true,
+    //centerPadding: '0px',
+    cssEase: 'cubic-bezier(0.85, 0.01, 0.12, 1)',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [{
+      breakpoint: 576,
+      settings: {
+        //variableWidth: false,
+        centerMode: false,
+        slidesToShow: 1,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        //variableWidth: false,
+        centerMode: false,
+        slidesToShow: 2,
+      }
+    }]
+
+    /*appendDots: $(".dots-2")*/
+  })
+  $('.slide-items .slick-slide.slick-current').addClass('is-active-next');
+
+  const $slider = $(".slide-items");
+
+  // 左右の透過の2周目ががたつく対応
+  $slider.on("beforeChange", (event, slick, currentSlide, nextSlide) => {
+    $slider.find(".slick-slide").each((index, el) => {
+      const $this = $(el),
+        slickindex = $this.attr("data-slick-index");
+      if (nextSlide == slick.slideCount - 1 && currentSlide == 0) {
+        // 現在のスライドが最初のスライドでそこから最後のスライドに戻る場合
+        if (slickindex == "-1") {
+          // 最後のスライドに対してクラスを付与
+          $this.addClass("is-active-next");
+        } else {
+          // それ以外は削除
+          $this.removeClass("is-active-next");
+        }
+      } else if (nextSlide == 0) {
+        // 次のスライドが最初のスライドの場合
+        if (slickindex == slick.slideCount) {
+          // 最初のスライドに対してクラスを付与
+          $this.addClass("is-active-next");
+        } else {
+          // それ以外は削除
+          $this.removeClass("is-active-next");
+        }
+      } else {
+        // それ以外は削除
+        $this.removeClass("is-active-next");
+      }
+    });
+  });
 </script>
 
 </html>
