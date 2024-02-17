@@ -1328,10 +1328,39 @@
 <script>
   ScrollReveal({}).reveal(".introimg_001", { distance: "50px", origin: "bottom", duration: 1000, viewFactor: 0.45 });
   ScrollReveal({}).reveal(".introimg_002", { distance: "50px", origin: "bottom", duration: 1000, viewFactor: 0.8 });
-  if (getParam("showcont") == "csx") {
+  ScrollReveal({}).reveal(".accordion-item.introimg_001", { distance: "50px", origin: "bottom", duration: 1000, viewFactor: 0.02, delay:50 });
+
+  const cururl = new URL(window.location.href);
+  const urlparams = cururl.searchParams;
+  if (urlparams.get("showcont") == "csx") {
     document.getElementById("ht_game_csx").children[0].classList.remove("collapsed");
     document.getElementById("htc_game_csx").classList.add("show");
   }
+  if (urlparams.get("showcont") == "tg") {
+    document.getElementById("ht_game_tg").children[0].classList.remove("collapsed");
+    document.getElementById("htc_game_tg").classList.add("show");
+  }
+  if (urlparams.get("showcont") == "nc") {
+    document.getElementById("ht_game_nc").children[0].classList.remove("collapsed");
+    document.getElementById("htc_game_nc").classList.add("show");
+  }
+  if (urlparams.get("showcont") == "tw") {
+    document.getElementById("ht_game_tw").children[0].classList.remove("collapsed");
+    document.getElementById("htc_game_tw").classList.add("show");
+  }
+  if (urlparams.get("showcont") == "br") {
+    document.getElementById("ht_game_br").children[0].classList.remove("collapsed");
+    document.getElementById("htc_game_br").classList.add("show");
+  }
+  if (urlparams.get("showcont") == "cjpc") {
+    document.getElementById("ht_game_cjpc").children[0].classList.remove("collapsed");
+    document.getElementById("htc_game_cjpc").classList.add("show");
+  }
+  if (urlparams.get("showcont") == "menu") {
+    document.getElementById("ht_menu").children[0].classList.remove("collapsed");
+    document.getElementById("htc_menu").classList.add("show");
+  }
+
   function getParam(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
