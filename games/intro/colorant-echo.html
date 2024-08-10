@@ -195,13 +195,28 @@
           <div class="gamesec gamesec-br">
             <div class="col row row-cols-1 align-items-center justify-content-center">
               <div class="col  align-items-center">
-                <p class="fs-4 gamesec-text">驚異のの10段を駆け抜けろ！</p>
+                <p class="fs-4 gamesec-text">驚異の10段を駆け抜けろ！</p>
                 <h1 class="gamesec-bigtext display-2 ">Bright Road</h1>
               </div>
               <div class="col">
                 <img
                   src="../../images/games/colorant-echo/intro/ce_br_scrshot01.png"
                   alt="Bright Roadのスクリーンショット" class="img-fluid rounded-3 gamesec-img">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="gamesec gamesec-wb">
+            <div class="col row row-cols-1 align-items-center justify-content-center">
+              <div class="col  align-items-center">
+                <p class="fs-4 gamesec-text">ワープでUPで高配当！</p>
+                <h1 class="gamesec-bigtext display-2 ">Warpup Bubble</h1>
+              </div>
+              <div class="col">
+                <img
+                  src="../../images/games/colorant-echo/intro/ce_wb_scrshot01.png"
+                  alt="Warpup Bubbleのスクリーンショット" class="img-fluid rounded-3 gamesec-img">
               </div>
             </div>
           </div>
@@ -308,6 +323,7 @@
                 <div id="htc_medalopr" class="accordion-collapse collapse text-start" aria-labelledby="ht_medalopr"
                   data-bs-parent="#accordionHt">
                   <div class="accordion-body">
+                    <!-- TODO:バンクのテンキー入力についての記述 -->
                     各ゲームで遊ぶには、「バンク」からメダルを引き出す必要があります。<br>
                     ゲーム画面左上に、現在のメダル枚数が表示されています。これをクリックすると「メダルオプション」が表示されます。<br>
                     バンクを開くには「バンクを開く」をクリックすると、メダルを引き出したり預けたりすることができます。
@@ -319,6 +335,7 @@
                     </div>
                     初回起動時のメダル枚数は1000枚です。<br>
                     アプリを終了すると引き出したメダルは自動的にバンクに預けられ、保存されます。<br><br>
+                    <!-- TODO:広告システム廃止後の一時的なメダルチャレンジの実装に関する記述 -->
                     <h5>メダルがなくなってしまったとき</h5>
                     メダルがなくなってしまった場合でも、広告をみることでメダルを復活できます。<br>
                     先ほどのメダルオプションから「広告を見る」をクリックして広告を見ると100枚もらえます。<br>
@@ -359,6 +376,7 @@
                           class="img-fluid rounded-3">
                       </div>
                     </div>
+                    <!-- TODO:遊び方確認ボタンについての記述 -->
                     <h5>1ページ目</h5>
                     <span class="fs-5">設定</span>・・・アプリのいろいろな設定を変更するときに使います。<br>
                     <span class="fs-5">終了</span>・・・アプリを終了したり、再読み込みしたりするときに使います。<br>
@@ -840,7 +858,7 @@
                     <h5>EX JP</h5>
                     EX Challengeで獲得できるJP。<br>
                     ベース値は3000で、それに抽選で決まった倍率をかけた枚数を獲得できます。<br>
-                    JP枚数にBET枚数は関係ありません。<br>
+                    JP枚数はBET枚数によって変化します。<br>
                     （ちなみに、EXJPの公式の呼び方は「イーエックスJP」です。「エクストラ」ではないのです...）<br>
                     <br>
                     <h5>SPECIAL JP</h5>
@@ -901,6 +919,184 @@
                     EXCのポケット配当は全プレイヤー共通で、一度ポケットに入るとポケットがパワーアップします。<br>
                     パワーアップは、x25 -> x50 -> x100 -> ！？ -> EXJP の順に行われます。<br>
                     EXJPポケットが2つ以上ある場合、EXJPポケットに入るとx25にリセットされます。EXJPポケットは常時1つ以上ありますのでご安心ください。<br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-3">
+              <div class="accordion-item acbord1 introimg_001">
+                <h2 class="accordion-header" id="ht_game_wb">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#htc_game_wb" aria-expanded="false" aria-controls="htc_game_wb">
+                    B05-Warpup Bubble&nbsp;<span class="badge bg-danger">メインゲーム</span>
+                  </button>
+                </h2>
+                <div id="htc_game_wb" class="accordion-collapse collapse text-start" aria-labelledby="ht_game_wb"
+                  data-bs-parent="#accordionHt2">
+                  <div class="accordion-body">
+                    <h4 class="mds6-2_ac">Warpup Bubble <span class="fs-6">｜ワープアップ バブル</span></h4>
+                    
+                    <div class="row row-cols-1 row-cols-sm-2 justify-content-center">
+                      <div class="col my-2">
+                        <img
+                          src="../../images/games/colorant-echo/intro/ce_wb_scrshot01.png"
+                          alt="Warpup Bubbleのメイン画面" class="img-fluid rounded-3">
+                      </div>
+                      <div class="col my-2">
+                        <img
+                          src="../../images/games/colorant-echo/intro/ce_wb_scrshot02.png"
+                          alt="Warpup Bubbleのメイン画面２" class="img-fluid rounded-3">
+                      </div>
+                    </div>
+                    いっぱいワープしてどんどんパワーアップさせていき高配当を目指す、新感覚のBETゲームです。<br>
+                    理論上無限に続く抽選、あなたはどこまでいける！？<br>
+                    <br>
+                    
+                    <h4 class="mds6-2_ac">1.各部の名称</h4>
+                    <!--
+                    <div class="row row-cols-1 row-cols-sm-2 justify-content-center">
+                      <div class="col my-2">
+                        <img
+                          src="../../images/games/colorant-echo/intro/ce_br_howto01-2.png"
+                          alt="Bright Roadのメイン画面各部" class="img-fluid rounded-3">
+                      </div>
+                      <div class="col my-2">
+                        <img
+                          src="../../images/games/colorant-echo/intro/ce_br_howto02.png"
+                          alt="Bright Roadのメイン画面各部２" class="img-fluid rounded-3">
+                      </div>
+                    </div>
+                    抽選スタート前<br>
+                    ①・・・BET枚数・BET枚数変更ボタン<br>
+                    ②・・・抽選スタートボタン<br>
+                    ③・・・データパネル表示ボタン<br>
+                    ④・・・ステータスパネル表示ボタン<br>
+                    <br>
+                    左右パネル表示後<br>
+                    ⑤・・・現在の各JPの枚数<br>
+                    ⑥・・・現在のEX Challengeの配当<br>
+                    ⑦・・・オートモードON/OFFボタン<br>
+                    ⑧・・・現在のポイント<br>
+                    ⑨・・・現在の抽選タイプ<br>
+                    ⑩・・・配当ステータス<br>
+                  -->
+                    準備中...<br>
+                    <br>
+                    <h4 class="mds6-2_ac">2.基本ルール</h4>
+                    まずはBET枚数を決めます。最大500BETまで可能です。<br>
+                    スタートを押すとゲームスタート！<br>
+                    最大6個のボールが上がったり下がったりワープしながら、ポケットを通過していきます。<br>
+                    UPポケットでレベルをアップさせたり、Plusポケットでボールを追加させたり！<br><br>
+                    レーン上部のOUTブロックにボールが当たると、OUTカウント-1。<br>
+                    OUTカウントが0になるとゲーム終了。全ボールのレベル配当を足したメダルをゲットできます。<br>
+                    ※OUTカウントはボールの個数によって変化します。<br><br>
+                    ポケットの種類などは3.配当・ポケットの種類をご確認ください。<br>
+                    <br>
+                    <h4 class="mds6-2_ac">3.配当・ポケットの種類</h4>
+                    <h5>レベル配当</h5>
+                    右パネルの上部にあるのはレベル配当の一覧です。<br>
+                    レベル1～8にはそれぞれ倍率の配当が紐づいていて、ゲーム終了時の抽選機各レーンの色と対応しているレベルの配当をすべて足したもの×BET枚数を獲得できます。<br>
+                    例えば20BETで、水色のレーンが2つ、緑のレーンが1つ、黄色のレーンが1つだった場合、<br>
+                    (0.5 + 0.5 + 1.5 + 2) x 20BET で、BETの4.5倍の90枚を獲得できます。<br>
+                    新たにボールが追加された場合のボールのレベルは0で、レベル0のボールだけが残った状態で終了すると0Winになってしまいます。いっぱいレベルアップするように祈りましょう！<br>
+                    <br>
+                    <h5>ポケットの種類</h5>
+                    <span class="fs-5">UP</span>：通過したボールのレベルがアップします。<br>
+                    <span class="fs-5">Plus</span>：ボールを1個追加します。最大で6つまで追加されます。<br>
+                    <span class="fs-5">! !</span>：チャンスポケット。OUT無効など、様々なことが起こるようです...<br>
+                    <span class="fs-5">A・B</span>：AポケットはSoapJP、BポケットはGlowJPが通過した分アップします。またゲーム終了までに多く通過したほうのルーレットメーターが増えます。<br>
+                    <span class="fs-5">M</span>：メダルポケット。通過するとランダムにメダルを獲得できます。<br>
+                    <br>
+                    <h4 class="mds6-2_ac">4.WarpupJPCHANCE・WarpupJP</h4>
+                    <h5>Warpup JACKPOTCHANCE</h5>
+                    <div class="row row-cols-1 row-cols-sm-2">
+                      <div class="col my-2">
+                        <img
+                          src="../../images/games/colorant-echo/intro/ce_wb_scrshot02.png"
+                          alt="Warpup BubbleのWarpupJPC" class="img-fluid rounded-3">
+                      </div>
+                    </div>
+                    通常ゲーム中、中央のJPCポケットを上がってきたボールが通過するとJPCカウントが+1され、下がってきたボールが通過すると-1されます。<br>
+                    JPCカウントが5つのまま一定時間キープするとWarpupJPC確定となり、ゲーム終了後WarpupJPCがスタートします。<br><br>
+                    WarpupJPCはボールがひたすらワープし続け、ワープした距離が長いほどバブルが成長していきます。<br>
+                    ボールがワープするたびに最終配当にメダルが追加されて、バブルが一定の大きさに達すると見事WarpupJP獲得です！　それ以降は配当に加算される枚数がすべて2倍になります。<br>
+                    ただし、中央を横切る黒いブロック「ブレイクブロック」にボールが当たると壊れてしまいます。すべてのボールが壊れてしまうとJPCが終了し、表示されている枚数を獲得します。<br>
+                    全部のボールが壊れる前にJPを獲得しよう！<br><br>
+                    また、JPC中にレーンを横切る「クリスタル」にボールが当たると、ワープしなくても最終配当が追加されます。1回当たるだけでめっちゃ追加されるクリスタルもあるらしい...？<br>
+                    <br>
+                    <h5>WarpupJP</h5>
+                    WarpupJPCで獲得できる、全プレイヤー共通のプログレッシブJPです。<br>
+                    初期値は1000で、10BETあたり0.5枚（BETの20分の1）上昇し、最大値は9999です。<br>
+                    JP枚数はBETに応じて変化します。<br>
+                    <br>
+                    <h4 class="mds6-2_ac">5.シンクルーレット・SoapJP・GlowJP</h4>
+                    <div class="row row-cols-1 row-cols-sm-2">
+                      <div class="col my-2">
+                        <img
+                          src="../../images/games/colorant-echo/intro/ce_wb_scrshot03.png"
+                          alt="Warpup BubbleのSync Roulette" class="img-fluid rounded-3">
+                      </div>
+                      <div class="col my-2">
+                        <img
+                          src="../../images/games/colorant-echo/intro/ce_wb_scrshot04.png"
+                          alt="Warpup BubbleのSync Roulette２" class="img-fluid rounded-3">
+                      </div>
+                    </div>
+                    左パネルの「Sync Roulette」メーターは、AポケットやBポケットに入った回数に応じて動きます。<br>
+                    メーターは全プレイヤー共通で、緑または青のメーターがMAXになるとそれぞれ「ルーレットA」または「ルーレットB」が、全プレイヤーで同時に発生します！<br>
+                    ワープポイントでBETして、ここでしか獲得できない7分の1のJPを当てちゃおう！（ワープポイントについては、6.ワープステップ・ワープポイントをご確認ください。）<br>
+                    <span class="text-warning">シンクルーレット発生前ににBETするワープポイントを決めておかないと、ルーレットに参加できませんのでご注意ください。</span><br>
+                    <br>
+                    <h5>シンクルーレットA</h5>
+                    緑のメーターがMAXになると発生します。<br>
+                    配当はルーレットBより高めで、抽選で決定したメダル配当 x 1ワープポイントBETあたり5枚のメダルがもらえます。<br>
+                    つまり、ワープポイント3個をBETしてルーレットAがスタートし、50Winだった場合、50 x 3 x 5 枚。つまり750枚がもらえます。<br>
+                    ルーレットAではSoapJPが当たるチャンス！<br>
+                    <br>
+                    <h5>シンクルーレットB</h5>
+                    青のメーターがMAXになると発生します。<br>
+                    配当はルーレットAより低めで基本的なルールはルーレットAと同じですが、<br>
+                    ルーレットBは配当が2倍以上になるチャンスがあります！<br>
+                    ルーレットBではGlowJPが当たるチャンス！（このGlowJPも2倍以上になるかもしれないんす。）<br>
+                    <br>
+                    ※17時や22時のColorantJPC開催がまもなくの場合に緑・青のメーターがMAXになった場合は、ColorantJPC終了後に発生します。<br>
+                    <br>
+                    <h5>SoapJP</h5>
+                    ルーレットAで獲得できるJPです。<br>
+                    初期値は500。最大値は5000で、Aポケットを通過すると上昇します。（通過した回数そのまま上昇するわけではありません。）<br>
+                    ルーレットAまたはBが1回終了するとリセットされます。<br>
+                    SoapJPはワープポイントBET数 x JP枚数をゲットできます。5枚分はかけられません。<br>
+                    <br>
+                    <h5>GlowJP</h5>
+                    ルーレットBで獲得できるJPです。<br>
+                    初期値は400。最大値は4000で、Bポケットを通過すると上昇します。（通過した回数そのまま上昇するわけではありません。）<br>
+                    ルーレットAまたはBが1回終了するとリセットされます。<br>
+                    GlowJPはワープポイントBET数 x JP枚数 x 抽選で決定した倍率をゲットできます。5枚分はかけられません。<br>
+                    <br>
+                    <h4 class="mds6-2_ac">6.ワープステップ・ワープポイント</h4>
+                    ゲームをプレイしていると、ワープした距離に応じてワープステップが進みます。<br>
+                    全部で3段階あり、ステップ1やステップ2に到達するとワープポイントをゲットできます。<br>
+                    ワープポイントは、シンクルーレットでBETするために必要です<br>
+                    ワープポイントは最大で20個持てますが、シンクルーレットで使った分減ってしまいます。<br>
+                    貴重なワープポイントをどれだけルーレットに使うかどうかを考えるのが大事です！<br>
+                    ちなみに、ゴールのJPというのは...ご自身の目で確かめてください！<br>
+                    <br>
+                    <h4 class="mds6-2_ac">7.フィーバー</h4>
+                    <div class="row row-cols-1 row-cols-sm-2">
+                      <div class="col my-2">
+                        <img
+                          src="../../images/games/colorant-echo/intro/ce_wb_scrshot05.png"
+                          alt="Warpup Bubbleのフィーバー" class="img-fluid rounded-3">
+                      </div>
+                    </div>
+                    Warpup Bubbleのフィーバーでは、UPポケットやPlusポケットやメダルポケットが、めっちゃ大量に増えるようになります！<br>
+                    左パネルの「FEVER」メーターは全プレイヤー共通で、通常ゲームでワープした距離分加算されます。<br>
+                    メーターがMAXになると、全プレイヤー同時にフィーバーに突入します!!<br>
+                    またフィーバー中は特定のポケットが増えるだけでなく、WarpupJPCですべての配当が2倍となって加算されたりします。<br>
+                    <span style="font-size:14px">（ここで思うかもしれません。「WJP確定したらどうなるん？」実はWJP確定中にフィーバーだった場合は、配当が2倍の2倍...つまり4倍になって加算されるんです！）</span><br>
+                    フィーバーはおよそ5分間継続します。<br>
+                    ※17時や22時のColorantJPC開催がまもなくの場合にフィーバーが開始した場合は、ColorantJPC終了後も継続されます。<br>
+
                   </div>
                 </div>
               </div>
@@ -1023,9 +1219,15 @@
             </div>
           </div>
         </div>
-        <h1 class="pt-3 introimg_001">Coming Soon...</h1>
-        <h5 class="text-muted introimg_001">紹介・遊び方ページ完成まで今しばらくお待ち下さい。</h5>
       </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center mb-3">
+      
+        <a href="../colorant-echo" class="text-center fs-5">Colorant Echo
+        のメインページに戻る</a>
+      
     </div>
   </div>
   <footer class="bg-black">
@@ -1111,6 +1313,11 @@
   .gamesec-br {
     background-color: #ff0044;
   }
+
+  .gamesec-wb {
+    background-color: #00e5e5;
+  }
+
   .gamesec-cjpc {
     background-color: #ffc400;
   }
@@ -1124,7 +1331,7 @@
   .gamesec-bigtext {
     color: #fffd;
     font-weight: bold;
-    font-size: calc(1.1rem + 2vw);
+    font-size: calc(1.1rem + 1.5vw);
     /*font-size:3rem;*/
     /*transform: translate(-100px, 50px);*/
     left: 200px;
@@ -1353,6 +1560,10 @@
   if (urlparams.get("showcont") == "br") {
     document.getElementById("ht_game_br").children[0].classList.remove("collapsed");
     document.getElementById("htc_game_br").classList.add("show");
+  }
+  if (urlparams.get("showcont") == "wb") {
+    document.getElementById("ht_game_wb").children[0].classList.remove("collapsed");
+    document.getElementById("htc_game_wb").classList.add("show");
   }
   if (urlparams.get("showcont") == "cjpc") {
     document.getElementById("ht_game_cjpc").children[0].classList.remove("collapsed");
