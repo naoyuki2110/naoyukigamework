@@ -337,9 +337,8 @@
                       class="img-fluid">
                     <span class="fw-bold">不具合に遭遇したら</span><br>
                     CEの不具合報告フォームにて「アップデータ」を選択したうえで送信いただきますようお願いします。<br>
-                    <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSeAltJGx-j1Xa4pHMsI9CJ7A53FFFaygKA51ldp9CY855urag/viewform" target="_blank">アップデータの不具合報告をする<i
-                      class="bi bi-box-arrow-up-right px-2"></i></a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAltJGx-j1Xa4pHMsI9CJ7A53FFFaygKA51ldp9CY855urag/viewform"
+                      target="_blank">アップデータの不具合報告をする<i class="bi bi-box-arrow-up-right px-2"></i></a>
                   </div>
                 </div>
               </div>
@@ -348,15 +347,19 @@
         </div>
       </div>
     </div>
-    <footer class="bg-black text-light mt-3">
+  </div>
+  <footer class="bg-black text-light mt-3">
     <div class="container pt-3">
       <div class="footer-logo mx-auto">
         <img src="../images/ngwlogo3-light.png" alt="naoyukiGameWork" class="img-fluid">
       </div>
       <div class="justify-content-center text-center">
-        <a href="https://discord.gg/VvrBsaq" target="_blank" class="footer-link footer-link-discord px-3 my-2 d-inline-block">Discord</a>
-        <a href="https://twitter.com/naoyukigamework/" target="_blank" class="footer-link footer-link-twitter px-3 my-2 d-inline-block">X (Twitter)</a>
-        <a href="https://www.youtube.com/@naoyukigamework0215" target="_blank" class="footer-link footer-link-youtube px-3 my-2 d-inline-block">YouTube</a>
+        <a href="https://discord.gg/VvrBsaq" target="_blank"
+          class="footer-link footer-link-discord px-3 my-2 d-inline-block">Discord</a>
+        <a href="https://twitter.com/naoyukigamework/" target="_blank"
+          class="footer-link footer-link-twitter px-3 my-2 d-inline-block">X (Twitter)</a>
+        <a href="https://www.youtube.com/@naoyukigamework0215" target="_blank"
+          class="footer-link footer-link-youtube px-3 my-2 d-inline-block">YouTube</a>
       </div>
     </div>
     <div class="container">
@@ -396,67 +399,67 @@
       <p class="text-center m-0">© 2020-2024 naoyukiGameWork</p>
     </div>
   </footer>
-    <!-- CommonComponent -->
-    <style>
-      .dropdown:hover>.dropdown-menu {
-        display: block;
-      }
+  <!-- CommonComponent -->
+  <style>
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
 
-      @media screen and (max-width: 992px) {
-        .resp-hidden {
-          display: none;
-        }
+    @media screen and (max-width: 992px) {
+      .resp-hidden {
+        display: none;
       }
-    </style>
-    <script src="/naoyukigamework/js/header.js"></script>
-    <script src="/naoyukigamework/js/footer.js"></script>
-    <!-- CommonComponentEnd -->
-    <script>
-      function gamedl(pf) {
-        const windlbtn = document.getElementById("windlbtn");
-        const androiddlbtn = document.getElementById("androiddlbtn");
-        windlbtn.classList.add("disabled");
-        androiddlbtn.classList.add("disabled");
-        let windlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
-        let androiddlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
-        windlbtntext = windlbtn.innerHTML;
-        androiddlbtntext = androiddlbtn.innerHTML;
-        windlbtn.innerText = "お待ちください...";
-        androiddlbtn.innerText = "お待ちください...";
-        const dlurl = fetch(`https://script.google.com/macros/s/AKfycbzwKdFUI5NKu434d0R3y2F1oncTO_f-_S0Z7RFsrDC_F-0eWMPtp4kFl1ejUhLrGv3j/exec?game=ce&pf=${pf}`)
-          .then(res => res.text())
-          .then(text => {
-            location.href = text;
-            //window.open(text, "_blank", "noreferrer");
-            windlbtn.classList.remove("disabled");
-            androiddlbtn.classList.remove("disabled");
-            windlbtn.innerHTML = windlbtntext;
-            androiddlbtn.innerHTML = androiddlbtntext;
-          })
-      }
-      function updaterdl(pf) {
-        const windlbtn = document.getElementById("updwindlbtn");
-        //const androiddlbtn = document.getElementById("androiddlbtn");
-        windlbtn.classList.add("disabled");
-        //androiddlbtn.classList.add("disabled");
-        let windlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
-        //let androiddlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
-        windlbtntext = windlbtn.innerHTML;
-        //androiddlbtntext = androiddlbtn.innerHTML;
-        windlbtn.innerText = "お待ちください...";
-        //androiddlbtn.innerText = "お待ちください...";
-        const dlurl = fetch(`https://script.google.com/macros/s/AKfycbzwKdFUI5NKu434d0R3y2F1oncTO_f-_S0Z7RFsrDC_F-0eWMPtp4kFl1ejUhLrGv3j/exec?game=ceupdater&pf=${pf}`)
-          .then(res => res.text())
-          .then(text => {
-            location.href = text;
-            //window.open(text, "_blank", "noreferrer");
-            windlbtn.classList.remove("disabled");
-            //androiddlbtn.classList.remove("disabled");
-            windlbtn.innerHTML = windlbtntext;
-            //androiddlbtn.innerHTML = androiddlbtntext;
-          })
-      }
-    </script>
+    }
+  </style>
+  <script src="/naoyukigamework/js/header.js"></script>
+  <script src="/naoyukigamework/js/footer.js"></script>
+  <!-- CommonComponentEnd -->
+  <script>
+    function gamedl(pf) {
+      const windlbtn = document.getElementById("windlbtn");
+      const androiddlbtn = document.getElementById("androiddlbtn");
+      windlbtn.classList.add("disabled");
+      androiddlbtn.classList.add("disabled");
+      let windlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
+      let androiddlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
+      windlbtntext = windlbtn.innerHTML;
+      androiddlbtntext = androiddlbtn.innerHTML;
+      windlbtn.innerText = "お待ちください...";
+      androiddlbtn.innerText = "お待ちください...";
+      const dlurl = fetch(`https://script.google.com/macros/s/AKfycbzwKdFUI5NKu434d0R3y2F1oncTO_f-_S0Z7RFsrDC_F-0eWMPtp4kFl1ejUhLrGv3j/exec?game=ce&pf=${pf}`)
+        .then(res => res.text())
+        .then(text => {
+          location.href = text;
+          //window.open(text, "_blank", "noreferrer");
+          windlbtn.classList.remove("disabled");
+          androiddlbtn.classList.remove("disabled");
+          windlbtn.innerHTML = windlbtntext;
+          androiddlbtn.innerHTML = androiddlbtntext;
+        })
+    }
+    function updaterdl(pf) {
+      const windlbtn = document.getElementById("updwindlbtn");
+      //const androiddlbtn = document.getElementById("androiddlbtn");
+      windlbtn.classList.add("disabled");
+      //androiddlbtn.classList.add("disabled");
+      let windlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
+      //let androiddlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
+      windlbtntext = windlbtn.innerHTML;
+      //androiddlbtntext = androiddlbtn.innerHTML;
+      windlbtn.innerText = "お待ちください...";
+      //androiddlbtn.innerText = "お待ちください...";
+      const dlurl = fetch(`https://script.google.com/macros/s/AKfycbzwKdFUI5NKu434d0R3y2F1oncTO_f-_S0Z7RFsrDC_F-0eWMPtp4kFl1ejUhLrGv3j/exec?game=ceupdater&pf=${pf}`)
+        .then(res => res.text())
+        .then(text => {
+          location.href = text;
+          //window.open(text, "_blank", "noreferrer");
+          windlbtn.classList.remove("disabled");
+          //androiddlbtn.classList.remove("disabled");
+          windlbtn.innerHTML = windlbtntext;
+          //androiddlbtn.innerHTML = androiddlbtntext;
+        })
+    }
+  </script>
 </body>
 
 </html>

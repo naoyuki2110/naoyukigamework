@@ -1,76 +1,85 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>404 Not Found | naoyukiGameWork</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/naoyukigamework/images/favicon.ico">
-  </head>
-  <body class="bodyFade">
+
+<head>
+  <title>404 Not Found | naoyukiGameWork</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/naoyukigamework/images/favicon.ico">
+</head>
+
+<body class="bodyFade">
   <div style="text-align:center;margin:0.3rem">
-  <p style="font-size:35px;padding-top:10px;">404 Not Found - naoyukiGameWork</p>
-  <p style="font-size:25px;">お探しのページは見つかりませんでした</p>
-  <p style="font-size:20px;">あなたが見つけようとしたページは存在しません・・・<br>本当にごめんなさい。</p>
-  <p style="font-size:17px;padding:30px;" id="randomtext">そういえば、スペースプッシャーってもともとは物理抽選機がなかったんです。プッシャーとメダルだけ...横穴もなかったんです。こう考えると今のアップデートは進化し過ぎだなと思ってしまいます笑</p>
-  <p style="font-size:20px;">それはそうと、もしかしたら<a href="/naoyukigamework/">TOPページ</a>に、あなたが見つけたいページがあるかもしれません。</p>
-  <p style="font-size:20px;">頑張ってくださいねっ</p>
-  </body>
-  <style>
-  h1,h2,h3,h4,h5,h6,p{
-  font-family: 'Inter', sans-serif;
-  font-weight:300;
-}
-a{
-  color: #207cf5;
-  transition: all 0.2s;
-  font-family: 'Inter', sans-serif;
-}
-body{
-  background-image:url("https://naoyuki2110.github.io/naoyukigamework/images/ngwlogo.png");
-  background-repeat:no-repeat;
-  background-position:center;
-  background-color:rgba(255,255,255,0.9);
-  background-blend-mode:lighten;
-}
-.bodyFade{
-animation-name:fadeIn;
-animation-duration:0.7s;
-animation-fill-mode:forwards;
-opacity:0;
-}
+    <p style="font-size:35px;padding-top:10px;">404 Not Found - naoyukiGameWork</p>
+    <p style="font-size:25px;">お探しのページは見つかりませんでした</p>
+    <p style="font-size:20px;">あなたが見つけようとしたページは存在しません・・・<br>本当にごめんなさい。</p>
+    <p style="font-size:17px;padding:30px;" id="randomtext">
+      そういえば、スペースプッシャーってもともとは物理抽選機がなかったんです。プッシャーとメダルだけ...横穴もなかったんです。こう考えると今のアップデートは進化し過ぎだなと思ってしまいます笑</p>
+    <p style="font-size:20px;">それはそうと、もしかしたら<a href="/naoyukigamework/">TOPページ</a>に、あなたが見つけたいページがあるかもしれません。</p>
+    <p style="font-size:20px;">頑張ってくださいねっ</p>
+  </div>
+</body>
+<style>
+  h1,h2,h3,h4,h5,h6,p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+  }
 
-@keyframes fadeIn{
-  from {
+  a {
+    color: #207cf5;
+    transition: all 0.2s;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    background-image: url("https://naoyuki2110.github.io/naoyukigamework/images/ngwlogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-blend-mode: lighten;
+  }
+
+  .bodyFade {
+    animation-name: fadeIn;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
     opacity: 0;
-    background-color:rgba(255,255,255,1);
   }
 
-  to {
-    opacity: 1;
-    background-color:rgba(255,255,255,0.9);
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    to {
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
   }
-}
-  </style>
-  <script>
-  const rd = Math.ceil( Math.random()*6 );
+</style>
+<script>
+  const rd = Math.ceil(Math.random() * 6);
   const text = document.getElementById("randomtext");
-  if(rd == 1){
+  if (rd == 1) {
     text.innerHTML = "そういえば、スペースプッシャーってもともとは物理抽選機がなかったんです。プッシャーとメダルだけ...横穴もなかったんです。こう考えると今のアップデートは進化し過ぎだなと思ってしまいます笑";
   }
-  if(rd == 2){
+  if (rd == 2) {
     text.innerHTML = "CubeAvoidは、NGWとしては4作目のゲームですが、形はブロック崩し3Dを創ったあとに考えていたんです。それからいくつか公開ゲームをまたいてしまいましたが...シンプルながら意外とハマるゲームにしたかったんです。";
   }
-  if(rd == 3){
+  if (rd == 3) {
     text.innerHTML = "ブロック崩し3Dには、かつてやばいイベントを実装しようとしていたとか...！？一体何でしょうか...<br><s>（リア充**しろ！）</s>";
   }
-  if(rd == 4){
+  if (rd == 4) {
     text.innerHTML = "ボタポッチは、初公開時からゲームが1つしかありませんでした。ボタンを連打するだけでつまらない。一時は公開停止を考えたぐらいでした・・・<br>そんなある日、「ボタポッチ」なのだから、他の「ボタン」を使ったゲームを作ろう！となって、公開したのが、「タイムポッチ」を追加したVer.1.1.0なんです。なぜそのアイデアが初公開からしばらく経って降りてきたんでしょうね。";
   }
-  if(rd == 5){
+  if (rd == 5) {
     text.innerHTML = "Colorant Echo、今はアップデートによってゲームを追加する方式を取っています。実は、本当はTenth Greenだけのゲームを作りたかったんです。<br>Colorant EchoのCanaryテスト日は2021年8月。B3D、BP、SP、CAが2020年に初公開したのに対して、1年のブランクを空けて公開されました。<br>（本当は、5作目のゲームはSchool Beatのはずだったということが関係している...？）";
   }
-  if(rd == 6){
+  if (rd == 6) {
     text.innerHTML = "School Beat、今は都市伝説的な扱いにされているゲームです...。実は、SBは一回オンライン化しようとしたことがあります。それは、CubeAvoid時代からの願望で、結局は制作休止になったものの、Colorant Echoでその願いは果たせました。";
   }
-  </script>
-  </html>
+</script>
+
+</html>

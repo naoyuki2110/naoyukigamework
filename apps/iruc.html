@@ -158,24 +158,24 @@
       <h1 class="mds6" style="text-align:center;">開催中のイベント</h1>
       <p class="fs-5 mx-1" style="text-align:center;">現在開催中のイベントはありません。</p>
     </div>
-    </div>
-      <div class="container">
-        <div class="row justify-content-center my-2">
-          <div class="col-lg-8">
-            <div class="card">
-              <h5 class="card-header">クレジット</h5>
-              <div class="card-body">
-                <div class="card-text">《制作》<br>naoyukiGameWork<br>《スタッフ》<br>
-                  ・naoyuki<br>
-                  ・ぱすと<br>
-                  《音楽・効果音》<br>
-                  ・naoyuki</div>
-              </div>
-            </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center my-2">
+      <div class="col-lg-8">
+        <div class="card">
+          <h5 class="card-header">クレジット</h5>
+          <div class="card-body">
+            <div class="card-text">《制作》<br>naoyukiGameWork<br>《スタッフ》<br>
+              ・naoyuki<br>
+              ・ぱすと<br>
+              《音楽・効果音》<br>
+              ・naoyuki</div>
           </div>
         </div>
       </div>
-      <footer class="bg-black text-light mt-3">
+    </div>
+  </div>
+  <footer class="bg-black text-light mt-3">
     <div class="container pt-3">
       <div class="footer-logo mx-auto">
         <img src="../images/ngwlogo3-light.png" alt="naoyukiGameWork" class="img-fluid">
@@ -223,39 +223,39 @@
       <p class="text-center m-0">© 2020-2024 naoyukiGameWork</p>
     </div>
   </footer>
-    <!-- CommonComponent -->
-    <style>
-      .dropdown:hover>.dropdown-menu {
-        display: block;
-      }
-    </style>
-    <script src="/naoyukigamework/js/header.js"></script>
-    <script src="/naoyukigamework/js/footer.js"></script>
-    <!-- CommonComponentEnd -->
-    <script>
-      function gamedl(pf) {
-        const windlbtn = document.getElementById("windlbtn");
-        // const androiddlbtn = document.getElementById("androiddlbtn");
-        windlbtn.classList.add("disabled");
-        // androiddlbtn.classList.add("disabled");
-        let windlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
-        // let androiddlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
-        windlbtntext = windlbtn.innerText;
-        // androiddlbtntext = androiddlbtn.innerText;
-        windlbtn.innerText = "お待ちください...";
-        // androiddlbtn.innerText = "お待ちください...";
-        const dlurl = fetch(`https://script.google.com/macros/s/AKfycbzwKdFUI5NKu434d0R3y2F1oncTO_f-_S0Z7RFsrDC_F-0eWMPtp4kFl1ejUhLrGv3j/exec?game=iruc&pf=${pf}`)
-          .then(res => res.text())
-          .then(text => {
-            location.href = text;
-            //window.open(text, "_blank", "noreferrer");
-            windlbtn.classList.remove("disabled");
-            // androiddlbtn.classList.remove("disabled");
-            windlbtn.innerText = windlbtntext;
-            // androiddlbtn.innerText = androiddlbtntext;
-          })
-      }
-    </script>
+  <!-- CommonComponent -->
+  <style>
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+  </style>
+  <script src="/naoyukigamework/js/header.js"></script>
+  <script src="/naoyukigamework/js/footer.js"></script>
+  <!-- CommonComponentEnd -->
+  <script>
+    function gamedl(pf) {
+      const windlbtn = document.getElementById("windlbtn");
+      // const androiddlbtn = document.getElementById("androiddlbtn");
+      windlbtn.classList.add("disabled");
+      // androiddlbtn.classList.add("disabled");
+      let windlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
+      // let androiddlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
+      windlbtntext = windlbtn.innerText;
+      // androiddlbtntext = androiddlbtn.innerText;
+      windlbtn.innerText = "お待ちください...";
+      // androiddlbtn.innerText = "お待ちください...";
+      const dlurl = fetch(`https://script.google.com/macros/s/AKfycbzwKdFUI5NKu434d0R3y2F1oncTO_f-_S0Z7RFsrDC_F-0eWMPtp4kFl1ejUhLrGv3j/exec?game=iruc&pf=${pf}`)
+        .then(res => res.text())
+        .then(text => {
+          location.href = text;
+          //window.open(text, "_blank", "noreferrer");
+          windlbtn.classList.remove("disabled");
+          // androiddlbtn.classList.remove("disabled");
+          windlbtn.innerText = windlbtntext;
+          // androiddlbtn.innerText = androiddlbtntext;
+        })
+    }
+  </script>
 </body>
 
 </html>
