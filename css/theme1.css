@@ -374,3 +374,47 @@ h1, h2, h3, h4, h5, h6 {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.footer-link:hover {
+  color: #ddd;
+  text-decoration: none;
+  position: relative;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #207cf5;
+  opacity: 0;
+  transition: all 0.15s ease-in-out;
+  pointer-events: none;
+}
+
+.footer-link:hover::after {
+  opacity: 1;
+}
+
+.footer-link-discord::after {
+  background-color: #5865f2;
+}
+.footer-link-youtube::after {
+  background-color: #ff0033;
+}
+.footer-link-twitter::after {
+  background-color: #18a9ff;
+}
+
+.footer-logo {
+  width: 300px;
+  max-width: 100%;
+}
