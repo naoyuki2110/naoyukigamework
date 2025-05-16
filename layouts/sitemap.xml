@@ -1,0 +1,25 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{ range .Site.RegularPages }}
+    {{- $path := .RelPermalink }}
+    {{- $excluded := false }}
+
+    {{ if or
+      (eq $path "/400.html")
+      (eq $path "/503.html")
+      (eq $path "/oldindex.html")
+      (eq $path "/sandbox.html")
+      (hasPrefix $path "/games/playwebgl/")
+      (hasPrefix $path "/announce/termspreview/")
+    }}
+      {{- $excluded = true }}
+    {{ end }}
+
+    {{ if not $excluded }}
+      <url>
+        <loc>{{ .Permalink }}</loc>
+        <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}</lastmod>
+      </url>
+    {{ end }}
+  {{ end }}
+</urlset>
