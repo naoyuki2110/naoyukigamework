@@ -92,15 +92,24 @@
       <h1 class="mds6" id="download">ダウンロード</h1>
       <div class="container">
         <div class="row justify-content-center my-2">
-          <div class="col-lg-8">
+          <div class="col-lg-8 pb-3">
             <div class="card border-primary">
-              <h5 class="card-header"><i class="bi bi-microsoft px-2"></i>Windows</h5>
+              <h5 class="card-header"><i class="bi bi-microsoft px-2"></i>Windows (64bit)</h5>
               <div class="card-body">
                 <div class="pb-3">
-                  <a href="https://1drv.ms/u/s!ArOeMEB9L5cqhzNvbTPFoM1eayQn?e=mOrmUQ"
-                    class="btn btn-primary py-2 fs-5 col-11" target="_blank">Ver.1.1.0 OneDriveからダウンロード
-                    (圧縮ZIPファイル)<i class="bi bi-box-arrow-up-right px-2"></i></a>
+                  <a href="javascript:gamedl('win')"
+                    class="btn btn-primary py-2 fs-5 col-11" id="windlbtn">Ver.1.2.0 ダウンロード
+                    (圧縮ZIPファイル)<i class="bi bi-download px-2"></i></a>
                 </div>
+                <div class="fs-6">Windows 7｜8｜8.1｜10｜11</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 pb-3">
+            <div class="card">
+              <h5 class="card-header">Ver.1.2.0 更新内容 (2025/9/29)</h5>
+              <div class="card-body">
+                ・グラフィックを一新しました<br>・新しいゲームモード「めーたーポッチ」「しゃとるらんポッチ」を追加しました<br>・れんだポッチ（連打ポッチ）とたいむポッチ（タイムポッチ）に新たなバリエーションを追加しました<br>・タイトル画面に「設定」を追加しました<br>・アプリアイコンを変更しました<br>・一部効果音を変更しました<br>・起動時のNGWのロゴアニメーションを削除しました<br>・対応CPUアーキテクチャを64bitのみにしました
               </div>
             </div>
           </div>
@@ -161,7 +170,7 @@
               ・ぱすと<br>
               《音楽・効果音》<br>
               ・こおろぎ<br>
-              ・Otologic<br>・On-Jin ～音人～<br>・ポケットサウンド<br>・効果音ラボ<br>・小森　平</div>
+              ・Otologic<br>・Springin’ Sound Stock<br>・ポケットサウンド<br>・効果音ラボ<br>・小森　平</div>
           </div>
         </div>
       </div>
@@ -229,6 +238,30 @@
   <script src="/naoyukigamework/js/header.js"></script>
   <script src="/naoyukigamework/js/footer.js"></script>
   <!-- CommonComponentEnd -->
+  <script>
+    function gamedl(pf) {
+      const windlbtn = document.getElementById("windlbtn");
+      // const androiddlbtn = document.getElementById("androiddlbtn");
+      windlbtn.classList.add("disabled");
+      // androiddlbtn.classList.add("disabled");
+      let windlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
+      // let androiddlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
+      windlbtntext = windlbtn.innerHTML;
+      // androiddlbtntext = androiddlbtn.innerText;
+      windlbtn.innerText = "お待ちください...";
+      // androiddlbtn.innerText = "お待ちください...";
+      const dlurl = fetch(`https://script.google.com/macros/s/AKfycbzwKdFUI5NKu434d0R3y2F1oncTO_f-_S0Z7RFsrDC_F-0eWMPtp4kFl1ejUhLrGv3j/exec?game=bp&pf=${pf}`)
+        .then(res => res.text())
+        .then(text => {
+          location.href = text;
+          //window.open(text, "_blank", "noreferrer");
+          windlbtn.classList.remove("disabled");
+          // androiddlbtn.classList.remove("disabled");
+          windlbtn.innerHTML = windlbtntext;
+          // androiddlbtn.innerText = androiddlbtntext;
+        })
+    }
+  </script>
 </body>
 
 </html>
