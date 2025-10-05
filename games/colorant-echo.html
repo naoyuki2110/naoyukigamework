@@ -310,13 +310,16 @@
             <div class="card-body text-center">
               <div class="pb-3">
                 <a href="javascript:updaterdl('win')" class="btn btn-primary py-2 fs-5 col-11"
-                  id="updwindlbtn">Ver.1.0.0
+                  id="updwindlbtn">Ver.1.0.1
                   ダウンロード
                   (圧縮ZIPファイル)<i class="bi bi-download px-2"></i></a>
               </div>
               <div class="fs-6">Windows 7｜8｜8.1｜10｜11</div>
             </div>
           </div>
+        </div>
+        <div class="col-lg-8 pb-3">
+          <div class="text-center"><button class="btn btn-outline-dark px-3 py-1 fs-6" data-bs-toggle="modal" data-bs-target="#updaterUpdInfoModal">アップデート内容を見る</button></div>
           <div class="accordion" id="howtoupd">
             <div class="my-3">
               <div class="accordion-item acbord1">
@@ -401,6 +404,46 @@
       <p class="text-center m-0">© 2020-2025 naoyukiGameWork</p>
     </div>
   </footer>
+  <!-- ModalArea -->
+  <div class="modal fade" id="updaterUpdInfoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">CEアップデータ アップデート履歴</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row justify-content-center my-2">
+            <div class="col-lg-10">
+              <div class="card shadow-sm">
+                <h5 class="card-header">Ver.1.0.1 更新内容 (2025/10/5)</h5>
+                <div class="card-body">
+                  <p class="card-text">
+                  ・2025年10月3日発表のUnityの脆弱性に対応しました
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center my-2">
+            <div class="col-lg-10">
+              <div class="card shadow-sm">
+                <h5 class="card-header">Ver.1.0.0 更新内容 (2024/8/10)</h5>
+                <div class="card-body">
+                  <p class="card-text">
+                  ・「CEアップデータ」を初公開しました
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- CommonComponent -->
   <style>
     .dropdown:hover>.dropdown-menu {
