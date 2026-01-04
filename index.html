@@ -26,6 +26,7 @@
   </script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
@@ -45,22 +46,33 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto me-5">
             <li class="nav-item me-3">
-              <a class="nav-link active fw-bold" aria-current="page" href="#">TOP</a>
+              <a class="nav-link fw-bold" aria-current="page" href="#">TOP</a>
             </li>
-            <li class="nav-item me-3">
-              <a class="nav-link fw-bold" href="games">ゲーム一覧</a>
+            <li class="nav-item has-menu me-3">
+              <a class="nav-link fw-bold" href="games">ゲーム一覧<i class="bi bi-caret-down-fill ps-1"></i></a>
+              <ul class="nav-dropdown">
+                <div class="container">
+                  <div><a href="games" class="nav-dropdown-header">ゲーム一覧トップページ<i class="bi bi-caret-right-fill px-2"></i></a></div>
+                  <div class="nav-dropdown-lists row row-cols-1 row-cols-lg-4">
+                    <li class="col"><a href="games/blockbreak3d" class="color-b3d">ブロック崩し3D<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                    <li class="col"><a href="games/botapochi" class="color-bp">ボタポッチ<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                    <li class="col"><a href="games/spacepusher" class="color-sp">スペースプッシャー<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                    <li class="col"><a href="games/cubeavoid" class="color-ca">CubeAvoid<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                    <li class="col"><a href="games/colorant-echo" class="color-ce">Colorant Echo<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                  </div>
+                </div>
+              </ul>
             </li>
-            <li class="nav-item dropdown me-3">
-              <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink" role="button"
-                aria-expanded="false">
-                ソーシャル
-              </a>
-              <ul class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="https://discord.gg/VvrBsaq" target="_blank">Discord</a></li>
-                <li><a class="dropdown-item" href="https://twitter.com/naoyukigamework/" target="_blank">Twitter</a>
-                </li>
-                <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCZmB8400Hi_j5xDU9EwbQDA/"
-                    target="_blank">YouTube</a></li>
+            <li class="nav-item has-menu me-3">
+              <a class="nav-link fw-bold" href="#">ソーシャル<i class="bi bi-caret-down-fill ps-1"></i></a>
+              <ul class="nav-dropdown">
+                <div class="container">
+                  <div class="nav-dropdown-header">SNSアカウント</div>
+                  <div class="nav-dropdown-lists row row-cols-1 row-cols-lg-4">
+                    <li class="col"><a href="https://x.com/naoyukigamework" target="_blank" class="color-twitter">X (Twitter)<i class="bi bi-box-arrow-up-right px-2"></i></a></li>
+                    <li class="col"><a href="https://www.youtube.com/channel/UCZmB8400Hi_j5xDU9EwbQDA/" target="_blank" class="color-youtube">YouTube<i class="bi bi-box-arrow-up-right px-2"></i></a></li>
+                  </div>
+                </div>
               </ul>
             </li>
           </ul>
@@ -193,129 +205,82 @@
     </div>
     <!-- Publc game Section -->
     <h1 class="mds3">公開中のゲーム / Public Games</h1>
-    <div class="text-center">
-      <!--
-      <div class="gamescr"><a href="/naoyukigamework/games/colorant-echo"><img
-            src="https://cdn.discordapp.com/attachments/879547925598969917/887948531627851786/21_08_25-16_58_32_0873.png"
-            class="imgsdw"></a></div>
-      <div class="gamescr"><a href="/naoyukigamework/games/cubeavoid"><img
-            src="https://cdn.discordapp.com/attachments/879547925598969917/887947064850382848/CA3.png"
-            class="imgsdw"></a></div>
-      <div class="gamescr"><a href="/naoyukigamework/games/botapochi"><img
-            src="https://cdn.discordapp.com/attachments/879547925598969917/888273776851177503/unknown.png"
-            class="imgsdw"></a></div>
-      <div class="gamescr"><a href="/naoyukigamework/games"><img src="/naoyukigamework/images/ngwmore1.png"
-            class="imgsdw"></a></div>
-      -->
-      <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 justify-content-center">
-          <div class="col my-2">
-            <div class="card shadow h-100">
-              <a href="games/colorant-echo">
-                <img
-                  src="images/games/colorant-echo/screenshots/img02.png"
-                  alt="JP共有で楽しめる！オンラインメダルゲーム「Colorant Echo」" class="card-img-top">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Colorant Echo</h5>
-                <p class="card-text">JP共有で楽しめる！オンラインメダルゲーム</p>
-                <a href="games/colorant-echo" class="btn btn-primary">Colorant Echoのページへ</a>
-              </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+        
+        <div class="col my-3">
+          <div class="game-card d-flex flex-column">
+            <a href="games/colorant-echo" class="game-thumb">
+              <img
+                src="images/games/colorant-echo/screenshots/img02.png"
+                alt="JP共有で楽しめる！オンラインメダルゲーム「Colorant Echo」">
+            </a>
+            <div class="game-info flex-grow-1">
+              <h5 class="game-title color-ce">Colorant Echo</h5>
+              <p class="game-desc">JP共有で楽しめる！オンラインメダルゲーム</p>
             </div>
-          </div>
-          <div class="col my-2">
-            <div class="card shadow">
-              <a href="games/cubeavoid">
-                <img src="images/games/cubeavoid/screenshots/img03.png"
-                  alt="キューブを避けてゲームクリア！爽快ゲーム「CubeAvoid」" class="card-img-top img-fluid">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">CubeAvoid</h5>
-                <p class="card-text">キューブを避けてゲームクリア！爽快避けゲー</p>
-                <a href="games/cubeavoid" class="btn btn-primary">CubeAvoidのページへ</a>
-              </div>
-            </div>
-          </div>
-          <!--
-          <div class="col my-2">
-            <div class="card" style="height:100%">
-              <a href="/naoyukigamework/games/botapochi">
-                <img src="https://cdn.discordapp.com/attachments/879547925598969917/888273776851177503/unknown.png"
-                  alt="ボタンをクリックする簡単ゲーム。いろんなモードでプレイ！「ボタポッチ」" class="card-img-top">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">ボタポッチ</h5>
-                <p class="card-text">ボタンをクリックする簡単ゲーム。いろんなモードでプレイ！</p>
-                <a href="/naoyukigamework/games/botapochi" class="btn btn-primary">ボタポッチのページへ</a>
-              </div>
-            </div>
-          </div>
-        -->
-          <div class="col align-self-center my-2">
-            <div class="card shadow" style="height:100%">
-              <div class="card-body">
-                <h5 class="card-title">公開中ゲームはもっとあります</h5>
-                <p class="card-text">もっとゲームを見たいですか？公開中のゲームはまだあります！</p>
-                <a href="games" class="btn btn-primary">ゲーム一覧へ</a>
-              </div>
-            </div>
+            <a href="games/colorant-echo" class="game-footer-btn">
+              くわしく見る <i class="bi bi-caret-right-fill"></i>
+            </a>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Public bot Section -->
-    <h1 class="mds3">公開中のBOT / Public Bots</h1>
-    <div class="text-center">
-      <!--
-      <div class="ineimg2"><img
-          src="https://cdn.discordapp.com/attachments/879547925598969917/888284077898203146/d1cd95c873221a1f06c5395a72f1dff1.png"
-          class="imgsdw2"></div>
-      <div class="ineimg2"><img src="/naoyukigamework/images/ngwmore2.png" class="imgsdw2"></div>
-      -->
-      <div class="container">
-        <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 justify-content-center">
-          <div class="col my-2">
-            <div class="card shadow">
+        <div class="col my-3">
+          <div class="game-card d-flex flex-column">
+            <a href="games/botapochi" class="game-thumb">
               <img
-                src="images/bots/icon/fukumi.png"
-                alt="遊び、便利、親しみやすいBOT「ふくみぃ」" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">ふくみぃ</h5>
-                <p class="card-text">遊び、便利、親しみやすいBOT</p>
-                <a href="bots/fukumi" class="btn btn-danger disabled">ふくみぃのページへ</a>
-              </div>
+                src="images/games/botapochi/screenshots/img02.png"
+                alt="ボタンをクリックする簡単ゲーム。いろんなモードでプレイ！「ボタポッチ」">
+            </a>
+            <div class="game-info flex-grow-1">
+              <h5 class="game-title color-bp">ボタポッチ</h5>
+              <p class="game-desc">ボタンをクリックする簡単ゲーム。いろんなモードでプレイ！</p>
             </div>
-          </div>
-          <div class="col my-2">
-            <div class="card shadow">
-              <img
-                src="images/bots/icon/fukucho.png"
-                alt="安全、快適にさせてみせます。「ふくちょー」" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">ふくちょー</h5>
-                <p class="card-text">安全、快適にさせてみせます。</p>
-                <a href="bots/fukucho" class="btn btn-danger disabled">ふくちょーのページへ</a>
-              </div>
-            </div>
-          </div>
-          <div class="col align-self-center my-2">
-            <div class="card shadow" style="height:100%">
-              <div class="card-body">
-                <h5 class="card-title">公開中BOTはもっとあります</h5>
-                <p class="card-text">もっとBOTを見たいですか？公開中のBOTはまだあります！</p>
-                <a href="games" class="btn btn-primary">ゲーム一覧へ</a>
-              </div>
-            </div>
+            <a href="games/botapochi" class="game-footer-btn">
+              くわしく見る <i class="bi bi-caret-right-fill"></i>
+            </a>
           </div>
         </div>
+        <div class="col my-3">
+          <div class="game-card d-flex flex-column">
+            <a href="games/spacepusher" class="game-thumb">
+              <img
+                src="images/games/spacepusher/screenshots/img02.png"
+                alt="宇宙のプッシャーゲーム！シンプルな物理抽選つき「スペースプッシャー」">
+            </a>
+            <div class="game-info flex-grow-1">
+              <h5 class="game-title color-sp">スペースプッシャー</h5>
+              <p class="game-desc">シンプルな宇宙のプッシャーゲーム！物理抽選つき</p>
+            </div>
+            <a href="games/spacepusher" class="game-footer-btn">
+              くわしく見る <i class="bi bi-caret-right-fill"></i>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="col my-3">
+          <div class="game-card d-flex flex-column">
+            <a href="games/cubeavoid" class="game-thumb">
+              <img
+                src="images/games/cubeavoid/screenshots/img03.png"
+                alt="キューブを避けてゲームクリア！爽快ゲーム「CubeAvoid」">
+            </a>
+            <div class="game-info flex-grow-1">
+              <h5 class="game-title color-ca">CubeAvoid</h5>
+              <p class="game-desc">キューブを避けてゲームクリア！爽快避けゲー</p>
+            </div>
+            <a href="games/cubeavoid" class="game-footer-btn">
+              くわしく見る <i class="bi bi-caret-right-fill"></i>
+            </a>
+          </div>
+        </div> -->
       </div>
+      <a href="games" class="btn2 btn-primary-a primary py-3 d-block text-center fs-5">公開中のゲームをもっと見る<i class="bi bi-arrow-right ps-2"></i></a>
     </div>
+    
     <h2 class="mds5">SNSでも情報配信中！</h2>
       <div class="text-center">
         <div class="container mb-3" align="center">
           <a class="twitter-timeline" data-lang="ja" data-width="800" data-height="900" data-theme="light"
-            href="https://twitter.com/naoyukiGameWork?ref_src=twsrc%5Etfw">Tweets by naoyukiGameWork</a>
+            href="https://x.com/naoyukiGameWork?ref_src=twsrc%5Etfw">Tweets by naoyukiGameWork</a>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
@@ -338,8 +303,8 @@
         <img src="images/ngwlogo3-light.png" alt="naoyukiGameWork" class="img-fluid">
       </div>
       <div class="justify-content-center text-center">
-        <a href="https://discord.gg/VvrBsaq" target="_blank" class="footer-link footer-link-discord px-3 my-2 d-inline-block">Discord</a>
-        <a href="https://twitter.com/naoyukigamework/" target="_blank" class="footer-link footer-link-twitter px-3 my-2 d-inline-block">X (Twitter)</a>
+        <!-- <a href="https://discord.gg/VvrBsaq" target="_blank" class="footer-link footer-link-discord px-3 my-2 d-inline-block">Discord</a> -->
+        <a href="https://x.com/naoyukigamework/" target="_blank" class="footer-link footer-link-twitter px-3 my-2 d-inline-block">X (Twitter)</a>
         <a href="https://www.youtube.com/@naoyukigamework0215" target="_blank" class="footer-link footer-link-youtube px-3 my-2 d-inline-block">YouTube</a>
       </div>
     </div>
@@ -377,7 +342,7 @@
     </div>
     <hr class="m-0">
     <div class="container py-3">
-      <p class="text-center m-0">© 2020-2025 naoyukiGameWork</p>
+      <p class="text-center m-0">© 2020-2026 naoyukiGameWork</p>
     </div>
   </footer>
   <!-- CustomStyle -->
@@ -581,9 +546,10 @@ $slider.on("beforeChange", (event, slick, currentSlide, nextSlide) => {
     }
   });
 });
+
   </script>
   <!-- CommonComponent -->
-  <script src="/naoyukigamework/js/header.js"></script>
+  <script src="js/header.js"></script>
   <script src="/naoyukigamework/js/footer.js"></script>
   <!-- CommonComponentEnd -->
 </body>

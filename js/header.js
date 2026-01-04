@@ -1,1 +1,8 @@
-document.getElementById("hdjs").innerHTML = "<nav class='hd'><ul class='menu'><li><img src='/naoyukigamework/images/ngwlogocir.png' width='50' height='50'></img></li><li><a href='/naoyukigamework/'>TOP</a></li><li><a href='/naoyukigamework/games'>ゲーム一覧</a></li><li><a style='cursor:pointer;'>ソーシャル</a><ul class='menu2'><li><a href='https://discord.gg/VvrBsaq' target='_blank'>Discord</a></li><li><a href='https://twitter.com/naoyukigamework/' target='_blank'>Twitter</a></li><li><a href='https://www.youtube.com/channel/UCZmB8400Hi_j5xDU9EwbQDA/' target='_blank'>YouTube</a></li></ul></li></ul></nav>";
+document.querySelectorAll(".has-menu > a").forEach(link => {
+    link.addEventListener("click", e => {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        link.parentElement.classList.toggle("open");
+      }
+    });
+  });

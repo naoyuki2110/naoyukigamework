@@ -43,7 +43,7 @@
           <li><img src="images/mclogocc2.png" width="50" height="50"></img></li>
           <li><a href="index.html">TOP</a></li>
           <li><a href="games.html">ゲーム一覧</a></li>
-          <li><a href="#">ソーシャル</a><ul class="menu2"><li><a href="https://discord.gg/VvrBsaq" target="_blank">Discord</a></li><li><a href="https://twitter.com/naoyukigamework/" target="_blank">Twitter</a></li><li><a href="https://www.youtube.com/channel/UCZmB8400Hi_j5xDU9EwbQDA/" target="_blank">YouTube</a></li></ul></li>
+          <li><a href="#">ソーシャル</a><ul class="menu2"><li><a href="https://discord.gg/VvrBsaq" target="_blank">Discord</a></li><li><a href="https://x.com/naoyukigamework/" target="_blank">Twitter</a></li><li><a href="https://www.youtube.com/channel/UCZmB8400Hi_j5xDU9EwbQDA/" target="_blank">YouTube</a></li></ul></li>
         </ul>
     </nav>
   </header>
@@ -62,20 +62,31 @@
             <li class="nav-item me-3">
               <a class="nav-link fw-bold" aria-current="page" href="../">TOP</a>
             </li>
-            <li class="nav-item me-3">
-              <a class="nav-link active fw-bold" href="../games">ゲーム一覧</a>
+            <li class="nav-item has-menu me-3">
+              <a class="nav-link fw-bold" href="../games">ゲーム一覧<i class="bi bi-caret-down-fill ps-1"></i></a>
+              <ul class="nav-dropdown">
+                <div class="container">
+                  <div><a href="../games" class="nav-dropdown-header">ゲーム一覧トップページ<i class="bi bi-caret-right-fill px-2"></i></a></div>
+                  <div class="nav-dropdown-lists row row-cols-1 row-cols-lg-4">
+                    <li class="col"><a href="../games/blockbreak3d" class="color-b3d">ブロック崩し3D<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                    <li class="col"><a href="../games/botapochi" class="color-bp">ボタポッチ<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                    <li class="col"><a href="../games/spacepusher" class="color-sp">スペースプッシャー<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                    <li class="col"><a href="../games/cubeavoid" class="color-ca">CubeAvoid<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                    <li class="col"><a href="../games/colorant-echo" class="color-ce">Colorant Echo<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                  </div>
+                </div>
+              </ul>
             </li>
-            <li class="nav-item dropdown me-3">
-              <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink" role="button"
-                aria-expanded="false">
-                ソーシャル
-              </a>
-              <ul class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="https://discord.gg/VvrBsaq" target="_blank">Discord</a></li>
-                <li><a class="dropdown-item" href="https://twitter.com/naoyukigamework/" target="_blank">Twitter</a>
-                </li>
-                <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCZmB8400Hi_j5xDU9EwbQDA/"
-                    target="_blank">YouTube</a></li>
+            <li class="nav-item has-menu me-3">
+              <a class="nav-link fw-bold" href="#">ソーシャル<i class="bi bi-caret-down-fill ps-1"></i></a>
+              <ul class="nav-dropdown">
+                <div class="container">
+                  <div class="nav-dropdown-header">SNSアカウント</div>
+                  <div class="nav-dropdown-lists row row-cols-1 row-cols-lg-4">
+                    <li class="col"><a href="https://x.com/naoyukigamework" target="_blank" class="color-twitter">X (Twitter)<i class="bi bi-box-arrow-up-right px-2"></i></a></li>
+                    <li class="col"><a href="https://www.youtube.com/channel/UCZmB8400Hi_j5xDU9EwbQDA/" target="_blank" class="color-youtube">YouTube<i class="bi bi-box-arrow-up-right px-2"></i></a></li>
+                  </div>
+                </div>
               </ul>
             </li>
           </ul>
@@ -85,7 +96,31 @@
   </header>
   <div style="padding-top:3.2rem;">
     <div style="text-align:center;">
-      <h1 class="mds4">ブロック崩し3D</h1>
+      <div class="game-hero color-b3d mb-4">
+        <div class="hero-content container">
+          <div class="row align-items-center">
+      
+            <div class="text-start mb-4 mb-md-0">
+              <h1 class="hero-title">ブロック崩し3D</h1>
+              <p class="hero-desc">
+                シンプルなブロック崩しの3D版。あなたは全クリできるか！？
+              </p>
+            </div>
+          </div>
+          <div class="hero-images row row-cols-1 row-cols-lg-3 justify-content-center">
+            <div class="col">
+              <img src="../images/games/blockbreak3d/screenshots/img03.png"
+                class="img-fluid shadow">
+            </div>
+            <div class="col resp-hidden">
+              <img src="../images/games/blockbreak3d/screenshots/img06.png"
+                class="img-fluid shadow">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- <h1 class="mds4">ブロック崩し3D</h1>
       <div class="container">
         <div class="row row-cols-1 row-cols-lg-2">
           <div class="col">
@@ -98,18 +133,28 @@
           </div>
         </div>
         <h3 class="mds6" style="text-align:center;">シンプルなブロック崩しの3D版。あなたは全クリできるか！？</h3>
-      </div>
+      </div> -->
       <h1 class="mds6" style="text-align:center;">お知らせ</h1>
-      <p class="fs-5 mx-1" style="text-align:center;">最新のお知らせはありません。</p>
-      <h1 class="mds6" id="download">ダウンロード</h1>
       <div class="container">
         <div class="row justify-content-center my-2">
+          <div class="col-lg-10 pb-3">
+            <div class="card shadow">
+              <div class="card-body">
+                <div class="fs-5 mx-1">最新のお知らせはありません。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+      <h1 class="mds6" id="download">ダウンロード</h1>
+        <div class="row justify-content-center my-2">
           <div class="col-lg-8 pb-3">
-            <div class="card border-primary">
+            <div class="card download-card-windows">
               <h5 class="card-header"><i class="bi bi-microsoft px-2"></i>Windows (64bit)</h5>
               <div class="card-body">
                 <div class="pb-3">
-                  <a href="javascript:gamedl('win')" class="btn btn-primary py-2 fs-5 col-11" id="windlbtn">Ver.1.0.10 ダウンロード（圧縮ZIPファイル）<i class="bi bi-download"></i></a>
+                  <button onclick="gamedl('win')" class="btn2 btn-primary-a primary py-3 fs-5 col-11" id="windlbtn">Ver.1.0.10 ダウンロード（圧縮ZIPファイル）<i class="bi bi-download"></i></button>
                 </div>
                 <div class="fs-6">Windows 7｜8｜8.1｜10｜11</div>
               </div>
@@ -168,17 +213,27 @@
     </div>
   </div>
   <div class="container">
+    <h1 class="mds6" style="text-align:center;">クレジット</h1>
     <div class="row justify-content-center my-2">
       <div class="col-lg-8">
         <div class="card">
-          <h5 class="card-header">クレジット</h5>
+          <h5 class="card-header">制作</h5>
           <div class="card-body">
-            <div class="card-text">《制作》<br>naoyukiGameWork<br>《スタッフ》<br>
+            <div class="card-text">naoyukiGameWork</div>
+          </div>
+          <h5 class="card-header-inside">スタッフ</h5>
+          <div class="card-body">
+            <div class="card-text">
               ・naoyuki<br>
               ・ぱすと<br>
-              《音楽・効果音》<br>
+            </div>
+          </div>
+          <h5 class="card-header-inside">音楽・効果音</h5>
+          <div class="card-body">
+            <div class="card-text">
               ・ISAo<br>
-              ・かずち<br>・FLASH☆BEAT<br>・稿屋 隆<br>・Next Arco Recordings<br>・ポケットサウンド<br>・効果音ラボ<br>・効果音辞典<br>・小森　平<br>・otosozai.com</div>
+              ・かずち<br>・FLASH☆BEAT<br>・稿屋 隆<br>・Next Arco Recordings<br>・ポケットサウンド<br>・効果音ラボ<br>・効果音辞典<br>・小森　平<br>・otosozai.com
+            </div>
           </div>
         </div>
       </div>
@@ -190,8 +245,8 @@
         <img src="../images/ngwlogo3-light.png" alt="naoyukiGameWork" class="img-fluid">
       </div>
       <div class="justify-content-center text-center">
-        <a href="https://discord.gg/VvrBsaq" target="_blank" class="footer-link footer-link-discord px-3 my-2 d-inline-block">Discord</a>
-        <a href="https://twitter.com/naoyukigamework/" target="_blank" class="footer-link footer-link-twitter px-3 my-2 d-inline-block">X (Twitter)</a>
+        <!-- <a href="https://discord.gg/VvrBsaq" target="_blank" class="footer-link footer-link-discord px-3 my-2 d-inline-block">Discord</a> -->
+        <a href="https://x.com/naoyukigamework/" target="_blank" class="footer-link footer-link-twitter px-3 my-2 d-inline-block">X (Twitter)</a>
         <a href="https://www.youtube.com/@naoyukigamework0215" target="_blank" class="footer-link footer-link-youtube px-3 my-2 d-inline-block">YouTube</a>
       </div>
     </div>
@@ -229,7 +284,7 @@
     </div>
     <hr class="m-0">
     <div class="container py-3">
-      <p class="text-center m-0">© 2020-2025 naoyukiGameWork</p>
+      <p class="text-center m-0">© 2020-2026 naoyukiGameWork</p>
     </div>
   </footer>
   <!-- CommonComponent -->
@@ -243,7 +298,7 @@
       }
     }
   </style>
-  <script src="/naoyukigamework/js/header.js"></script>
+  <script src="../js/header.js"></script>
   <script src="/naoyukigamework/js/footer.js"></script>
   <!-- CommonComponentEnd -->
   <script>
@@ -252,6 +307,8 @@
       // const androiddlbtn = document.getElementById("androiddlbtn");
       windlbtn.classList.add("disabled");
       // androiddlbtn.classList.add("disabled");
+      windlbtn.setAttribute("disabled", "");
+      // androiddlbtn.setAttribute("disabled", "");
       let windlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
       // let androiddlbtntext = "Ver.X.Y.Z ダウンロード（XXXファイル）";
       windlbtntext = windlbtn.innerHTML;
@@ -265,6 +322,8 @@
           //window.open(text, "_blank", "noreferrer");
           windlbtn.classList.remove("disabled");
           // androiddlbtn.classList.remove("disabled");
+          windlbtn.removeAttribute("disabled");
+          // androiddlbtn.removeAttribute("disabled");
           windlbtn.innerHTML = windlbtntext;
           // androiddlbtn.innerText = androiddlbtntext;
         })

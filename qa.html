@@ -26,6 +26,7 @@
   </script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
@@ -46,20 +47,31 @@
             <li class="nav-item me-3">
               <a class="nav-link fw-bold" aria-current="page" href="./">TOP</a>
             </li>
-            <li class="nav-item me-3">
-              <a class="nav-link fw-bold" href="games">ゲーム一覧</a>
+            <li class="nav-item has-menu me-3">
+              <a class="nav-link fw-bold" href="games">ゲーム一覧<i class="bi bi-caret-down-fill ps-1"></i></a>
+              <ul class="nav-dropdown">
+                <div class="container">
+                  <div><a href="games" class="nav-dropdown-header">ゲーム一覧トップページ<i class="bi bi-caret-right-fill px-2"></i></a></div>
+                  <div class="nav-dropdown-lists row row-cols-1 row-cols-lg-4">
+                    <li class="col"><a href="games/blockbreak3d" class="color-b3d">ブロック崩し3D<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                    <li class="col"><a href="games/botapochi" class="color-bp">ボタポッチ<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                    <li class="col"><a href="games/spacepusher" class="color-sp">スペースプッシャー<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                    <li class="col"><a href="games/cubeavoid" class="color-ca">CubeAvoid<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                    <li class="col"><a href="games/colorant-echo" class="color-ce">Colorant Echo<i class="bi bi-caret-right-fill px-2"></i></a></li>
+                  </div>
+                </div>
+              </ul>
             </li>
-            <li class="nav-item dropdown me-3">
-              <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink" role="button"
-                aria-expanded="false">
-                ソーシャル
-              </a>
-              <ul class="dropdown-menu mt-0" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="https://discord.gg/VvrBsaq" target="_blank">Discord</a></li>
-                <li><a class="dropdown-item" href="https://twitter.com/naoyukigamework/" target="_blank">Twitter</a>
-                </li>
-                <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCZmB8400Hi_j5xDU9EwbQDA/"
-                    target="_blank">YouTube</a></li>
+            <li class="nav-item has-menu me-3">
+              <a class="nav-link fw-bold" href="#">ソーシャル<i class="bi bi-caret-down-fill ps-1"></i></a>
+              <ul class="nav-dropdown">
+                <div class="container">
+                  <div class="nav-dropdown-header">SNSアカウント</div>
+                  <div class="nav-dropdown-lists row row-cols-1 row-cols-lg-4">
+                    <li class="col"><a href="https://x.com/naoyukigamework" target="_blank" class="color-twitter">X (Twitter)<i class="bi bi-box-arrow-up-right px-2"></i></a></li>
+                    <li class="col"><a href="https://www.youtube.com/channel/UCZmB8400Hi_j5xDU9EwbQDA/" target="_blank" class="color-youtube">YouTube<i class="bi bi-box-arrow-up-right px-2"></i></a></li>
+                  </div>
+                </div>
               </ul>
             </li>
           </ul>
@@ -69,18 +81,19 @@
   </header>
   <div style="padding-top:3.2rem;">
     <h1 class="mds3">よくある質問</h1>
+    <h2 class="mds5">ゲーム・アプリについて</h2>
     <!-- Q & A Section -->
     <div class="container">
-      <div class="accordion" id="accordionQa">
+      <div class="accordion" id="gameQas">
         <div class="my-3">
           <div class="accordion-item acbord1">
-            <h2 class="accordion-header" id="qa_gen1">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_gen1"
-                aria-expanded="false" aria-controls="qac_gen1">
-                Q1.ゲームは無料ですか？
+            <h2 class="accordion-header" id="qa_game1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_game1"
+                aria-expanded="false" aria-controls="qac_game1">
+                Q1.ゲームは無料ですか？ <span class="badge bg-primary ms-2">仕様</span>
               </button>
             </h2>
-            <div id="qac_gen1" class="accordion-collapse collapse" aria-labelledby="qa_gen1" data-bs-parent="#accordionQa">
+            <div id="qac_game1" class="accordion-collapse collapse" aria-labelledby="qa_game1" data-bs-parent="#gameQas">
               <div class="accordion-body">
                 はい。すべてのゲームを無料で提供しております。
               </div>
@@ -89,34 +102,36 @@
         </div>
         <div class="my-3">
           <div class="accordion-item acbord1">
-            <h2 class="accordion-header" id="qa_gen2">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_gen2"
-                aria-expanded="true" aria-controls="qac_gen2">
-                Q2.動作対象のOSを教えてほしいです
+            <h2 class="accordion-header" id="qa_game2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_game2"
+                aria-expanded="true" aria-controls="qac_game2">
+                Q2.動作対象のOSを教えてほしいです <span class="badge bg-primary ms-2">仕様</span>
               </button>
             </h2>
-            <div id="qac_gen2" class="accordion-collapse collapse" aria-labelledby="qa_gen2" data-bs-parent="#accordionQa">
+            <div id="qac_game2" class="accordion-collapse collapse" aria-labelledby="qa_game2" data-bs-parent="#gameQas">
               <div class="accordion-body">
                 本サービスの提供するゲームは<br>
-                ・Windows 7｜8｜8.1｜10｜11<br>
-                ・Android 5.1 Lollipop 以上（「Colorant Echo Ver.1.3.11 以降」に限る）<br>
+                <span class="fs-5">
+                  ・Windows 7｜8｜8.1｜10｜11<br>
+                  ・Android 5.1 Lollipop 以降<br>
+                </span>
                 で動作する仕様となっております。<br>
-                それ以外のOSやバージョンでは正常に起動・プレイができない可能性があります。<br>
+                Windows Vista、iOS、macOSなどそれ以外のOSやバージョンでは正常に起動・プレイができません。<br>
                 最新の環境を整えたうえでお楽しみください。<br>
-                それでも解決しない場合は<a href="https://discord.gg/VvrBsaq" target="_blank">Discordサーバー</a>までお申し付けください。
+                それでも解決しない場合はお問い合わせください。
               </div>
             </div>
           </div>
         </div>
         <div class="my-3">
           <div class="accordion-item acbord1">
-            <h2 class="accordion-header" id="qa_gen3">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_gen3"
-                aria-expanded="true" aria-controls="qac_gen3">
-                Q3.ゲームを他の人に勧めたりすることは可能でしょうか？
+            <h2 class="accordion-header" id="qa_game3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_game3"
+                aria-expanded="true" aria-controls="qac_game3">
+                Q3.ゲームを他の人に勧めたりすることは可能でしょうか？ <span class="badge bg-warning ms-2">ルール</span>
               </button>
             </h2>
-            <div id="qac_gen3" class="accordion-collapse collapse" aria-labelledby="qa_gen3" data-bs-parent="#accordionQa">
+            <div id="qac_game3" class="accordion-collapse collapse" aria-labelledby="qa_game3" data-bs-parent="#gameQas">
               <div class="accordion-body">
                 はい。自由に勧めて頂いて構いません。<br>
                 可能でしたら当サービスへの関連リンクを記述していただけると大変嬉しいです。
@@ -126,13 +141,13 @@
         </div>
         <div class="my-3">
           <div class="accordion-item acbord1">
-            <h2 class="accordion-header" id="qa_gen4">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_gen4"
-                aria-expanded="true" aria-controls="qac_gen4">
-                Q4.ゲームのスクリーンショット、録画映像ををSNSに共有したり、生放送をしたりできますか？
+            <h2 class="accordion-header" id="qa_game4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_game4"
+                aria-expanded="true" aria-controls="qac_game4">
+                Q4.ゲームのスクリーンショット、録画映像ををSNSに共有したり、生放送をしたりできますか？ <span class="badge bg-warning ms-2">ルール</span>
               </button>
             </h2>
-            <div id="qac_gen4" class="accordion-collapse collapse" aria-labelledby="qa_gen4" data-bs-parent="#accordionQa">
+            <div id="qac_game4" class="accordion-collapse collapse" aria-labelledby="qa_game4" data-bs-parent="#gameQas">
               <div class="accordion-body">
                 はい。自由にスクリーンショット画像や録画映像をSNS等に掲載いただいて構いません。ゲームのプレイの様子を生放送で配信していただいても構いません。<br>
                 ただし、当サービスや当サービスのスタッフだと偽ったり、虚偽の内容を同時に流したりするのはおやめください。（詳しくは<a
@@ -144,32 +159,70 @@
         </div>
         <div class="my-3">
           <div class="accordion-item acbord1">
-            <h2 class="accordion-header" id="qa_gen5">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_gen5"
-                aria-expanded="true" aria-controls="qac_gen5">
-                Q5.ゲームの不具合、バグを発見したんだけど、どこで報告すればいいの？
+            <h2 class="accordion-header" id="qa_game5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_game5"
+                aria-expanded="true" aria-controls="qac_game5">
+                Q5.ゲームの不具合、バグを発見したんだけど、どこで報告すればいいの？ <span class="badge bg-danger ms-2">バグ</span>
               </button>
             </h2>
-            <div id="qac_gen5" class="accordion-collapse collapse" aria-labelledby="qa_gen5" data-bs-parent="#accordionQa">
+            <div id="qac_game5" class="accordion-collapse collapse" aria-labelledby="qa_game5" data-bs-parent="#gameQas">
               <div class="accordion-body">
-                <a href="https://discord.gg/VvrBsaq" target="_blank">Discordサーバー</a>や、各ゲームページにある不具合報告フォームをご利用ください。（現在は<a
-                  href="games/colorant-echo">Colorant Echo</a>のみ利用可能です。）
+                <a href="https://x.com/naoyukigamework/" target="_blank">公式X</a>への返信や、各ゲームページにある不具合報告フォームをご利用ください。（現在は<a href="games/colorant-echo">Colorant Echo</a>のみ利用可能です。）
               </div>
             </div>
           </div>
         </div>
         <div class="my-3">
           <div class="accordion-item acbord1">
-            <h2 class="accordion-header" id="qa_gen6">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_gen6"
-                aria-expanded="true" aria-controls="qac_gen6">
-                Q6.NGWチームに加わりたいです！
+            <h2 class="accordion-header" id="qa_game6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_game6"
+                aria-expanded="true" aria-controls="qac_game6">
+                Q6.オートクリッカーやマクロなどの外部ツールを使ってもええんか？ <span class="badge bg-warning ms-2">ルール</span>
               </button>
             </h2>
-            <div id="qac_gen6" class="accordion-collapse collapse" aria-labelledby="qa_gen6" data-bs-parent="#accordionQa">
+            <div id="qac_game6" class="accordion-collapse collapse" aria-labelledby="qa_game6" data-bs-parent="#gameQas">
               <div class="accordion-body">
-                <a href="https://discord.gg/VvrBsaq" target="_blank">Discordサーバー</a>や、代表のDiscordのDM（naoyuki#5883）や、<a
-                  href="mailto:official-naoyukigamework@outlook.jp">公式お問い合わせメール</a>を利用して申請してください。<br>
+                naoyukiGameWorkの公開するゲームにおいて、外部ツールを用いてプレイを有利に進める行為は利用規約により禁止されています。<br>
+                ただし、一定間隔でマウス・キーボードの操作をシミュレーションする「オートクリッカー」と呼ばれるツールについては、他者への不利益に繋がらない限り禁止事項の対象外としています。<br>
+                これらのツールをオンラインゲームなどで利用し他のプレイヤーへ迷惑をかける行為はご遠慮ください。<br>
+                外部ツールの利用により発生した問題については一切の責任を負いかねます。ご了承ください。
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-3">
+          <div class="accordion-item acbord1">
+            <h2 class="accordion-header" id="qa_game7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_game7"
+                aria-expanded="true" aria-controls="qac_game7">
+                Q7.ChromeOSで動く？ <span class="badge bg-primary ms-2">仕様</span>
+              </button>
+            </h2>
+            <div id="qac_game7" class="accordion-collapse collapse" aria-labelledby="qa_game7" data-bs-parent="#gameQas">
+              <div class="accordion-body">
+                ChromeOSのLinux開発環境をはじめ、その他のLinuxディストリビューション用のサポートはしていません。<br>
+                Wineなど、互換レイヤーを利用することで動作する可能性はありますが、保証はできないこと、あらかじめご了承ください。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="mds5">サービスについて</h2>
+    <div class="container">
+      <div class="accordion" id="serviceQas">
+        <div class="my-3">
+          <div class="accordion-item acbord1">
+            <h2 class="accordion-header" id="qa_service1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_service1"
+                aria-expanded="true" aria-controls="qac_service1">
+                Q1.NGWチームに加わりたいです！ <span class="badge bg-info ms-2">運営</span>
+              </button>
+            </h2>
+            <div id="qac_service1" class="accordion-collapse collapse" aria-labelledby="qa_service1" data-bs-parent="#serviceQas">
+              <div class="accordion-body">
+                運営に興味を持っていただきありがとうございます！<br>
+                代表のDiscordのDM（naoyuki#5883）や、<a href="mailto:official-naoyukigamework@outlook.jp">公式お問い合わせメール</a>を利用して申請してください。<br>
                 なお、フリーでサービスを提供するチームですので、賃金はなしとさせていただいております。ご了承ください。
               </div>
             </div>
@@ -177,16 +230,37 @@
         </div>
         <div class="my-3">
           <div class="accordion-item acbord1">
-            <h2 class="accordion-header" id="qa_gen7">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_gen7"
-                aria-expanded="true" aria-controls="qac_gen7">
-                Q7.ここに書いていないことが知りたいです。
+            <h2 class="accordion-header" id="qa_service2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_service2"
+                aria-expanded="true" aria-controls="qac_service2">
+                Q2.新しいゲームを作ってほしい！提案してもいいですか？ <span class="badge bg-success ms-2">要望</span>
               </button>
             </h2>
-            <div id="qac_gen7" class="accordion-collapse collapse" aria-labelledby="qa_gen7" data-bs-parent="#accordionQa">
+            <div id="qac_service2" class="accordion-collapse collapse" aria-labelledby="qa_service2" data-bs-parent="#serviceQas">
               <div class="accordion-body">
-                <a href="https://discord.gg/VvrBsaq" target="_blank">Discordサーバー</a>や、<a
-                  href="mailto:official-naoyukigamework@outlook.jp">公式お問い合わせメール</a>をご利用ください。<br>
+                貴重なご意見、ありがとうございます！<br>
+                <a href="https://x.com/naoyukigamework/" target="_blank">公式X</a>などでゲーム・アプリのご要望などをどしどしお待ちしております。<br>
+                （常時ネタ切れと格闘しているので本当に嬉しいです）
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="mds5">その他のこと</h2>
+    <div class="container">
+      <div class="accordion" id="otherQas">
+        <div class="my-3">
+          <div class="accordion-item acbord1">
+            <h2 class="accordion-header" id="qa_other1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qac_other1"
+                aria-expanded="true" aria-controls="qac_other1">
+                Q1.ここに書いていないことが知りたいです。 <span class="badge bg-dark ms-2">その他</span>
+              </button>
+            </h2>
+            <div id="qac_other1" class="accordion-collapse collapse" aria-labelledby="qa_other1" data-bs-parent="#otherQas">
+              <div class="accordion-body">
+                <a href="https://x.com/naoyukigamework/" target="_blank">公式X</a>への返信や、<a href="mailto:official-naoyukigamework@outlook.jp">公式お問い合わせメール</a>をご利用ください。<br>
                 こちらで対応させていただきます。
               </div>
             </div>
@@ -194,7 +268,7 @@
         </div>
       </div>
     </div>
-    <h2 class="text-center">こちらの項目は随時更新してまいります。</h2>
+    <!-- <h2 class="text-center">こちらの項目は随時更新してまいります。</h2> -->
     <!--
           <h1 class="mds3">よくある質問</h1>
         <h2>Q1.ゲームは無料ですか？</h2>
@@ -223,8 +297,8 @@
         <img src="images/ngwlogo3-light.png" alt="naoyukiGameWork" class="img-fluid">
       </div>
       <div class="justify-content-center text-center">
-        <a href="https://discord.gg/VvrBsaq" target="_blank" class="footer-link footer-link-discord px-3 my-2 d-inline-block">Discord</a>
-        <a href="https://twitter.com/naoyukigamework/" target="_blank" class="footer-link footer-link-twitter px-3 my-2 d-inline-block">X (Twitter)</a>
+        <!-- <a href="https://discord.gg/VvrBsaq" target="_blank" class="footer-link footer-link-discord px-3 my-2 d-inline-block">Discord</a> -->
+        <a href="https://x.com/naoyukigamework/" target="_blank" class="footer-link footer-link-twitter px-3 my-2 d-inline-block">X (Twitter)</a>
         <a href="https://www.youtube.com/@naoyukigamework0215" target="_blank" class="footer-link footer-link-youtube px-3 my-2 d-inline-block">YouTube</a>
       </div>
     </div>
@@ -262,7 +336,7 @@
     </div>
     <hr class="m-0">
     <div class="container py-3">
-      <p class="text-center m-0">© 2020-2025 naoyukiGameWork</p>
+      <p class="text-center m-0">© 2020-2026 naoyukiGameWork</p>
     </div>
   </footer>
   <!-- CustomStyle -->
@@ -276,7 +350,7 @@
   </style>
   <!-- CustomStyleEnd -->
   <!-- CommonComponent -->
-  <script src="/naoyukigamework/js/header.js"></script>
+  <script src="js/header.js"></script>
   <script src="/naoyukigamework/js/footer.js"></script>
   <!-- CommonComponentEnd -->
 </body>
