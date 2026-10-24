@@ -865,7 +865,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -999;
 }
 
-.hero-title {
+.game-hero .hero-title {
   position: relative;
   font-size: 3.6rem;
   font-weight: bold;
@@ -875,7 +875,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 15px;
   opacity: 0.85;
 }
-.hero-title:before {
+.game-hero .hero-title:before {
   position: absolute;
   bottom: 0px;
   width:100%;
@@ -900,10 +900,10 @@ h1, h2, h3, h4, h5, h6 {
   .resp-hidden{
     display: none;
   }
-  .hero-title {
+  .game-hero .hero-title {
     font-size: 2.6rem;
   }
-  .hero-title:before {
+  .game-hero .hero-title:before {
     position: absolute;
     bottom: 0px;
     /* left: calc(50% - 75px); */
@@ -944,6 +944,12 @@ h1, h2, h3, h4, h5, h6 {
   background:
     linear-gradient(0deg, #ffffff 0%, transparent 30%),
     linear-gradient(135deg, #00bb74, #00d19d);
+}
+.game-hero.color-sample {
+  /* background: linear-gradient(135deg, #00bb74, #00d19d); */
+  background:
+    linear-gradient(0deg, #ffffff 0%, transparent 30%),
+    linear-gradient(135deg, #000000, #161616);
 }
 
 .hero-theme-green {
